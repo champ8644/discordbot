@@ -5,7 +5,7 @@ bot.on("ready", () => {
   console.log(`${bot.user.username} Is Online!`);
 });
 
-client.on("message", (msg) => {
+bot.on("message", (msg) => {
   if (msg.content === "ping") {
     msg.reply("Pong!");
   }
