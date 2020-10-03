@@ -1,11 +1,11 @@
-const { getCleanChannel } = require("../utils/getChannel");
+const { getChannelById } = require("../utils/getChannel");
+const { roomname } = require("../utils/roomname");
 
-async function fukukaichouClean(reaction, user) {
+async function registerQuickClean(reaction, user) {
   const member = reaction.message.guild.members.cache.get(user.id);
   const isJanitor = member.roles.cache.has("761867672496635914"); // Janitor
   if (isJanitor) {
-    const destCleanChannelName = `ถังขยะ-${user.username.toLowerCase()}`;
-    const destCleanChannel = await getCleanChannel(destCleanChannelName);
+    const destCleanChannel = await getChannelById(roomname["งานรีบกำลังคลีน"]);
     const sentMessage = await destCleanChannel.send(reaction.message.content);
     reaction.message.reactions.cache.forEach((item) => {
       if (!item._emoji.delete) {
@@ -16,4 +16,4 @@ async function fukukaichouClean(reaction, user) {
     reaction.message.delete();
   }
 }
-module.exports = { fukukaichouClean };
+module.exports = { registerQuickClean };
