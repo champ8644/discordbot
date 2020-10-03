@@ -1,4 +1,5 @@
 const { getChannel } = require("../utils/getChannel");
+const { send } = require("../utils/send");
 
 const twitterRegex = new RegExp(/twitter\.com\/(.*)\/status\/(\d*)/);
 const oneDriveRegex = new RegExp(/payap-my\.sharepoint\.com/);
@@ -74,13 +75,12 @@ async function sortJobs(message) {
     if (isQuick) destRoom = await getChannel("ห้องส่งงานรีบ");
     else destRoom = await getChannel("ห้องส่งงานคลีน");
 
-    destRoom.send(rawLink.content);
-    if (cleanLink.attachments.size > 0) {
-      destRoom.send(cleanLink.attachments.values().next().value);
-    } else destRoom.send(cleanLink.content);
-
-    rawLink.delete();
-    cleanLink.delete();
+    send(destRoom, rawLink, {
+      shouldDelete: true,
+    });
+    send(destRoom, cleanLink, {
+      shouldDelete: true,
+    });
   }
 }
 module.exports = { sortJobs };

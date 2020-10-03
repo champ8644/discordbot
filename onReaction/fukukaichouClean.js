@@ -1,4 +1,5 @@
 const { getCleanChannel } = require("../utils/getChannel");
+const { send } = require("../utils/send");
 
 async function fukukaichouClean(reaction, user) {
   const member = reaction.message.guild.members.cache.get(user.id);
@@ -6,14 +7,10 @@ async function fukukaichouClean(reaction, user) {
   if (isJanitor) {
     const destCleanChannelName = `ถังขยะ-${user.username.toLowerCase()}`;
     const destCleanChannel = await getCleanChannel(destCleanChannelName);
-    const sentMessage = await destCleanChannel.send(reaction.message.content);
-    reaction.message.reactions.cache.forEach((item) => {
-      if (!item._emoji.delete) {
-        if (item._emoji.id) sentMessage.react(item._emoji.id);
-        else sentMessage.react(item._emoji.name);
-      }
+    const sentMessage = await send(destCleanChannel, reaction.message, {
+      withReactions: true,
+      shouldDelete: true,
     });
-    reaction.message.delete();
   }
 }
 module.exports = { fukukaichouClean };

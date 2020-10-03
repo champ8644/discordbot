@@ -9,13 +9,13 @@ bot.on("ready", async () => {
   // const arr = await loopFetch();
   // const newTimerRoom = await bot.channels.cache.get("761898397451026452");
   // await moving(arr, newTimerRoom);
-  // console.log("finsihing jobs");
 });
 
 const { fukukaichouClean } = require("./onReaction/fukukaichouClean");
 const { captainClean } = require("./onReaction/captainClean");
 const { partialCheck } = require("./onReaction/partialCheck");
 const { registerQuickClean } = require("./onReaction/registerQuickClean");
+const { reactQC } = require("./onReaction/reactQC");
 bot.on("messageReactionAdd", async (reaction, user) => {
   // When we receive a reaction we check if the reaction is partial or not
   if (user.bot) return;
@@ -35,14 +35,17 @@ bot.on("messageReactionAdd", async (reaction, user) => {
       captainClean(reaction, user, roomname["ถังขยะห้องส่งงาน"]);
       return;
     case "575701679744483338": // ห้องลิ้งภาพ
-      // captainClean(reaction, user, roomname["ถังขยะห้องลิ้งภาพ"]);
+      captainClean(reaction, user, roomname["ถังขยะห้องลิ้งภาพ"]);
+      return;
+    case "761957871880503316": // ห้องแจ้ง QC
+      reactQC(reaction, user);
       return;
   }
 });
 
 const { acceptCommand } = require("./onMessage/acceptCommand");
 const { sortJobs } = require("./onMessage/sortJobs");
-const { addReactionQC } = require("./onMessage/addReactionQC");
+const { registerQC } = require("./onMessage/registerQC");
 bot.on("message", async (message) => {
   if (message.author.bot) return;
   await partialCheck(message);
@@ -51,7 +54,7 @@ bot.on("message", async (message) => {
       sortJobs(message);
       return;
     case "761957871880503316": // ห้องแจ้ง QC
-      addReactionQC(message);
+      registerQC(message);
       return;
     case "726319165048356944": // ห้องทดลอง
       acceptCommand(message);

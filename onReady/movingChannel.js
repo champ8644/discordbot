@@ -1,3 +1,5 @@
+const { send } = require("../utils/send");
+
 async function loopFetch() {
   const arr = [];
   let before;
@@ -32,8 +34,7 @@ function delay(t, v) {
 async function moving(arr, room) {
   const callBack = arr.map((message) => {
     return () => {
-      room.send(message.content);
-      message.delete();
+      send(room, message, { shouldDelete: true });
     };
   });
   for (let i = 0; i < callBack.length; i++) {
