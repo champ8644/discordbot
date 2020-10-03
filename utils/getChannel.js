@@ -5,7 +5,7 @@ async function getChannel(name, parent) {
   if (roomname[name]) return bot.channels.cache.get(roomname[name]);
 
   let room = bot.channels.cache.find((channel) => {
-    if (!parent || channel.parent?.id == parent) {
+    if (!parent || (channel && channel.parent && channel.parent.id) == parent) {
       if (channel.name === name) return true;
     }
   });
