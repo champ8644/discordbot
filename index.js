@@ -4,8 +4,10 @@ const { bot } = require("./utils/Discord");
 const { roomname } = require("./utils/roomname");
 
 const { welcomeScreen } = require("./onReady/welcomeScreen");
+const { postDiscord } = require("./functions/postDiscord");
 bot.on("ready", async () => {
   welcomeScreen();
+  // postDiscord();
   // const arr = await loopFetch();
   // const newTimerRoom = await bot.channels.cache.get("761898397451026452");
   // await moving(arr, newTimerRoom);
