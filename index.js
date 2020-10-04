@@ -22,9 +22,9 @@ bot.on("messageReactionAdd", async (reaction, user) => {
   await partialCheck(reaction);
   switch (reaction.message.channel.id) {
     case "761957637657985060": // ห้องงานรีบ-ใหม่
+    case "761963747308601344": // ห้องคอมมิค-ใหม่
       registerQuickClean(reaction, user);
     case "761898397451026452": // ห้องงานคลีน-ใหม่
-    case "761963747308601344": // ห้องคอมมิค-ใหม่
     case "761961486524350485": // ห้องงานยาก-ใหม่
       fukukaichouClean(reaction, user);
       return;
