@@ -1,5 +1,9 @@
-async function send(channel, message, options) {
+async function send(channel, message, options = {}) {
   const { shouldDelete, withReactions } = options;
+  if (typeof message === "string") {
+    channel.send(message);
+    return;
+  }
   let messageSent;
   if (message.attachments.size > 0) {
     messageSent = await channel.send(message.attachments.values().next().value);
