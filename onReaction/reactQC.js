@@ -12,7 +12,7 @@ async function reactQC(reaction, user) {
         const sentMessage = await send(destChannel, reaction.message, {
           shouldDelete: true,
         });
-        sentMessage.react("👍");
+        await sentMessage.react("👍");
         break;
       }
       case "👎": {
@@ -20,7 +20,7 @@ async function reactQC(reaction, user) {
         const sentMessage = await send(destChannel, reaction.message, {
           shouldDelete: true,
         });
-        sentMessage.react("👎");
+        await sentMessage.react("👎");
         break;
       }
       default:

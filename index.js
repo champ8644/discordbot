@@ -3,11 +3,54 @@ require("dotenv").config();
 const { bot } = require("./utils/Discord");
 const { roomname } = require("./utils/roomname");
 
+class queueAsyncClass {
+  constructor() {
+    this.queue = [];
+    this.working = false;
+  }
+
+  isEmpty() {
+    return this.queue.length === 0;
+  }
+
+  async execute() {
+    if (this.isEmpty()) {
+      this.working = false;
+      return;
+    }
+    const callBack = this.queue.shift();
+    await callBack();
+    if (this.working) return this.execute();
+  }
+
+  start() {
+    if (!this.working) {
+      this.working = true;
+      return this.execute();
+    }
+  }
+
+  stop() {
+    this.working = false;
+  }
+
+  add(callBack) {
+    this.queue.push(callBack);
+    this.start();
+  }
+}
+
+const queueAsync = new queueAsyncClass();
+
 const { welcomeScreen } = require("./onReady/welcomeScreen");
 const { postDiscord } = require("./functions/postDiscord");
+const { cleanRoom } = require("./functions/cleanRoom");
+const { getChannelById } = require("./utils/getChannel");
 bot.on("ready", async () => {
   welcomeScreen();
   // postDiscord();
+  // cleanRoom(getChannelById("762691667559972884")); // ห้องคลีนtest
+  // cleanRoom(getChannelById("761963411592446002")); // ห้องส่ง
   // const arr = await loopFetch();
   // const newTimerRoom = await bot.channels.cache.get("761898397451026452");
   // await moving(arr, newTimerRoom);
@@ -28,19 +71,25 @@ bot.on("messageReactionAdd", async (reaction, user) => {
       registerQuickClean(reaction, user);
     case "761898397451026452": // ห้องงานคลีน-ใหม่
     case "761961486524350485": // ห้องงานยาก-ใหม่
-      fukukaichouClean(reaction, user);
+      queueAsync.add(async () => fukukaichouClean(reaction, user));
       return;
     case "761962591022481438": // ห้องส่งงานรีบ
-      captainClean(reaction, user, roomname["ถังขยะห้องส่งงาน"]);
+      queueAsync.add(async () =>
+        captainClean(reaction, user, roomname["ถังขยะห้องส่งงาน"])
+      );
       return;
     case "761959220831584277": // ห้องส่งงานคลีน
-      captainClean(reaction, user, roomname["ถังขยะห้องส่งงาน"]);
+      queueAsync.add(async () =>
+        captainClean(reaction, user, roomname["ถังขยะห้องส่งงาน"])
+      );
       return;
     case "575701679744483338": // ห้องลิ้งภาพ
-      captainClean(reaction, user, roomname["ถังขยะห้องลิ้งภาพ"]);
+      queueAsync.add(async () =>
+        captainClean(reaction, user, roomname["ถังขยะห้องลิ้งภาพ"])
+      );
       return;
     case "761957871880503316": // ห้องแจ้ง QC
-      reactQC(reaction, user);
+      queueAsync.add(async () => reactQC(reaction, user));
       return;
   }
 });
@@ -49,14 +98,13 @@ const { acceptCommand } = require("./onMessage/acceptCommand");
 const { sortJobs } = require("./onMessage/sortJobs");
 const { registerQC } = require("./onMessage/registerQC");
 bot.on("message", async (message) => {
-  if (message.author.bot) return;
   await partialCheck(message);
   switch (message.channel.id) {
     case "761963411592446002": // ห้องส่งงาน
-      sortJobs(message);
+      queueAsync.add(async () => sortJobs(message));
       return;
     case "761957871880503316": // ห้องแจ้ง QC
-      registerQC(message);
+      queueAsync.add(async () => registerQC(message));
       return;
     case "726319165048356944": // ห้องทดลอง
       acceptCommand(message);

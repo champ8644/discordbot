@@ -8,7 +8,7 @@ async function start() {
   for (let i = 0; i < input.length; i++) {
     console.log("start -> i", i);
     await channel.send(input[i]);
-    await delay(2000);
+    // await delay(2000);
   }
 }
 

@@ -6,7 +6,7 @@ async function captainClean(reaction, user, destId) {
   const isTranslator = member.roles.cache.has("762003560303951883"); // Translator
   if (isTranslator) {
     const dest = await getChannelById(destId);
-    const sentMessage = await send(dest, reaction.message, {
+    await send(dest, reaction.message, {
       withReactions: true,
       shouldDelete: true,
     });

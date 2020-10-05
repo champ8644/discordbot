@@ -7,7 +7,7 @@ async function registerQuickClean(reaction, user) {
   const isJanitor = member.roles.cache.has("761867672496635914"); // Janitor
   if (isJanitor) {
     const destCleanChannel = await getChannelById(roomname["งานรีบกำลังคลีน"]);
-    const sentMessage = await send(destCleanChannel, reaction.message, {
+    await send(destCleanChannel, reaction.message, {
       withReactions: true,
       shouldDelete: true,
     });

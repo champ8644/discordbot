@@ -7,7 +7,7 @@ async function fukukaichouClean(reaction, user) {
   if (isJanitor) {
     const destCleanChannelName = `ถังขยะ-${user.username.toLowerCase()}`;
     const destCleanChannel = await getCleanChannel(destCleanChannelName);
-    const sentMessage = await send(destCleanChannel, reaction.message, {
+    await send(destCleanChannel, reaction.message, {
       withReactions: true,
       shouldDelete: true,
     });
