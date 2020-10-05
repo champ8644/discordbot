@@ -7,7 +7,8 @@ const gDriveRegex = new RegExp(/drive\.google\.com/);
 
 function parseLinkType(message) {
   if (!message) return { type: null };
-  if (message.attachments?.size > 0) return { type: "file" };
+  if (message.attachments && message.attachments.size > 0)
+    return { type: "file" };
   const twitParse = twitterRegex.exec(message.content);
   if (twitParse) {
     const [, author, post] = twitParse;
