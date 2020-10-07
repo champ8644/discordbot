@@ -47,7 +47,7 @@ const { postDiscord } = require("./functions/postDiscord");
 const { cleanRoom } = require("./functions/cleanRoom");
 const { getChannelById } = require("./utils/getChannel");
 bot.on("ready", async () => {
-  welcomeScreen();
+  welcomeScreen(process.env.dev);
   // postDiscord();
   // cleanRoom(getChannelById("762691667559972884")); // ห้องคลีนtest
   // cleanRoom(getChannelById("761963411592446002")); // ห้องส่ง
