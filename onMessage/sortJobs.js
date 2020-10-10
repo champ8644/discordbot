@@ -51,6 +51,7 @@ const onGoingMessage = {};
 
 async function sortJobs(message) {
   const latestLink = parseLinkType(message);
+  // console.log("sortJobs -> latestLink", latestLink);
   if (!latestLink.type) return;
   if (onGoingMessage[message.id]) return;
   onGoingMessage[message.id] = 1;
@@ -63,6 +64,7 @@ async function sortJobs(message) {
   const iterator = messages.values();
   const message2 = iterator.next().value;
   const secondLink = parseLinkType(message2);
+  // console.log("sortJobs -> secondLink", secondLink);
   if (!secondLink.type) {
     delete onGoingMessage[message.id];
     return;
@@ -83,6 +85,7 @@ async function sortJobs(message) {
   } else return;
 
   const isQuick = await checkQuick(parseLink);
+  // console.log("sortJobs -> isQuick", isQuick);
 
   let destRoom;
   if (isQuick) destRoom = await getChannel("ห้องส่งงานรีบ");

@@ -1,5 +1,12 @@
 async function send(channel, message, options = {}) {
   const { shouldDelete, withReactions } = options;
+  // console.log("send -> ", {
+  //   channel: channel.name,
+  //   content: message.content,
+  //   attachments: message.attachments.size,
+  //   shouldDelete,
+  //   withReactions,
+  // });
   if (typeof message === "string") {
     channel.send(message);
     return;
