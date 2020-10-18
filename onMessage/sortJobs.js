@@ -6,6 +6,7 @@ const oneDriveRegex = new RegExp(/payap-my\.sharepoint\.com/);
 const gDriveRegex = new RegExp(/drive\.google\.com/);
 
 function parseLinkType(message) {
+  console.log("parseLinkType -> message", message);
   if (!message) return { type: null };
   if (message.attachments && message.attachments.size > 0)
     return { type: "file" };
@@ -20,6 +21,11 @@ function parseLinkType(message) {
 }
 
 async function checkAtChannel(parseLink, getChannel, shouldDelete) {
+  console.log("checkAtChannel -> payload", {
+    parseLink,
+    getChannel,
+    shouldDelete,
+  });
   const channel = await getChannel;
   const messages = await channel.messages.fetch();
   for (let value of messages.values()) {
@@ -35,6 +41,7 @@ async function checkAtChannel(parseLink, getChannel, shouldDelete) {
 }
 
 async function checkQuick(parseLink) {
+  console.log("checkQuick -> parseLink", parseLink);
   const finalPromise = await Promise.all([
     checkAtChannel(parseLink, getChannel("ห้องงานรีบใหม่")),
     checkAtChannel(parseLink, getChannel("ห้องคอมมิคใหม่")),
@@ -50,7 +57,9 @@ async function checkQuick(parseLink) {
 const onGoingMessage = {};
 
 async function sortJobs(message) {
+  console.log("sortJobs -> message", message);
   const latestLink = parseLinkType(message);
+  console.log("sortJobs -> latestLink", { latestLink, message });
   // console.log("sortJobs -> latestLink", latestLink);
   if (!latestLink.type) return;
   if (onGoingMessage[message.id]) return;
@@ -64,6 +73,7 @@ async function sortJobs(message) {
   const iterator = messages.values();
   const message2 = iterator.next().value;
   const secondLink = parseLinkType(message2);
+  console.log("sortJobs -> secondLink", { secondLink, message2 });
   // console.log("sortJobs -> secondLink", secondLink);
   if (!secondLink.type) {
     delete onGoingMessage[message.id];
