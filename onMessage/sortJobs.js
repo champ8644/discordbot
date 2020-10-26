@@ -64,10 +64,14 @@ async function sortJobs(message) {
   if (!latestLink.type) return;
   if (onGoingMessage[message.id]) return;
   onGoingMessage[message.id] = 1;
-  const messages = await message.channel.messages.fetch({
-    limit: 1,
-    before: message.id,
-  });
+  try {
+    const messages = await message.channel.messages.fetch({
+      limit: 1,
+      before: message.id,
+    });
+  } catch (error) {
+    console.log("sortJobs:73 message.channel.messages ", error);
+  }
   if (!latestLink.type) return;
   if (messages.length === 0) return;
   const iterator = messages.values();
@@ -94,12 +98,20 @@ async function sortJobs(message) {
     cleanLink = message;
   } else return;
 
-  const isQuick = await checkQuick(parseLink);
+  try {
+    const isQuick = await checkQuick(parseLink);
+  } catch (error) {
+    console.log("sortJobs:104 checkQuick ", error);
+  }
   // console.log("sortJobs -> isQuick", isQuick);
 
   let destRoom;
-  if (isQuick) destRoom = await getChannel("ห้องส่งงานรีบ");
-  else destRoom = await getChannel("ห้องส่งงานคลีน");
+  try {
+    if (isQuick) destRoom = await getChannel("ห้องส่งงานรีบ");
+    else destRoom = await getChannel("ห้องส่งงานคลีน");
+  } catch (error) {
+    console.log("113: error", error);
+  }
 
   await send(destRoom, rawLink, {
     shouldDelete: true,
