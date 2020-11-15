@@ -1,5 +1,9 @@
 async function registerQC(message) {
-  await message.react("👍");
-  await message.react("👎");
+  try {
+    await message.react("👍");
+    await message.react("👎");
+  } catch (error) {
+    console.error(error);
+  }
 }
 module.exports = { registerQC };
