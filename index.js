@@ -44,15 +44,21 @@ const queueAsync = new queueAsyncClass();
 const { welcomeScreen } = require("./onReady/welcomeScreen");
 const { postDiscord } = require("./functions/postDiscord");
 const { cleanRoom } = require("./functions/cleanRoom");
-const { getChannelById } = require("./utils/getChannel");
+const { getChannelById, getChannel } = require("./utils/getChannel");
 bot.on("ready", async () => {
-  welcomeScreen(process.env.status);
-  // postDiscord();
-  // cleanRoom(getChannelById("762691667559972884")); // ห้องคลีนtest
-  // cleanRoom(getChannelById("761963411592446002")); // ห้องส่ง
-  // const arr = await loopFetch();
-  // const newTimerRoom = await bot.channels.cache.get("761898397451026452");
-  // await moving(arr, newTimerRoom);
+  try {
+    const channel = await getChannel("ห้องงานรีบใหม่");
+    await channel.messages.fetch();
+    welcomeScreen(process.env.status);
+    // postDiscord();
+    // cleanRoom(getChannelById("762691667559972884")); // ห้องคลีนtest
+    // cleanRoom(getChannelById("761963411592446002")); // ห้องส่ง
+    // const arr = await loopFetch();
+    // const newTimerRoom = await bot.channels.cache.get("761898397451026452");
+    // await moving(arr, newTimerRoom);
+  } catch (error) {
+    console.error(error);
+  }
 });
 
 const { fukukaichouClean } = require("./onReaction/fukukaichouClean");
