@@ -24,6 +24,7 @@ async function send(channel, message, options = {}) {
         else messageSent.react(item._emoji.name);
       });
     }
+    console.log("send -> delete -> message", message);
     if (shouldDelete) await message.delete();
     return messageSent;
   } catch (error) {
