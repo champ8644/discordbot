@@ -14,7 +14,7 @@ async function moving(arr, room) {
       await delay(1100);
     }
   } catch (error) {
-    console.error(error);
+    console.error(new Error(), error);
   }
 }
 module.exports = { moving };

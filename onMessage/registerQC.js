@@ -3,7 +3,7 @@ async function registerQC(message) {
     await message.react("👍");
     await message.react("👎");
   } catch (error) {
-    console.error(error);
+    console.error(new Error(), error);
   }
 }
 module.exports = { registerQC };

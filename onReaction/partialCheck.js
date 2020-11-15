@@ -19,7 +19,7 @@ async function partialCheck(entities) {
       }
     }
   } catch (error) {
-    console.error(error);
+    console.error(new Error(), error);
   }
 }
 module.exports = { partialCheck };

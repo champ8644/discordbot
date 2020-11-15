@@ -14,7 +14,7 @@ async function fukukaichouClean(reaction, user) {
       });
     }
   } catch (error) {
-    console.error(error);
+    console.error(new Error(), error);
   }
 }
 module.exports = { fukukaichouClean };

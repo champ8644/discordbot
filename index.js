@@ -57,7 +57,7 @@ bot.on("ready", async () => {
     // const newTimerRoom = await bot.channels.cache.get("761898397451026452");
     // await moving(arr, newTimerRoom);
   } catch (error) {
-    console.error(error);
+    console.error(new Error(), error);
   }
 });
 

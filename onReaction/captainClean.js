@@ -13,7 +13,7 @@ async function captainClean(reaction, user, destId) {
       });
     }
   } catch (error) {
-    console.error(error);
+    console.error(new Error(), error);
   }
 }
 module.exports = { captainClean };
