@@ -46,10 +46,14 @@ const { postDiscord } = require("./functions/postDiscord");
 const { cleanRoom } = require("./functions/cleanRoom");
 const { getChannelById, getChannel } = require("./utils/getChannel");
 const { fetchRoom } = require("./utils/fetchRoom.js");
+const { db } = require("./utils/postgres.js");
+const { HBDCheck } = require("./onReady/HBDCheck.js");
 bot.on("ready", async () => {
   try {
-    await fetchRoom();
-    await welcomeScreen(process.env.status);
+    await db.connect();
+    HBDCheck();
+    // await fetchRoom();
+    // await welcomeScreen(process.env.status);
     // postDiscord();
     // cleanRoom(getChannelById("762691667559972884")); // ห้องคลีนtest
     // cleanRoom(getChannelById("761963411592446002")); // ห้องส่ง
