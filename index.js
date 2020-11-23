@@ -45,11 +45,11 @@ const { welcomeScreen } = require("./onReady/welcomeScreen");
 const { postDiscord } = require("./functions/postDiscord");
 const { cleanRoom } = require("./functions/cleanRoom");
 const { getChannelById, getChannel } = require("./utils/getChannel");
+const { fetchRoom } = require("./utils/fetchRoom.js");
 bot.on("ready", async () => {
   try {
-    const channel = await getChannel("ห้องงานรีบใหม่");
-    await channel.messages.fetch();
-    welcomeScreen(process.env.status);
+    await fetchRoom();
+    await welcomeScreen(process.env.status);
     // postDiscord();
     // cleanRoom(getChannelById("762691667559972884")); // ห้องคลีนtest
     // cleanRoom(getChannelById("761963411592446002")); // ห้องส่ง
@@ -57,7 +57,7 @@ bot.on("ready", async () => {
     // const newTimerRoom = await bot.channels.cache.get("761898397451026452");
     // await moving(arr, newTimerRoom);
   } catch (error) {
-    console.error(new Error(), error);
+    console.error(error);
   }
 });
 

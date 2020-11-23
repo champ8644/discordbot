@@ -31,7 +31,7 @@ async function send(channel, message, options = {}) {
     if (shouldDelete) await message.delete();
     return messageSent;
   } catch (error) {
-    console.error(new Error(), error);
+    console.error(error);
   }
 }
 module.exports = { send };

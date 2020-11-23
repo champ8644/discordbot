@@ -34,7 +34,7 @@ async function checkAtChannel(parseLink, getChannel, shouldDelete) {
       }
     }
   } catch (error) {
-    console.error(new Error(), error);
+    console.error(error);
   }
 }
 
@@ -51,7 +51,7 @@ async function checkQuick(parseLink) {
     );
     return finalAnswer;
   } catch (error) {
-    console.error(new Error(), error);
+    console.error(error);
   }
 }
 
@@ -112,7 +112,7 @@ async function sortJobs(message) {
     delete onGoingMessage[rawLink.id];
     delete onGoingMessage[cleanLink.id];
   } catch (error) {
-    console.error(new Error(), error);
+    console.error(error);
   }
 }
-module.exports = { sortJobs };
+module.exports = { sortJobs, parseLinkType };

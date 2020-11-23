@@ -22,7 +22,7 @@ async function getChannel(name, parent) {
       });
     return room;
   } catch (error) {
-    console.error(new Error(), error);
+    console.error(error);
   }
 }
 function getCleanChannel(name) {

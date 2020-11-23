@@ -13,7 +13,7 @@ async function welcomeScreen(status) {
       `${bot.user.username} ver${pjson.version} ${statusPost}`
     );
   } catch (error) {
-    console.error(new Error(), error);
+    console.error(error);
   }
 }
 module.exports = { welcomeScreen };
