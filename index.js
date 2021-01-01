@@ -51,9 +51,9 @@ const { HBDCheck } = require("./onReady/HBDCheck.js");
 bot.on("ready", async () => {
   try {
     await db.connect();
-    HBDCheck();
-    // await fetchRoom();
-    // await welcomeScreen(process.env.status);
+    // HBDCheck();
+    await fetchRoom();
+    await welcomeScreen(process.env.status);
     // postDiscord();
     // cleanRoom(getChannelById("762691667559972884")); // ห้องคลีนtest
     // cleanRoom(getChannelById("761963411592446002")); // ห้องส่ง
@@ -71,6 +71,7 @@ const { partialCheck } = require("./onReaction/partialCheck");
 const { registerQuickClean } = require("./onReaction/registerQuickClean");
 const { reactQC } = require("./onReaction/reactQC");
 bot.on("messageReactionAdd", async (reaction, user) => {
+  console.log(reaction, user);
   // When we receive a reaction we check if the reaction is partial or not
   if (user.bot) return;
   await partialCheck(reaction);
