@@ -1,10 +1,11 @@
 {
   "name": "discordbot",
-  "version": "1.3.1",
+  "version": "1.4.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
+    "startDaily": "nodemon indexDaily.js",
     "startgen": "nodemon character/generateBirthdayList.js"
   },
   "author": "",
