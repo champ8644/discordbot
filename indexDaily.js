@@ -1,3 +1,192 @@
-const { format } = require("date-fns");
+const Discord = require("discord.js");
 
-console.log("Node daily runs at", format(new Date(), "eee d MMMM yyyy, H:mm"));
+require("dotenv").config();
+const { bot } = require("./utils/Discord");
+bot.login(process.env.token);
+
+const { send } = require("./utils/send");
+const { format, addHours, startOfDay, setMonth, setDate } = require("date-fns");
+const locale = require("date-fns/locale/th");
+
+const birthdayList = require("./character/birthdayList.json");
+const characterList = require("./character/BanGDreamChars.json");
+
+const now = addHours(new Date(), 7);
+const day = startOfDay(addHours(now, 14));
+const keyDate = format(day, "dd/MM");
+const todayEvents = birthdayList[keyDate];
+
+function combineTHJP(th, jp) {
+  if (!jp) return th;
+  if (!th) return th;
+  return `${th} 「${jp}」`;
+}
+
+function combineTHJPNewline(th, jp) {
+  if (!jp) return th;
+  if (!th) return th;
+  return `${th}\n「${jp}」`;
+}
+
+function combineName(name = "", surname = "") {
+  return [name, surname].filter((x) => x).join(" ");
+}
+
+function combineNewLine(text1, text2) {
+  return [text1, text2].filter((x) => x).join("\n");
+}
+
+function makeLink(link) {
+  return `[${link}](${link})`;
+}
+
+function getFullName(name, surname, name_jp, surname_jp) {
+  return combineTHJP(
+    combineName(name, surname),
+    combineName(surname_jp, name_jp)
+  );
+}
+
+function getBandText(band) {
+  switch (band) {
+    case "Poppin'Party":
+      return "Poppin'Party <:PopipaLogo:794643844565958677>";
+    case "Roselia":
+      return "Roselia <:RoseliaLogo:794643844490592316>";
+    case "Afterglow":
+      return "Afterglow <:AfterglowLogo:794643844317577286>";
+    case "Pastel✽Palettes":
+      return "Pastel✽Palettes <:PasupareLogo:794643844339728434>";
+    case "Hello, Happy World!":
+      return "Hello, Happy World! <:HHWLogo:794643844259774515>";
+    case "RAISE A SUILEN":
+      return "RAISE A SUILEN <:RASLogo:794643845253693480>";
+    case "Morfonica":
+      return "Morfonica <:MorfonicaLogo:794643844346937374>";
+    default:
+      return band;
+  }
+}
+
+function genCharReport(info, hbd) {
+  const embed = new Discord.MessageEmbed();
+
+  const fullname = getFullName(
+    info.name,
+    info.surname,
+    info.name_jp,
+    info.surname_jp
+  );
+
+  const nickname = combineTHJPNewline(info.nickname, info.nickname_jp);
+  const fullnameNewline = combineTHJPNewline(
+    combineName(info.name, info.surname),
+    combineName(info.surname_jp, info.name_jp)
+  );
+  const hbdDay = format(
+    new Date(2020, info.birthday_month, info.birthday_day),
+    "do MMM"
+  );
+
+  const hbdText = hbd ? "แฮปปี้เบิร์ดเดย์" : "เตรียม HBD พรุ่งนี้";
+
+  embed.setAuthor("Nep-A-Live Cake Manager", "https://i.imgur.com/K1AWKjQ.jpg");
+  embed.setColor(info.colorcode_char);
+  embed.setTitle(`${hbdText} ${fullname}`);
+  embed.setDescription(
+    format(
+      setMonth(setDate(now, info.birthday_day), info.birthday_month),
+      "eeee d MMMM yyyy",
+      { locale }
+    )
+  );
+  if (nickname) embed.addField("ชื่อเล่น", nickname, true);
+  embed.addField("ชื่อ", fullnameNewline, true);
+  embed.addField("วันเกิด", hbdDay, true);
+  embed.addField("วง", getBandText(info.band), true);
+  embed.addField("ตำแหน่ง", info.role, true);
+  if (info.image) embed.setImage(info.image);
+  embed.setTimestamp(now);
+
+  if (hbd) send("ห้องเป่าเค้ก", { embed }, { API: true });
+  else send("ห้องวันเกิด-ห้องนั่งเล่นรวม", { embed }, { API: true });
+}
+
+function genSeiyuuReport(info, hbd) {
+  if (!hbd) return;
+  const embed = new Discord.MessageEmbed();
+
+  const fullname = getFullName(
+    info.s_name,
+    info.s_surname,
+    info.s_name_jp,
+    info.s_surname_jp
+  );
+
+  const nickname = combineTHJPNewline(info.s_nickname, info.s_nickname_jp);
+  const fullnameNewline = combineTHJPNewline(
+    combineName(info.s_name, info.s_surname),
+    combineName(info.s_surname_jp, info.s_name_jp)
+  );
+  const hbdDay = format(
+    new Date(2020, info.s_birthday_month, info.s_birthday_day),
+    "do MMM"
+  );
+  const blog = combineNewLine(info.blog1, info.blog2);
+
+  embed.setAuthor(
+    "Nep-A-Live Cake Manager - [Seiyuu]",
+    "https://i.imgur.com/K1AWKjQ.jpg"
+  );
+  embed.setColor(info.colorcode_char);
+  embed.setTitle(`แฮปปี้เบิร์ดเดย์ ${fullname}`);
+  embed.setDescription(
+    format(
+      setMonth(setDate(now, info.s_birthday_day), info.s_birthday_month),
+      "eeee d MMMM yyyy",
+      { locale }
+    )
+  );
+  if (nickname) embed.addField("ชื่อเล่น", nickname, true);
+  embed.addField("ชื่อ", fullnameNewline, true);
+  embed.addField("วันเกิด", hbdDay, true);
+  embed.addField("วง", getBandText(info.band), true);
+  embed.addField("ตำแหน่ง", info.role, true);
+  if (info.twitter) embed.addField("Twitter", info.twitter, true);
+  if (info.site_instagram)
+    embed.addField("Instagram", info.site_instagram, true);
+  if (info.site_youtube) embed.addField("Youtube", info.site_youtube, true);
+  if (blog) embed.addField("Blog", blog, true);
+  if (info.site_other) embed.addField("Other", info.site_other, true);
+  if (info.s_image) embed.setImage(info.s_image);
+  embed.setTimestamp(now);
+
+  send("ห้องเป่าเค้ก-seiyuu", { embed }, { API: true });
+}
+
+function generateReport(event) {
+  const info = characterList[event.key];
+  const type = event.type === "hbd";
+  if (
+    info.band === "CHiSPA" ||
+    info.band === "Others" ||
+    info.band === "Glitter*Green"
+  )
+    console.log("hello");
+  else if (event.seiyuu) genSeiyuuReport(info, type);
+  else genCharReport(info, type);
+}
+
+bot.on("ready", async () => {
+  try {
+    console.log("Node daily runs at", format(now, "eee d MMMM yyyy, H:mm"));
+
+    todayEvents.forEach((event) => {
+      generateReport(event);
+    });
+  } catch (error) {
+    console.error(error);
+  }
+});
+
+module.exports = { generateReport };

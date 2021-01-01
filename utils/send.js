@@ -1,6 +1,8 @@
-async function send(channel, message, options = {}) {
+const { getChannel } = require("./getChannel");
+
+async function send(_channel, message, options = {}) {
   try {
-    const { shouldDelete, withReactions } = options;
+    const { shouldDelete, withReactions, API } = options;
     // console.log("send -> ", {
     //   channel: channel.name,
     //   content: message.content,
@@ -8,10 +10,13 @@ async function send(channel, message, options = {}) {
     //   shouldDelete,
     //   withReactions,
     // });
-    if (typeof message === "string") {
-      channel.send(message);
-      return;
-    }
+    let channel;
+
+    if (typeof _channel === "string") channel = await getChannel(_channel);
+    else channel = _channel;
+
+    if (typeof message === "string" || API) return channel.send(message);
+
     let messageSent;
     if (message.attachments.size > 0) {
       messageSent = await channel.send(
@@ -34,4 +39,5 @@ async function send(channel, message, options = {}) {
     console.error(error);
   }
 }
+
 module.exports = { send };
