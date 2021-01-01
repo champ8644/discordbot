@@ -1,0 +1,232 @@
+{
+  "01/01": [{ "key": "rinko_legacy", "type": "pre", "seiyuu": true }],
+  "02/01": [{ "key": "rinko_legacy", "type": "hbd", "seiyuu": true }],
+  "06/01": [{ "key": "tsugumi", "type": "pre" }],
+  "07/01": [{ "key": "tsugumi", "type": "hbd" }],
+  "09/01": [{ "key": "natsuki", "type": "pre", "seiyuu": true }],
+  "10/01": [{ "key": "natsuki", "type": "hbd", "seiyuu": true }],
+  "12/01": [
+    { "key": "moca", "type": "pre", "seiyuu": true },
+    { "key": "rei", "type": "pre" },
+    { "key": "rei", "type": "pre", "seiyuu": true }
+  ],
+  "13/01": [
+    { "key": "moca", "type": "hbd", "seiyuu": true },
+    { "key": "rei", "type": "hbd" },
+    { "key": "rei", "type": "hbd", "seiyuu": true }
+  ],
+  "28/01": [{ "key": "ran", "type": "pre", "seiyuu": true }],
+  "29/01": [{ "key": "ran", "type": "hbd", "seiyuu": true }],
+  "02/02": [{ "key": "rokka", "type": "pre", "seiyuu": true }],
+  "03/02": [
+    { "key": "rokka", "type": "hbd", "seiyuu": true },
+    { "key": "mayu", "type": "pre", "seiyuu": true }
+  ],
+  "04/02": [{ "key": "mayu", "type": "hbd", "seiyuu": true }],
+  "07/02": [{ "key": "rinko", "type": "pre", "seiyuu": true }],
+  "08/02": [{ "key": "rinko", "type": "hbd", "seiyuu": true }],
+  "18/02": [{ "key": "mashiro", "type": "pre" }],
+  "19/02": [{ "key": "mashiro", "type": "hbd" }],
+  "27/02": [{ "key": "kaoru", "type": "pre" }],
+  "28/02": [{ "key": "kaoru", "type": "hbd" }],
+  "04/03": [{ "key": "yoshiko", "type": "pre", "seiyuu": true }],
+  "05/03": [{ "key": "yoshiko", "type": "hbd", "seiyuu": true }],
+  "14/03": [{ "key": "kanon", "type": "pre", "seiyuu": true }],
+  "15/03": [
+    { "key": "sayo", "type": "pre", "seiyuu": true },
+    { "key": "kanon", "type": "hbd", "seiyuu": true }
+  ],
+  "16/03": [{ "key": "sayo", "type": "hbd", "seiyuu": true }],
+  "19/03": [
+    { "key": "hina", "type": "pre" },
+    { "key": "sayo", "type": "pre" }
+  ],
+  "20/03": [
+    { "key": "hina", "type": "hbd" },
+    { "key": "sayo", "type": "hbd" }
+  ],
+  "22/03": [{ "key": "rimi", "type": "pre" }],
+  "23/03": [{ "key": "rimi", "type": "hbd" }],
+  "24/03": [{ "key": "reona", "type": "pre" }],
+  "25/03": [{ "key": "reona", "type": "hbd" }],
+  "29/03": [{ "key": "nanana", "type": "pre", "seiyuu": true }],
+  "30/03": [
+    { "key": "nanami", "type": "pre", "seiyuu": true },
+    { "key": "nanana", "type": "hbd", "seiyuu": true }
+  ],
+  "31/03": [{ "key": "nanami", "type": "hbd", "seiyuu": true }],
+  "05/04": [{ "key": "chisato", "type": "pre" }],
+  "06/04": [{ "key": "chisato", "type": "hbd" }],
+  "09/04": [
+    { "key": "ran", "type": "pre" },
+    { "key": "misaki", "type": "pre", "seiyuu": true }
+  ],
+  "10/04": [
+    { "key": "ran", "type": "hbd" },
+    { "key": "misaki", "type": "hbd", "seiyuu": true }
+  ],
+  "14/04": [{ "key": "tomoe", "type": "pre" }],
+  "15/04": [{ "key": "tomoe", "type": "hbd" }],
+  "16/04": [{ "key": "touko", "type": "pre", "seiyuu": true }],
+  "17/04": [{ "key": "touko", "type": "hbd", "seiyuu": true }],
+  "19/04": [{ "key": "mashiro", "type": "pre", "seiyuu": true }],
+  "20/04": [{ "key": "mashiro", "type": "hbd", "seiyuu": true }],
+  "10/05": [{ "key": "kanon", "type": "pre" }],
+  "11/05": [
+    { "key": "kanon", "type": "hbd" },
+    { "key": "masuki", "type": "pre" }
+  ],
+  "12/05": [{ "key": "masuki", "type": "hbd" }],
+  "14/05": [{ "key": "asuka", "type": "pre", "seiyuu": true }],
+  "15/05": [{ "key": "asuka", "type": "hbd", "seiyuu": true }],
+  "18/05": [{ "key": "saaya", "type": "pre" }],
+  "19/05": [{ "key": "saaya", "type": "hbd" }],
+  "21/05": [{ "key": "reona", "type": "pre", "seiyuu": true }],
+  "22/05": [{ "key": "reona", "type": "hbd", "seiyuu": true }],
+  "15/06": [{ "key": "nanami", "type": "pre" }],
+  "16/06": [{ "key": "nanami", "type": "hbd" }],
+  "17/06": [{ "key": "maya", "type": "pre", "seiyuu": true }],
+  "18/06": [{ "key": "maya", "type": "hbd", "seiyuu": true }],
+  "23/06": [
+    { "key": "lisa_legacy", "type": "pre", "seiyuu": true },
+    { "key": "tsukushi", "type": "pre", "seiyuu": true }
+  ],
+  "24/06": [
+    { "key": "lisa_legacy", "type": "hbd", "seiyuu": true },
+    { "key": "tsukushi", "type": "hbd", "seiyuu": true }
+  ],
+  "26/06": [{ "key": "eve", "type": "pre" }],
+  "27/06": [
+    { "key": "eve", "type": "hbd" },
+    { "key": "yuri", "type": "pre", "seiyuu": true }
+  ],
+  "28/06": [{ "key": "yuri", "type": "hbd", "seiyuu": true }],
+  "02/07": [{ "key": "ako", "type": "pre" }],
+  "03/07": [{ "key": "ako", "type": "hbd" }],
+  "04/07": [{ "key": "chiyu", "type": "pre", "seiyuu": true }],
+  "05/07": [{ "key": "chiyu", "type": "hbd", "seiyuu": true }],
+  "13/07": [{ "key": "kasumi", "type": "pre" }],
+  "14/07": [{ "key": "kasumi", "type": "hbd" }],
+  "15/07": [{ "key": "tomoe", "type": "pre", "seiyuu": true }],
+  "16/07": [
+    { "key": "tomoe", "type": "hbd", "seiyuu": true },
+    { "key": "rokka", "type": "pre" }
+  ],
+  "17/07": [{ "key": "rokka", "type": "hbd" }],
+  "19/07": [{ "key": "masuki", "type": "pre", "seiyuu": true }],
+  "20/07": [{ "key": "masuki", "type": "hbd", "seiyuu": true }],
+  "29/07": [{ "key": "hagumi", "type": "pre" }],
+  "30/07": [{ "key": "hagumi", "type": "hbd" }],
+  "07/08": [{ "key": "kokoro", "type": "pre" }],
+  "08/08": [{ "key": "kokoro", "type": "hbd" }],
+  "09/08": [{ "key": "hina", "type": "pre", "seiyuu": true }],
+  "10/08": [{ "key": "hina", "type": "hbd", "seiyuu": true }],
+  "16/08": [{ "key": "arisa", "type": "pre", "seiyuu": true }],
+  "17/08": [
+    { "key": "arisa", "type": "hbd", "seiyuu": true },
+    { "key": "hagumi", "type": "pre", "seiyuu": true }
+  ],
+  "18/08": [{ "key": "hagumi", "type": "hbd", "seiyuu": true }],
+  "24/08": [{ "key": "lisa", "type": "pre" }],
+  "25/08": [{ "key": "lisa", "type": "hbd" }],
+  "02/09": [{ "key": "moca", "type": "pre" }],
+  "03/09": [{ "key": "moca", "type": "hbd" }],
+  "11/09": [{ "key": "lisa", "type": "pre", "seiyuu": true }],
+  "12/09": [
+    { "key": "saaya", "type": "pre", "seiyuu": true },
+    { "key": "lisa", "type": "hbd", "seiyuu": true }
+  ],
+  "13/09": [
+    { "key": "saaya", "type": "hbd", "seiyuu": true },
+    { "key": "eve", "type": "pre", "seiyuu": true }
+  ],
+  "14/09": [
+    { "key": "eve", "type": "hbd", "seiyuu": true },
+    { "key": "tsukushi", "type": "pre" }
+  ],
+  "15/09": [{ "key": "tsukushi", "type": "hbd" }],
+  "30/09": [{ "key": "misaki", "type": "pre" }],
+  "01/10": [{ "key": "misaki", "type": "hbd" }],
+  "09/10": [{ "key": "tae", "type": "pre", "seiyuu": true }],
+  "10/10": [{ "key": "tae", "type": "hbd", "seiyuu": true }],
+  "11/10": [{ "key": "kokoro", "type": "pre", "seiyuu": true }],
+  "12/10": [{ "key": "kokoro", "type": "hbd", "seiyuu": true }],
+  "16/10": [
+    { "key": "yukina", "type": "pre", "seiyuu": true },
+    { "key": "rinko", "type": "pre" }
+  ],
+  "17/10": [
+    { "key": "yukina", "type": "hbd", "seiyuu": true },
+    { "key": "rinko", "type": "hbd" }
+  ],
+  "18/10": [{ "key": "rui", "type": "pre", "seiyuu": true }],
+  "19/10": [{ "key": "rui", "type": "hbd", "seiyuu": true }],
+  "22/10": [{ "key": "himari", "type": "pre" }],
+  "23/10": [
+    { "key": "himari", "type": "hbd" },
+    { "key": "ako", "type": "pre", "seiyuu": true }
+  ],
+  "24/10": [
+    { "key": "rimi", "type": "pre", "seiyuu": true },
+    { "key": "ako", "type": "hbd", "seiyuu": true }
+  ],
+  "25/10": [
+    { "key": "rimi", "type": "hbd", "seiyuu": true },
+    { "key": "yukina", "type": "pre" }
+  ],
+  "26/10": [
+    { "key": "arisa", "type": "pre" },
+    { "key": "yukina", "type": "hbd" }
+  ],
+  "27/10": [{ "key": "arisa", "type": "hbd" }],
+  "02/11": [{ "key": "maya", "type": "pre" }],
+  "03/11": [{ "key": "maya", "type": "hbd" }],
+  "09/11": [{ "key": "kaoru", "type": "pre", "seiyuu": true }],
+  "10/11": [{ "key": "kaoru", "type": "hbd", "seiyuu": true }],
+  "18/11": [
+    { "key": "rui", "type": "pre" },
+    { "key": "satomi", "type": "pre", "seiyuu": true }
+  ],
+  "19/11": [
+    { "key": "rui", "type": "hbd" },
+    { "key": "satomi", "type": "hbd", "seiyuu": true }
+  ],
+  "21/11": [{ "key": "aya", "type": "pre", "seiyuu": true }],
+  "22/11": [{ "key": "aya", "type": "hbd", "seiyuu": true }],
+  "25/11": [{ "key": "himari", "type": "pre", "seiyuu": true }],
+  "26/11": [
+    { "key": "himari", "type": "hbd", "seiyuu": true },
+    { "key": "rii", "type": "pre", "seiyuu": true }
+  ],
+  "27/11": [{ "key": "rii", "type": "hbd", "seiyuu": true }],
+  "03/12": [{ "key": "tae", "type": "pre" }],
+  "04/12": [{ "key": "tae", "type": "hbd" }],
+  "06/12": [{ "key": "chiyu", "type": "pre" }],
+  "07/12": [{ "key": "chiyu", "type": "hbd" }],
+  "15/12": [
+    { "key": "tsugumi", "type": "pre", "seiyuu": true },
+    { "key": "touko", "type": "pre" }
+  ],
+  "16/12": [
+    { "key": "tsugumi", "type": "hbd", "seiyuu": true },
+    { "key": "touko", "type": "hbd" },
+    { "key": "fumika", "type": "pre", "seiyuu": true }
+  ],
+  "17/12": [{ "key": "fumika", "type": "hbd", "seiyuu": true }],
+  "18/12": [{ "key": "chisato", "type": "pre", "seiyuu": true }],
+  "19/12": [{ "key": "chisato", "type": "hbd", "seiyuu": true }],
+  "24/12": [
+    { "key": "kasumi", "type": "pre", "seiyuu": true },
+    { "key": "marina", "type": "pre", "seiyuu": true }
+  ],
+  "25/12": [
+    { "key": "kasumi", "type": "hbd", "seiyuu": true },
+    { "key": "hinako", "type": "pre", "seiyuu": true },
+    { "key": "marina", "type": "hbd", "seiyuu": true }
+  ],
+  "26/12": [
+    { "key": "aya", "type": "pre" },
+    { "key": "hinako", "type": "hbd", "seiyuu": true }
+  ],
+  "27/12": [{ "key": "aya", "type": "hbd" }]
+}
