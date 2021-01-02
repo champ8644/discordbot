@@ -17,14 +17,14 @@ async function updateLastLogin(date) {
   const text = "UPDATE meta SET lasthbd = ($1)";
   const values = [getDateStr(date)];
   const res = await db.query(text, values);
-  return res?.rowCount;
+  return res && res.rowCount;
 }
 
 async function getLastLogin() {
   const text = "SELECT lasthbd from meta";
   const res = await db.query(text);
   const { rows } = res;
-  const lasthbd = rows && rows[0]?.lasthbd;
+  const lasthbd = rows && rows[0] && rows[0].lasthbd;
   return lasthbd;
 }
 
