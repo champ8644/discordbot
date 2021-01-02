@@ -142,7 +142,9 @@
     "s_birthday_month": 8,
     "s_birthday_year": "1996",
     "colorcode_char": "#AA66E1",
-    "colorcode_band": "#FF3381"
+    "colorcode_band": "#FF3381",
+    "image": "https://static.wikia.nocookie.net/bandori/images/c/c8/A_Touching_Feeling.png",
+    "s_image": "https://stat.ameba.jp/user_images/20191215/18/mizore7arisa/35/d8/j/o0720128014678384550.jpg?caw=800"
   },
   "ran": {
     "surname": "Mitake",
@@ -220,7 +222,9 @@
     "s_birthday_month": 11,
     "s_birthday_year": "1983",
     "colorcode_char": "#FF999A",
-    "colorcode_band": "#EE3346"
+    "colorcode_band": "#EE3346",
+    "image": "https://static.wikia.nocookie.net/bandori/images/9/98/The_Usual_%22Thing%22_T.png",
+    "s_image": "https://static.wikia.nocookie.net/revuestarlight/images/4/46/Emiri_Kato.jpg"
   },
   "tomoe": {
     "surname": "Udagawa",
@@ -245,7 +249,9 @@
     "s_birthday_month": 7,
     "s_birthday_year": "1985",
     "colorcode_char": "#BB0133",
-    "colorcode_band": "#EE3347"
+    "colorcode_band": "#EE3347",
+    "image": "https://static.wikia.nocookie.net/bandori/images/d/d8/Sleepy_Windowsill.png",
+    "s_image": "https://images.moely.jp/files/article/901572/large_901572_659.jpg"
   },
   "tsugumi": {
     "surname": "Hazawa",
@@ -297,7 +303,9 @@
     "s_birthday_month": 11,
     "s_birthday_year": "1997",
     "colorcode_char": "#FE88BA",
-    "colorcode_band": "#33DDAA"
+    "colorcode_band": "#33DDAA",
+    "image": "https://static.wikia.nocookie.net/bandori/images/3/35/Caressing_the_Water.png",
+    "s_image": "https://cdn.clipkit.co/tenants/375/articles/images/000/004/231/large/02db0761-28aa-49a8-aa3d-f5dfdb31dece.jpg?1551344553"
   },
   "hina": {
     "surname": "Hikawa",
@@ -321,7 +329,9 @@
     "s_birthday_month": 8,
     "s_birthday_year": "1992",
     "colorcode_char": "#55DDED",
-    "colorcode_band": "#33DDAA"
+    "colorcode_band": "#33DDAA",
+    "image": "https://static.wikia.nocookie.net/bandori/images/d/d4/Boppidy_Bop_Boppin%27%E2%99%AA_T.png",
+    "s_image": "https://ogre.natalie.mu/media/news/comic/2020/0615/plunderertokuban_05.jpg"
   },
   "chisato": {
     "surname": "Shirasagi",
