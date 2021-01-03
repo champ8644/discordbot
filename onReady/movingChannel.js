@@ -1,5 +1,6 @@
 const { send } = require("../utils/send");
 const { delay } = require("../functions/delay");
+const { onError } = require("../utils/errorHandle");
 
 async function moving(arr, room) {
   try {
@@ -14,7 +15,7 @@ async function moving(arr, room) {
       await delay(1100);
     }
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 }
 module.exports = { moving };

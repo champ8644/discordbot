@@ -2,6 +2,8 @@ const { getChannelById } = require("../utils/getChannel");
 const { roomname } = require("../utils/roomname");
 const { send } = require("../utils/send");
 
+const { onError } = require("../utils/errorHandle");
+
 async function registerQuickClean(reaction, user) {
   try {
     const member = reaction.message.guild.members.cache.get(user.id);
@@ -16,7 +18,7 @@ async function registerQuickClean(reaction, user) {
       });
     }
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 }
 module.exports = { registerQuickClean };

@@ -12,6 +12,8 @@ const todayEvents = birthdayList["13/09"];
 
 const test = false;
 
+const { onError } = require("./utils/errorHandle");
+
 bot.on("ready", async () => {
   try {
     if (!test) {
@@ -48,7 +50,7 @@ bot.on("ready", async () => {
       send("ห้องทดลอง", msg, { API: true });
     }
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 });
 

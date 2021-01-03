@@ -1,3 +1,4 @@
+const { onError } = require("../utils/errorHandle");
 const { getChannel } = require("../utils/getChannel");
 const { send } = require("../utils/send");
 
@@ -34,7 +35,7 @@ async function checkAtChannel(parseLink, getChannel, shouldDelete) {
       }
     }
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 }
 
@@ -51,7 +52,7 @@ async function checkQuick(parseLink) {
     );
     return finalAnswer;
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 }
 
@@ -112,7 +113,7 @@ async function sortJobs(message) {
     delete onGoingMessage[rawLink.id];
     delete onGoingMessage[cleanLink.id];
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 }
 module.exports = { sortJobs, parseLinkType };

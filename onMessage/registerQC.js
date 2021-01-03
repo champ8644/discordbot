@@ -1,9 +1,11 @@
+const { onError } = require("../utils/errorHandle");
+
 async function registerQC(message) {
   try {
     await message.react("👍");
     await message.react("👎");
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 }
 module.exports = { registerQC };

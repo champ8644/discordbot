@@ -1,5 +1,6 @@
 const { getChannel } = require("../utils/getChannel");
 const { send } = require("../utils/send");
+const { onError } = require("../utils/errorHandle");
 
 async function reactQC(reaction, user) {
   try {
@@ -29,7 +30,7 @@ async function reactQC(reaction, user) {
       }
     }
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 }
 module.exports = { reactQC };

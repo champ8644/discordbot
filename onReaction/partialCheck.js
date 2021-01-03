@@ -1,3 +1,5 @@
+const { onError } = require("../utils/errorHandle");
+
 async function partialCheck(entities) {
   try {
     if (entities.partial) {
@@ -19,7 +21,7 @@ async function partialCheck(entities) {
       }
     }
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 }
 module.exports = { partialCheck };

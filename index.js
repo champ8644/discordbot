@@ -2,6 +2,8 @@ require("dotenv").config();
 
 const { bot } = require("./utils/Discord");
 const { roomname } = require("./utils/roomname");
+const { onError, onRejection } = require("./utils/errorHandle");
+
 class queueAsyncClass {
   constructor() {
     this.queue = [];
@@ -60,8 +62,16 @@ bot.on("ready", async () => {
     // const arr = await loopFetch();
     // const newTimerRoom = await bot.channels.cache.get("761898397451026452");
     // await moving(arr, newTimerRoom);
+    process.on("uncaughtException", (err) => {
+      onError(err);
+      process.exit(1);
+    });
+    process.on("unhandledRejection", (reason, promise) => {
+      onRejection(reason, promise);
+      process.exit(1);
+    });
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 });
 
@@ -71,36 +81,40 @@ const { partialCheck } = require("./onReaction/partialCheck");
 const { registerQuickClean } = require("./onReaction/registerQuickClean");
 const { reactQC } = require("./onReaction/reactQC");
 bot.on("messageReactionAdd", async (reaction, user) => {
-  console.log(reaction, user);
-  // When we receive a reaction we check if the reaction is partial or not
-  if (user.bot) return;
-  await partialCheck(reaction);
-  switch (reaction.message.channel.id) {
-    case "761957637657985060": // ห้องงานรีบ-ใหม่
-    case "761963747308601344": // ห้องคอมมิค-ใหม่
-      registerQuickClean(reaction, user);
-    case "761898397451026452": // ห้องงานคลีน-ใหม่
-    case "761961486524350485": // ห้องงานยาก-ใหม่
-      queueAsync.add(async () => fukukaichouClean(reaction, user));
-      return;
-    case "761962591022481438": // ห้องส่งงานรีบ
-      queueAsync.add(async () =>
-        captainClean(reaction, user, roomname["ถังขยะห้องส่งงาน"])
-      );
-      return;
-    case "761959220831584277": // ห้องส่งงานคลีน
-      queueAsync.add(async () =>
-        captainClean(reaction, user, roomname["ถังขยะห้องส่งงาน"])
-      );
-      return;
-    case "575701679744483338": // ห้องลิ้งภาพ
-      queueAsync.add(async () =>
-        captainClean(reaction, user, roomname["ถังขยะห้องลิ้งภาพ"])
-      );
-      return;
-    case "761957871880503316": // ห้องแจ้ง QC
-      queueAsync.add(async () => reactQC(reaction, user));
-      return;
+  try {
+    console.log(reaction, user);
+    // When we receive a reaction we check if the reaction is partial or not
+    if (user.bot) return;
+    await partialCheck(reaction);
+    switch (reaction.message.channel.id) {
+      case "761957637657985060": // ห้องงานรีบ-ใหม่
+      case "761963747308601344": // ห้องคอมมิค-ใหม่
+        registerQuickClean(reaction, user);
+      case "761898397451026452": // ห้องงานคลีน-ใหม่
+      case "761961486524350485": // ห้องงานยาก-ใหม่
+        queueAsync.add(async () => fukukaichouClean(reaction, user));
+        return;
+      case "761962591022481438": // ห้องส่งงานรีบ
+        queueAsync.add(async () =>
+          captainClean(reaction, user, roomname["ถังขยะห้องส่งงาน"])
+        );
+        return;
+      case "761959220831584277": // ห้องส่งงานคลีน
+        queueAsync.add(async () =>
+          captainClean(reaction, user, roomname["ถังขยะห้องส่งงาน"])
+        );
+        return;
+      case "575701679744483338": // ห้องลิ้งภาพ
+        queueAsync.add(async () =>
+          captainClean(reaction, user, roomname["ถังขยะห้องลิ้งภาพ"])
+        );
+        return;
+      case "761957871880503316": // ห้องแจ้ง QC
+        queueAsync.add(async () => reactQC(reaction, user));
+        return;
+    }
+  } catch (error) {
+    onError(error);
   }
 });
 
@@ -108,17 +122,21 @@ const { acceptCommand } = require("./onMessage/acceptCommand");
 const { sortJobs } = require("./onMessage/sortJobs");
 const { registerQC } = require("./onMessage/registerQC");
 bot.on("message", async (message) => {
-  await partialCheck(message);
-  switch (message.channel.id) {
-    case "761963411592446002": // ห้องส่งงาน
-      queueAsync.add(async () => sortJobs(message));
-      return;
-    case "761957871880503316": // ห้องแจ้ง QC
-      queueAsync.add(async () => registerQC(message));
-      return;
-    case "726319165048356944": // ห้องทดลอง
-      acceptCommand(message);
-      return;
+  try {
+    await partialCheck(message);
+    switch (message.channel.id) {
+      case "761963411592446002": // ห้องส่งงาน
+        queueAsync.add(async () => sortJobs(message));
+        return;
+      case "761957871880503316": // ห้องแจ้ง QC
+        queueAsync.add(async () => registerQC(message));
+        return;
+      case "726319165048356944": // ห้องทดลอง
+        acceptCommand(message);
+        return;
+    }
+  } catch (error) {
+    onError(error);
   }
 });
 

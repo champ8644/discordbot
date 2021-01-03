@@ -21,6 +21,7 @@ const fetchCleanList = [
 
 const { parseLinkType } = require("../onMessage/sortJobs.js");
 const { getChannel } = require("./getChannel.js");
+const { onError } = require("./errorHandle");
 async function fetchRoom() {
   try {
     const channelsMessages = await Promise.all(
@@ -50,7 +51,7 @@ async function fetchRoom() {
       }
     });
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 }
 

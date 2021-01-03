@@ -10,6 +10,7 @@ const locale = require("date-fns/locale/th");
 
 const birthdayList = require("./character/birthdayList.json");
 const characterList = require("./character/BanGDreamChars.json");
+const { onError } = require("./utils/errorHandle");
 
 const now = addHours(new Date(), 7);
 const day = startOfDay(addHours(now, 14));
@@ -185,7 +186,7 @@ bot.on("ready", async () => {
       generateReport(event);
     });
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 });
 

@@ -1,5 +1,6 @@
 const { getCleanChannel } = require("../utils/getChannel");
 const { send } = require("../utils/send");
+const { onError } = require("../utils/errorHandle");
 
 async function fukukaichouClean(reaction, user) {
   try {
@@ -14,7 +15,7 @@ async function fukukaichouClean(reaction, user) {
       });
     }
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 }
 module.exports = { fukukaichouClean };

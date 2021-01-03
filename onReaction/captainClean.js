@@ -1,5 +1,6 @@
 const { getChannelById } = require("../utils/getChannel");
 const { send } = require("../utils/send");
+const { onError } = require("../utils/errorHandle");
 
 async function captainClean(reaction, user, destId) {
   try {
@@ -13,7 +14,7 @@ async function captainClean(reaction, user, destId) {
       });
     }
   } catch (error) {
-    console.error(error);
+    onError(error);
   }
 }
 module.exports = { captainClean };
