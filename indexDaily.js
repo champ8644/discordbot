@@ -5,7 +5,14 @@ const { bot } = require("./utils/Discord");
 bot.login(process.env.token);
 
 const { send } = require("./utils/send");
-const { format, addHours, startOfDay, setMonth, setDate } = require("date-fns");
+const {
+  format,
+  addHours,
+  addMinutes,
+  startOfDay,
+  setMonth,
+  setDate,
+} = require("date-fns");
 const locale = require("date-fns/locale/th");
 
 const birthdayList = require("./character/birthdayList.json");
@@ -110,7 +117,10 @@ function genCharReport(info, hbd) {
   embed.setTitle(`${hbdText} ${fullname}`);
   embed.setDescription(
     format(
-      setMonth(setDate(nowThailand, info.birthday_day), info.birthday_month),
+      setMonth(
+        setDate(nowThailand, info.birthday_day),
+        info.birthday_month - 1
+      ),
       "eeee d MMMM yyyy",
       { locale }
     )
@@ -160,7 +170,7 @@ function genSeiyuuReport(info, hbd) {
     format(
       setMonth(
         setDate(nowThailand, info.s_birthday_day),
-        info.s_birthday_month
+        info.s_birthday_month - 1
       ),
       "eeee d MMMM yyyy",
       { locale }
