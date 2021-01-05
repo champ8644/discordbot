@@ -59,7 +59,6 @@ async function checkQuick(parseLink) {
 const onGoingMessage = {};
 
 async function sortJobs(message) {
-  console.log("message.content", { content: message.content, id: message.id });
   try {
     const latestLink = parseLinkType(message);
     if (!latestLink.type) return;
@@ -72,7 +71,6 @@ async function sortJobs(message) {
     if (!latestLink.type) return;
     if (messagesFetch.length === 0) return;
     const iterator = messagesFetch.values();
-    console.log("sortJobs -> iterator", iterator.size);
     const message2 = iterator.next().value;
     const secondLink = parseLinkType(message2);
     if (!secondLink.type) {
@@ -80,10 +78,6 @@ async function sortJobs(message) {
       return;
     }
     if (onGoingMessage[message2.id]) return;
-    console.log("message2.content", {
-      content: message2.content,
-      id: message2.id,
-    });
     onGoingMessage[message2.id] = true;
     let rawLink;
     let parseLink;

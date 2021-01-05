@@ -15,7 +15,6 @@ async function loopFetch(channel) {
         }
       }
     });
-    console.log(arr.length);
   } while (!done);
 
   return arr;

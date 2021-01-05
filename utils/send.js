@@ -3,13 +3,6 @@ const { getChannel } = require("./getChannel");
 async function send(_channel, message, options = {}) {
   try {
     const { shouldDelete, withReactions, API } = options;
-    // console.log("send -> ", {
-    //   channel: channel.name,
-    //   content: message.content,
-    //   attachments: message.attachments.size,
-    //   shouldDelete,
-    //   withReactions,
-    // });
     let channel;
 
     if (typeof _channel === "string") channel = await getChannel(_channel);
@@ -29,10 +22,6 @@ async function send(_channel, message, options = {}) {
         else messageSent.react(item._emoji.name);
       });
     }
-    console.log("send -> delete -> message", {
-      content: message.content,
-      id: message.id,
-    });
     if (shouldDelete) await message.delete();
     return messageSent;
   } catch (error) {

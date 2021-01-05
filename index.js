@@ -82,7 +82,6 @@ const { registerQuickClean } = require("./onReaction/registerQuickClean");
 const { reactQC } = require("./onReaction/reactQC");
 bot.on("messageReactionAdd", async (reaction, user) => {
   try {
-    console.log(reaction, user);
     // When we receive a reaction we check if the reaction is partial or not
     if (user.bot) return;
     await partialCheck(reaction);

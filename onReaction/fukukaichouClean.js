@@ -15,6 +15,11 @@ async function fukukaichouClean(reaction, user) {
       });
     }
   } catch (error) {
+    console.log(
+      "🚀 ~ file: fukukaichouClean.js ~ line 6 ~ fukukaichouClean ~ reaction, user",
+      reaction,
+      user
+    );
     onError(error);
   }
 }

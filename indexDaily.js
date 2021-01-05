@@ -15,7 +15,7 @@ const { onError } = require("./utils/errorHandle");
 const now = addHours(new Date(), 7);
 const day = startOfDay(addHours(now, 14));
 const keyDate = format(day, "dd/MM");
-const todayEvents = birthdayList[keyDate];
+const todayEvents = birthdayList[keyDate] || [];
 
 function combineTHJP(th, jp) {
   if (!jp) return th;
@@ -69,6 +69,16 @@ function getBandText(band) {
   }
 }
 
+const logReport = [];
+
+function genLogReport(name, color, hbd) {
+  const embed = new Discord.MessageEmbed();
+  embed.setColor(color);
+  if (hbd) embed.setTitle("HBD to " + name);
+  else embed.setTitle("Pre HBD to " + name);
+  logReport.push(embed);
+}
+
 function genCharReport(info, hbd) {
   const embed = new Discord.MessageEmbed();
 
@@ -111,6 +121,7 @@ function genCharReport(info, hbd) {
 
   if (hbd) send("ห้องเป่าเค้ก", { embed }, { API: true });
   else send("ห้องวันเกิด-ห้องนั่งเล่นรวม", { embed }, { API: true });
+  genLogReport(nickname || fullnameNewline, info.colorcode_char, hbd);
 }
 
 function genSeiyuuReport(info, hbd) {
@@ -163,6 +174,7 @@ function genSeiyuuReport(info, hbd) {
   embed.setTimestamp(now);
 
   send("ห้องเป่าเค้ก-seiyuu", { embed }, { API: true });
+  genLogReport(nickname || fullnameNewline, info.colorcode_char, hbd);
 }
 
 function generateReport(event) {
@@ -173,17 +185,29 @@ function generateReport(event) {
     info.band === "Others" ||
     info.band === "Glitter*Green"
   )
-    console.log("hello");
+    console.log(`not senting ${info.band}`);
   else if (event.seiyuu) genSeiyuuReport(info, type);
   else genCharReport(info, type);
 }
 
 bot.on("ready", async () => {
   try {
-    console.log("Node daily runs at", format(now, "eee d MMMM yyyy, H:mm"));
-
     todayEvents.forEach((event) => {
       generateReport(event);
+    });
+
+    let eventText;
+    if (logReport.length === 0) eventText = "no events.";
+    else if (logReport.length === 1) eventText = "1 event.";
+    else eventText = logReport.length + " events.";
+    send(
+      "ห้องหุ่นมิเชล",
+      `Today [${format(now, "eee d MMMM yyyy, H:mm")}] has ${eventText}`,
+      { API: true }
+    );
+
+    logReport.forEach((embed) => {
+      send("ห้องหุ่นมิเชล", { embed }, { API: true });
     });
   } catch (error) {
     onError(error);

@@ -53,15 +53,10 @@ function main() {
     }
   });
   const keys = Object.keys(output).sort(compareObj);
-  console.log(
-    "🚀 ~ file: generateBirthdayList.js ~ line 38 ~ main ~ keys",
-    keys
-  );
   const output2 = {};
   keys.forEach((key) => {
     output2[key] = output[key];
   });
-  console.log(output2);
 }
 
 main();
