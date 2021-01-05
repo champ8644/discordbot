@@ -12,8 +12,12 @@ const birthdayList = require("./character/birthdayList.json");
 const characterList = require("./character/BanGDreamChars.json");
 const { onError } = require("./utils/errorHandle");
 
-const now = addHours(new Date(), 7);
-const day = startOfDay(addHours(now, 14));
+const nowThailand = addHours(
+  addMinutes(new Date(), new Date().getTimezoneOffset()),
+  7
+);
+const nowJapan = addHours(nowThailand, 2);
+const day = startOfDay(addHours(nowJapan, 12));
 const keyDate = format(day, "dd/MM");
 const todayEvents = birthdayList[keyDate] || [];
 
@@ -106,7 +110,7 @@ function genCharReport(info, hbd) {
   embed.setTitle(`${hbdText} ${fullname}`);
   embed.setDescription(
     format(
-      setMonth(setDate(now, info.birthday_day), info.birthday_month),
+      setMonth(setDate(nowThailand, info.birthday_day), info.birthday_month),
       "eeee d MMMM yyyy",
       { locale }
     )
@@ -117,10 +121,10 @@ function genCharReport(info, hbd) {
   embed.addField("วง", getBandText(info.band), true);
   embed.addField("ตำแหน่ง", info.role, true);
   if (info.image) embed.setImage(info.image);
-  embed.setTimestamp(now);
+  embed.setTimestamp(nowThailand);
 
   if (hbd) send("ห้องเป่าเค้ก", { embed }, { API: true });
-  else send("ห้องวันเกิด-ห้องนั่งเล่นรวม", { embed }, { API: true });
+  send("ห้องวันเกิด-ห้องนั่งเล่นรวม", { embed }, { API: true });
   genLogReport(nickname || fullnameNewline, info.colorcode_char, hbd);
 }
 
@@ -154,7 +158,10 @@ function genSeiyuuReport(info, hbd) {
   embed.setTitle(`แฮปปี้เบิร์ดเดย์ ${fullname}`);
   embed.setDescription(
     format(
-      setMonth(setDate(now, info.s_birthday_day), info.s_birthday_month),
+      setMonth(
+        setDate(nowThailand, info.s_birthday_day),
+        info.s_birthday_month
+      ),
       "eeee d MMMM yyyy",
       { locale }
     )
@@ -171,7 +178,7 @@ function genSeiyuuReport(info, hbd) {
   if (blog) embed.addField("Blog", blog, true);
   if (info.site_other) embed.addField("Other", info.site_other, true);
   if (info.s_image) embed.setImage(info.s_image);
-  embed.setTimestamp(now);
+  embed.setTimestamp(nowThailand);
 
   send("ห้องเป่าเค้ก-seiyuu", { embed }, { API: true });
   genLogReport(nickname || fullnameNewline, info.colorcode_char, hbd);
@@ -202,7 +209,10 @@ bot.on("ready", async () => {
     else eventText = logReport.length + " events.";
     send(
       "ห้องหุ่นมิเชล",
-      `Today [${format(now, "eee d MMMM yyyy, H:mm")}] has ${eventText}`,
+      `Today [${format(
+        nowThailand,
+        "eee d MMMM yyyy, H:mm"
+      )}] has ${eventText}`,
       { API: true }
     );
 
