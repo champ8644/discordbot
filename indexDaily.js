@@ -106,7 +106,7 @@ function genCharReport(info, hbd) {
     combineName(info.surname_jp, info.name_jp)
   );
   const hbdDay = format(
-    new Date(2020, info.birthday_month, info.birthday_day),
+    new Date(2020, info.birthday_month - 1, info.birthday_day),
     "do MMM"
   );
 
@@ -155,7 +155,7 @@ function genSeiyuuReport(info, hbd) {
     combineName(info.s_surname_jp, info.s_name_jp)
   );
   const hbdDay = format(
-    new Date(2020, info.s_birthday_month, info.s_birthday_day),
+    new Date(2020, info.s_birthday_month - 1, info.s_birthday_day),
     "do MMM"
   );
   const blog = combineNewLine(info.blog1, info.blog2);
