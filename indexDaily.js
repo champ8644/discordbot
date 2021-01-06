@@ -131,7 +131,7 @@ function genCharReport(info, hbd) {
   embed.addField("วง", getBandText(info.band), true);
   embed.addField("ตำแหน่ง", info.role, true);
   if (info.image) embed.setImage(info.image);
-  embed.setTimestamp(nowThailand);
+  embed.setTimestamp(new Date());
 
   if (hbd) send("ห้องเป่าเค้ก", { embed }, { API: true });
   send("ห้องวันเกิด-ห้องนั่งเล่นรวม", { embed }, { API: true });
@@ -188,7 +188,7 @@ function genSeiyuuReport(info, hbd) {
   if (blog) embed.addField("Blog", blog, true);
   if (info.site_other) embed.addField("Other", info.site_other, true);
   if (info.s_image) embed.setImage(info.s_image);
-  embed.setTimestamp(nowThailand);
+  embed.setTimestamp(new Date());
 
   send("ห้องเป่าเค้ก-seiyuu", { embed }, { API: true });
   genLogReport(nickname || fullnameNewline, info.colorcode_char, hbd);
