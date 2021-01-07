@@ -2,7 +2,7 @@ const { addDays, addHours, addMinutes, format } = require("date-fns");
 
 const birthdayList = require("../character/birthdayList.json");
 const characterList = require("../character/BanGDreamChars.json");
-const { generateReport } = require("../indexDaily");
+const { generateReport } = require("../birthday/generateReport");
 
 function events(channel, query) {
   const nowThailand = addHours(
