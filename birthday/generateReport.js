@@ -205,8 +205,8 @@ function genSeiyuuReport(info, hbd, channel) {
     return;
   }
 
-  if (info.band === "CHiSPA") console.log(`not senting ${info.band}`);
-  else send("ห้องเป่าเค้ก-seiyuu", { embed }, { API: true });
+  if (info.band !== "CHiSPA")
+    send("ห้องเป่าเค้ก-seiyuu", { embed }, { API: true });
 
   genLogReport(nickname || fullnameNewline, info.colorcode_char, hbd);
 }

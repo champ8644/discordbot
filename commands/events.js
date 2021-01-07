@@ -22,11 +22,6 @@ function events(channel, query) {
     count -= todayEvents.length;
     day = addDays(day, 1);
   }
-  console.log(
-    "🚀 ~ file: events.js ~ line 16 ~ postNextEvent ~ gatheredEvents",
-    gatheredEvents
-  );
-  console.log("🚀 ~ file: events.js ~ line 20 ~ events ~ day", day);
 }
 
 function events(channel, query, type) {
