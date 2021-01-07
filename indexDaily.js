@@ -90,7 +90,7 @@ function genLogReport(name, color, hbd) {
   logReport.push(embed);
 }
 
-function genCharReport(info, hbd) {
+function genCharReport(info, hbd, channel) {
   const embed = new Discord.MessageEmbed();
 
   const fullname = getFullName(
@@ -133,12 +133,26 @@ function genCharReport(info, hbd) {
   if (info.image) embed.setImage(info.image);
   embed.setTimestamp(new Date());
 
+  if (channel) {
+    send(channel, { embed }, { API: true });
+    return;
+  }
+
   if (hbd) send("ห้องเป่าเค้ก", { embed }, { API: true });
-  send("ห้องวันเกิด-ห้องนั่งเล่นรวม", { embed }, { API: true });
+
+  if (
+    !(
+      info.band === "CHiSPA" ||
+      info.band === "Others" ||
+      info.band === "Glitter*Green"
+    )
+  )
+    send("ห้องวันเกิด-ห้องนั่งเล่นรวม", { embed }, { API: true });
+
   genLogReport(nickname || fullnameNewline, info.colorcode_char, hbd);
 }
 
-function genSeiyuuReport(info, hbd) {
+function genSeiyuuReport(info, hbd, channel) {
   if (!hbd) return;
   const embed = new Discord.MessageEmbed();
 
@@ -190,21 +204,22 @@ function genSeiyuuReport(info, hbd) {
   if (info.s_image) embed.setImage(info.s_image);
   embed.setTimestamp(new Date());
 
-  send("ห้องเป่าเค้ก-seiyuu", { embed }, { API: true });
+  if (channel) {
+    send(channel, { embed }, { API: true });
+    return;
+  }
+
+  if (info.band === "CHiSPA") console.log(`not senting ${info.band}`);
+  else send("ห้องเป่าเค้ก-seiyuu", { embed }, { API: true });
+
   genLogReport(nickname || fullnameNewline, info.colorcode_char, hbd);
 }
 
-function generateReport(event) {
+function generateReport(event, channel) {
   const info = characterList[event.key];
   const type = event.type === "hbd";
-  if (
-    info.band === "CHiSPA" ||
-    info.band === "Others" ||
-    info.band === "Glitter*Green"
-  )
-    console.log(`not senting ${info.band}`);
-  else if (event.seiyuu) genSeiyuuReport(info, type);
-  else genCharReport(info, type);
+  if (event.seiyuu) genSeiyuuReport(info, type, channel);
+  else genCharReport(info, type, channel);
 }
 
 bot.on("ready", async () => {

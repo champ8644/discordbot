@@ -124,6 +124,9 @@ bot.on("message", async (message) => {
   try {
     await partialCheck(message);
     switch (message.channel.id) {
+      case "762684068357472276": // ห้องหุ่นมิเชล
+        acceptCommand(message);
+        return;
       case "761963411592446002": // ห้องส่งงาน
         queueAsync.add(async () => sortJobs(message));
         return;

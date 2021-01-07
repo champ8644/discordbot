@@ -169,7 +169,7 @@
     "colorcode_char": "#EE0024",
     "colorcode_band": "#EE3344",
     "image": "https://static.wikia.nocookie.net/bandori/images/7/70/Awakening_Rivalry_T.png",
-    "s_image": "https://d2wi3xvhr3qrd7.cloudfront.net/wp/wp-content/uploads/2019/01/23152509/MG_0127-1269x846.jpg"
+    "s_image": "https://cdn-ak.f.st-hatena.com/images/fotolife/h/hrkne/20180108/20180108004411.jpg"
   },
   "moca": {
     "surname": "Aoba",
@@ -358,7 +358,9 @@
     "s_birthday_month": 12,
     "s_birthday_year": "1991",
     "colorcode_char": "#FBD87A",
-    "colorcode_band": "#33DDAA"
+    "colorcode_band": "#33DDAA",
+    "image": "https://static.wikia.nocookie.net/bandori/images/3/37/Into_the_Stage%27s_Light_T.png",
+    "s_image": "https://livedoor.blogimg.jp/nichmatomerunn/imgs/2/c/2ccb78a9.jpg"
   },
   "maya": {
     "surname": "Yamato",
@@ -386,7 +388,9 @@
     "s_birthday_month": 6,
     "s_birthday_year": "19XX",
     "colorcode_char": "#99DD88",
-    "colorcode_band": "#33DDAA"
+    "colorcode_band": "#33DDAA",
+    "image": "https://static.wikia.nocookie.net/bandori/images/3/33/Mischievous_Water_Play_T.png",
+    "s_image": "https://contents.oricon.co.jp/upimg/news/20170607/2091988_201706070075872001496795021c.jpg"
   },
   "eve": {
     "surname": "Wakamiya",
@@ -411,7 +415,9 @@
     "s_birthday_month": 9,
     "s_birthday_year": "1988",
     "colorcode_char": "#DEBBFF",
-    "colorcode_band": "#33DDAA"
+    "colorcode_band": "#33DDAA",
+    "image": "https://static.wikia.nocookie.net/bandori/images/c/c8/Chandelier_Road.png",
+    "s_image": "https://pbs.twimg.com/media/CpoZxliUEAAvBXO.jpg"
   },
   "yukina": {
     "surname": "Minato",
@@ -436,7 +442,9 @@
     "s_birthday_month": 10,
     "s_birthday_year": "1988",
     "colorcode_char": "#881187",
-    "colorcode_band": "#3344AA"
+    "colorcode_band": "#3344AA",
+    "image": "https://static.wikia.nocookie.net/bandori/images/9/91/The_Miko%27s_Grand_Gesture.png",
+    "s_image": "https://i.pinimg.com/originals/fd/30/c8/fd30c860e76784ce5e46ca8585f9fcf9.jpg"
   },
   "sayo": {
     "surname": "Hikawa",
@@ -463,7 +471,9 @@
     "s_birthday_month": 3,
     "s_birthday_year": "1989",
     "colorcode_char": "#00AABB",
-    "colorcode_band": "#3344AA"
+    "colorcode_band": "#3344AA",
+    "image": "https://static.wikia.nocookie.net/bandori/images/c/cb/Number_One_Supporter_T.png",
+    "s_image": "https://pbs.twimg.com/media/EejpMlpU4AARDjZ.jpg"
   },
   "lisa": {
     "surname": "Imai",
@@ -489,7 +499,9 @@
     "s_birthday_month": 9,
     "s_birthday_year": "1997",
     "colorcode_char": "#DD2200",
-    "colorcode_band": "#3344AA"
+    "colorcode_band": "#3344AA",
+    "image": "https://static.wikia.nocookie.net/bandori/images/4/42/Leave_Sweet_Making_to_Me_T.png",
+    "s_image": "https://pbs.twimg.com/media/Eqe6dlZUwAARpHg.jpg"
   },
   "ako": {
     "surname": "Udagawa",
@@ -516,7 +528,9 @@
     "s_birthday_month": 10,
     "s_birthday_year": "1988",
     "colorcode_char": "#DD008B",
-    "colorcode_band": "#3344AA"
+    "colorcode_band": "#3344AA",
+    "image": "https://static.wikia.nocookie.net/bandori/images/2/20/Private_Nurse_T.png",
+    "s_image": "https://pbs.twimg.com/media/EPG4CBHVUAECd4q.jpg"
   },
   "rinko": {
     "surname": "Shirokane",
@@ -568,7 +582,9 @@
     "s_birthday_month": 6,
     "s_birthday_year": "1994",
     "colorcode_char": "#DD2200",
-    "colorcode_band": "#3344AA"
+    "colorcode_band": "#3344AA",
+    "image": "https://static.wikia.nocookie.net/bandori/images/4/42/Leave_Sweet_Making_to_Me_T.png",
+    "s_image": "https://pbs.twimg.com/media/D0Lks7HVsAAzLMy.jpg"
   },
   "rinko_legacy": {
     "graduated": true,
@@ -621,7 +637,9 @@
     "s_birthday_month": 10,
     "s_birthday_year": "1996",
     "colorcode_char": "#FFDD00",
-    "colorcode_band": "#FFC02A"
+    "colorcode_band": "#FFC02A",
+    "image": "https://static.wikia.nocookie.net/bandori/images/9/90/Welcome%2C_One_and_All%21_T.png",
+    "s_image": "https://i.pinimg.com/originals/89/cc/73/89cc73299d0eaafa8ec965d49ff36115.jpg"
   },
   "kaoru": {
     "surname": "Seta",
@@ -647,7 +665,9 @@
     "s_birthday_month": 11,
     "s_birthday_year": "1993",
     "colorcode_char": "#AA33CB",
-    "colorcode_band": "#FFC02A"
+    "colorcode_band": "#FFC02A",
+    "image": "https://static.wikia.nocookie.net/bandori/images/6/63/The_Star_Has_Arrived%21_T.png",
+    "s_image": "https://prtimes.jp/i/7785/456/resize/d7785-456-921919-3.jpg"
   },
   "hagumi": {
     "surname": "Kitazawa",
@@ -671,7 +691,9 @@
     "s_birthday_month": 8,
     "s_birthday_year": "1992",
     "colorcode_char": "#FF9923",
-    "colorcode_band": "#FFC02A"
+    "colorcode_band": "#FFC02A",
+    "image": "https://static.wikia.nocookie.net/bandori/images/2/20/Our_Beginnings_T.png",
+    "s_image": "https://r4g.jp/wp-content/uploads/2020/08/news_79_01.jpg"
   },
   "kanon": {
     "surname": "Matsubara",
@@ -696,7 +718,9 @@
     "s_birthday_month": 3,
     "s_birthday_year": "1995",
     "colorcode_char": "#44DDFF",
-    "colorcode_band": "#FFC02A"
+    "colorcode_band": "#FFC02A",
+    "image": "https://static.wikia.nocookie.net/bandori/images/3/30/Floating_Moon_T.png",
+    "s_image": "https://livedoor.blogimg.jp/getgossip24/imgs/2/9/297eb682.jpg"
   },
   "misaki": {
     "surname": "Okusawa",
@@ -724,7 +748,9 @@
     "s_birthday_month": 4,
     "s_birthday_year": "1996",
     "colorcode_char": "#006599",
-    "colorcode_band": "#FFC02A"
+    "colorcode_band": "#FFC02A",
+    "image": "https://static.wikia.nocookie.net/bandori/images/7/7d/Michelle%27s_Secret.png",
+    "s_image": "https://mausu.net/talent/content/5825_Re.jpg"
   },
   "mashiro": {
     "surname": "Kurata",
@@ -748,7 +774,9 @@
     "s_birthday_month": 4,
     "s_birthday_year": "2004",
     "colorcode_char": "#6677CC",
-    "colorcode_band": "#33AAFF"
+    "colorcode_band": "#33AAFF",
+    "image": "https://static.wikia.nocookie.net/bandori/images/d/dd/To_Indulge_in_My_Aspirations_T.png",
+    "s_image": "https://i.imgur.com/VCZlWZL.jpg"
   },
   "touko": {
     "surname": "Kirigaya",
@@ -773,7 +801,9 @@
     "s_birthday_month": 4,
     "s_birthday_year": "1995",
     "colorcode_char": "#EE6666",
-    "colorcode_band": "#33AAFF"
+    "colorcode_band": "#33AAFF",
+    "image": "https://static.wikia.nocookie.net/bandori/images/a/ad/Make_A_Pose%2C_Everyone%E2%98%86.png",
+    "s_image": "https://64.media.tumblr.com/cb9269a4689c6c7f4646f752c03bfcd1/tumblr_psoijwM11M1vw9qofo1_1280.jpg"
   },
   "nanami": {
     "surname": "Hiromachi",
@@ -797,7 +827,9 @@
     "s_birthday_month": 3,
     "s_birthday_year": "1994",
     "colorcode_char": "#EE7744",
-    "colorcode_band": "#33AAFF"
+    "colorcode_band": "#33AAFF",
+    "image": "https://static.wikia.nocookie.net/bandori/images/0/05/An_Unconcealed_Secret_T.png",
+    "s_image": "https://i.pinimg.com/originals/c4/ad/99/c4ad99a12b3f8a5d0c67d7f7a4e19781.jpg"
   },
   "tsukushi": {
     "surname": "Futaba",
@@ -817,7 +849,9 @@
     "s_birthday_month": 6,
     "s_birthday_year": "19XX",
     "colorcode_char": "#EE7788",
-    "colorcode_band": "#33AAFF"
+    "colorcode_band": "#33AAFF",
+    "image": "https://static.wikia.nocookie.net/bandori/images/a/a1/Morning_Call.png",
+    "s_image": "https://static.wikia.nocookie.net/bandori/images/a/a3/Mika.jpg/revision/latest?cb=20200320162426"
   },
   "rui": {
     "surname": "Yashio",
@@ -840,7 +874,9 @@
     "s_birthday_month": 10,
     "s_birthday_year": "1991",
     "colorcode_char": "#669988",
-    "colorcode_band": "#33AAFF"
+    "colorcode_band": "#33AAFF",
+    "image": "https://static.wikia.nocookie.net/bandori/images/3/33/Used_Musical_Score_T.png",
+    "s_image": "https://i.pinimg.com/originals/9d/82/08/9d82085c3de42f1f0d5697f05e843aa7.jpg"
   },
   "rei": {
     "surname": "Wakana",
@@ -957,7 +993,9 @@
     "s_birthday_month": 5,
     "s_birthday_year": "1997",
     "colorcode_char": "#FF99CC",
-    "colorcode_band": "#22CCCC"
+    "colorcode_band": "#22CCCC",
+    "image": "https://static.wikia.nocookie.net/bandori/images/0/08/Because_You_Were_Here.png/revision/latest/scale-to-width-down/1000?cb=20200831115320",
+    "s_image": "https://pbs.twimg.com/media/EgBjbjZUYAAd8jK.jpg"
   },
   "chiyu": {
     "surname": "Tamade",
@@ -983,7 +1021,9 @@
     "s_birthday_month": 7,
     "s_birthday_year": "1996",
     "colorcode_char": "#33CCFF",
-    "colorcode_band": "#22CCCC"
+    "colorcode_band": "#22CCCC",
+    "image": "https://static.wikia.nocookie.net/bandori/images/9/91/The_Power_To_Change_The_World.png",
+    "s_image": "https://pbs.twimg.com/media/EgMdZR9U4AMp6iA.jpg"
   },
   "yuri": {
     "surname": "Ushigome",
@@ -1006,7 +1046,9 @@
     "s_birthday_day": 28,
     "s_birthday_month": 6,
     "s_birthday_year": "1986",
-    "colorcode_band": "#01DFA5"
+    "colorcode_band": "#01DFA5",
+    "image": "https://static.wikia.nocookie.net/bandori/images/b/b0/Ushigome_Yuri_-_Glitter%2AGreen_Live2D_Model.png",
+    "s_image": "https://livedoor.blogimg.jp/mil8/imgs/6/8/685167de.jpg"
   },
   "rii": {
     "surname": "Uzawa",
@@ -1029,7 +1071,9 @@
     "s_birthday_day": 27,
     "s_birthday_month": 11,
     "s_birthday_year": "1984",
-    "colorcode_band": "#01DFA6"
+    "colorcode_band": "#01DFA6",
+    "image": "https://pbs.twimg.com/media/Ds8FAhOUcAIDOXs.jpg",
+    "s_image": "https://pbs.twimg.com/media/Ds-f-sfU4AA9a4y.jpg"
   },
   "nanana": {
     "surname": "Wanibe",
@@ -1052,7 +1096,9 @@
     "s_birthday_day": 30,
     "s_birthday_month": 3,
     "s_birthday_year": "1991",
-    "colorcode_band": "#01DFA7"
+    "colorcode_band": "#01DFA7",
+    "image": "https://pbs.twimg.com/media/DR6uCXRUMAAKvSK.jpg",
+    "s_image": "https://thetv.jp/i/tl/100/0091/1000091988_r.jpg?w=840"
   },
   "hinako": {
     "surname": "Nijikki",
@@ -1075,7 +1121,9 @@
     "s_birthday_day": 26,
     "s_birthday_month": 12,
     "s_birthday_year": "1989",
-    "colorcode_band": "#01DFA8"
+    "colorcode_band": "#01DFA8",
+    "image": "https://pbs.twimg.com/media/EUCrOMbU0AoMZZy.jpg",
+    "s_image": "https://avex.jp/artist/tokuisora/img/mobile_image.jpg"
   },
   "natsuki": {
     "surname": "Umino",
@@ -1116,7 +1164,9 @@
     "s_birthday_string": "19XX-12-17",
     "s_birthday_day": 17,
     "s_birthday_month": 12,
-    "s_birthday_year": "19XX"
+    "s_birthday_year": "19XX",
+    "image": "https://www.anime-planet.com/images/characters/fumika-mori-124891.jpg?t=1580080553",
+    "s_image": "https://pbs.twimg.com/media/D3ng9FkUEAEJ65L.jpg"
   },
   "mayu": {
     "surname": "Kawabata",
@@ -1136,7 +1186,8 @@
     "s_birthday_day": 4,
     "s_birthday_month": 2,
     "s_birthday_year": "19XX",
-    "image": "https://static.wikia.nocookie.net/bandori/images/4/4a/Kawabata_Mayu.png"
+    "image": "https://static.wikia.nocookie.net/bandori/images/4/4a/Kawabata_Mayu.png",
+    "s_image": "https://otajo.jp/files/2018/03/ITB9689.jpg"
   },
   "satomi": {
     "surname": "Taiko",
@@ -1153,7 +1204,9 @@
     "s_birthday_string": "19XX-11-19",
     "s_birthday_day": 19,
     "s_birthday_month": 11,
-    "s_birthday_year": "19XX"
+    "s_birthday_year": "19XX",
+    "image": "https://animemiru.jp/wp-content/uploads/2018/06/bangdream-chicpa-05-480x270.jpg",
+    "s_image": "https://www.81produce.co.jp/dcms_media/image/minami_saki.jpg"
   },
   "asuka": {
     "surname": "Toyama",
@@ -1172,7 +1225,9 @@
     "s_birthday_string": "1993-05-15",
     "s_birthday_day": 15,
     "s_birthday_month": 5,
-    "s_birthday_year": "1993"
+    "s_birthday_year": "1993",
+    "image": "https://static.wikia.nocookie.net/bandori/images/7/74/Memories_from_Back_Then.png/revision/latest?cb=20200110042427",
+    "s_image": "https://pbs.twimg.com/profile_images/1242377449536507904/E6iTyv8w_400x400.jpg"
   },
   "yoshiko": {
     "surname": "Nono",
@@ -1191,7 +1246,9 @@
     "s_birthday_string": "1996-03-05",
     "s_birthday_day": 5,
     "s_birthday_month": 3,
-    "s_birthday_year": "1996"
+    "s_birthday_year": "1996",
+    "image": "https://www.anime-planet.com/images/characters/yoshiko-nono-181580.jpg",
+    "s_image": "https://sp-akiba-souken.k-img.com/assets/images/actor/73/738633c60c7905ae3e1ba6f6dbca5ea3f9bbc314.jpg"
   },
   "marina": {
     "surname": "Tsukishima",
@@ -1211,6 +1268,8 @@
     "s_birthday_string": "1986-12-25",
     "s_birthday_day": 25,
     "s_birthday_month": 12,
-    "s_birthday_year": "1986"
+    "s_birthday_year": "1986",
+    "image": "https://pbs.twimg.com/media/EevbD63UYAMvGvt.png",
+    "s_image": "https://pbs.twimg.com/media/Cu5uPj0UIAAWfAL.jpg"
   }
 }
