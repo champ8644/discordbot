@@ -1,28 +1,10 @@
 const Discord = require("discord.js");
 
-const { send } = require("./utils/send");
-const {
-  format,
-  addHours,
-  addMinutes,
-  startOfDay,
-  setMonth,
-  setDate,
-} = require("date-fns");
+const { send } = require("../utils/send");
+const { format, setMonth, setDate, addHours, addMinutes } = require("date-fns");
+
 const locale = require("date-fns/locale/th");
-
-const birthdayList = require("./character/birthdayList.json");
-const characterList = require("./character/BanGDreamChars.json");
-const { onError } = require("./utils/errorHandle");
-
-const nowThailand = addHours(
-  addMinutes(new Date(), new Date().getTimezoneOffset()),
-  7
-);
-const nowJapan = addHours(nowThailand, 2);
-const day = startOfDay(addHours(nowJapan, 12));
-const keyDate = format(day, "dd/MM");
-const todayEvents = birthdayList[keyDate] || [];
+const characterList = require("../character/BanGDreamChars.json");
 
 function combineTHJP(th, jp) {
   if (!jp) return th;
@@ -76,9 +58,7 @@ function getBandText(band) {
   }
 }
 
-const logReport = [];
-
-function genLogReport(name, color, hbd) {
+function genLogReport(name, color, hbd, logReport) {
   const embed = new Discord.MessageEmbed();
   embed.setColor(color);
   if (hbd) embed.setTitle("HBD to " + name);
@@ -86,7 +66,11 @@ function genLogReport(name, color, hbd) {
   logReport.push(embed);
 }
 
-function genCharReport(info, hbd, channel) {
+function genCharReport(info, hbd, channel, logReport) {
+  const nowThailand = addHours(
+    addMinutes(new Date(), new Date().getTimezoneOffset()),
+    7
+  );
   const embed = new Discord.MessageEmbed();
 
   const fullname = getFullName(
@@ -145,11 +129,21 @@ function genCharReport(info, hbd, channel) {
   )
     send("ห้องวันเกิด-ห้องนั่งเล่นรวม", { embed }, { API: true });
 
-  genLogReport(nickname || fullnameNewline, info.colorcode_char, hbd);
+  if (logReport)
+    genLogReport(
+      nickname || fullnameNewline,
+      info.colorcode_char,
+      hbd,
+      logReport
+    );
 }
 
-function genSeiyuuReport(info, hbd, channel) {
+function genSeiyuuReport(info, hbd, channel, logReport) {
   if (!hbd) return;
+  const nowThailand = addHours(
+    addMinutes(new Date(), new Date().getTimezoneOffset()),
+    7
+  );
   const embed = new Discord.MessageEmbed();
 
   const fullname = getFullName(
@@ -208,14 +202,20 @@ function genSeiyuuReport(info, hbd, channel) {
   if (info.band !== "CHiSPA")
     send("ห้องเป่าเค้ก-seiyuu", { embed }, { API: true });
 
-  genLogReport(nickname || fullnameNewline, info.colorcode_char, hbd);
+  if (logReport)
+    genLogReport(
+      nickname || fullnameNewline,
+      info.colorcode_char,
+      hbd,
+      logReport
+    );
 }
 
-function generateReport(event, channel) {
+function generateReport(event, channel, logReport) {
   const info = characterList[event.key];
   const type = event.type === "hbd";
-  if (event.seiyuu) genSeiyuuReport(info, type, channel);
-  else genCharReport(info, type, channel);
+  if (event.seiyuu) genSeiyuuReport(info, type, channel, logReport);
+  else genCharReport(info, type, channel, logReport);
 }
 
 module.exports = { generateReport };
