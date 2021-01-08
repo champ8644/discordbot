@@ -18,12 +18,7 @@ async function registerQuickClean(reaction, user) {
       });
     }
   } catch (error) {
-    console.log(
-      "🚀 ~ file: registerQuickClean.js ~ line 8 ~ registerQuickClean ~ reaction, user",
-      reaction,
-      user
-    );
-    onError(error);
+    onError(error, { reaction, user });
   }
 }
 module.exports = { registerQuickClean };

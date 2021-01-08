@@ -113,7 +113,7 @@ bot.on("messageReactionAdd", async (reaction, user) => {
         return;
     }
   } catch (error) {
-    onError(error);
+    onError(error, { reaction, user });
   }
 });
 
@@ -138,7 +138,7 @@ bot.on("message", async (message) => {
         return;
     }
   } catch (error) {
-    onError(error);
+    onError(error, { message });
   }
 });
 

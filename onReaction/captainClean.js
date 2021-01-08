@@ -14,7 +14,7 @@ async function captainClean(reaction, user, destId) {
       });
     }
   } catch (error) {
-    onError(error);
+    onError(error, { reaction, user, destId });
   }
 }
 module.exports = { captainClean };

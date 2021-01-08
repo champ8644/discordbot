@@ -14,7 +14,7 @@ async function welcomeScreen(status) {
       `${bot.user.username} ver${pjson.version} ${statusPost}`
     );
   } catch (error) {
-    onError(error);
+    onError(error, { status });
   }
 }
 module.exports = { welcomeScreen };

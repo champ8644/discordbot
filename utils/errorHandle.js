@@ -1,7 +1,7 @@
 const { send } = require("../utils/send");
 
-function onError(error) {
-  console.error(error);
+function onError(error, args) {
+  console.error({ error, args });
   const sentError = `\`\`\`js
     ${error.stack}\`\`\``;
   const msg = {

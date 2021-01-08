@@ -15,7 +15,7 @@ async function moving(arr, room) {
       await delay(1100);
     }
   } catch (error) {
-    onError(error);
+    onError(error, { arr, room });
   }
 }
 module.exports = { moving };

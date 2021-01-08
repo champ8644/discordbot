@@ -21,7 +21,7 @@ async function partialCheck(entities) {
       }
     }
   } catch (error) {
-    onError(error);
+    onError(error, { entities });
   }
 }
 module.exports = { partialCheck };

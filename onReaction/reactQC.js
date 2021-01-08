@@ -30,7 +30,7 @@ async function reactQC(reaction, user) {
       }
     }
   } catch (error) {
-    onError(error);
+    onError(error, { reaction, user });
   }
 }
 module.exports = { reactQC };
