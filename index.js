@@ -111,6 +111,9 @@ bot.on("messageReactionAdd", async (reaction, user) => {
       case "761957871880503316": // ห้องแจ้ง QC
         queueAsync.add(async () => reactQC(reaction, user));
         return;
+      // case "726319165048356944": // ห้องทดลอง
+      // queueAsync.add(async () => fukukaichouClean(reaction, user));
+      // return;
     }
   } catch (error) {
     onError(error, { reaction, user });

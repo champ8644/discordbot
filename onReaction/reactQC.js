@@ -4,7 +4,8 @@ const { onError } = require("../utils/errorHandle");
 
 async function reactQC(reaction, user) {
   try {
-    const member = reaction.message.guild.members.cache.get(user.id);
+    let member = reaction.message.guild.members.cache.get(user.id);
+    if (!member) member = await reaction.message.guild.members.fetch(user.id);
     const isProofReader = member.roles.cache.has("762033050825392188"); // Proof Reader
     if (isProofReader) {
       let destChannel;
