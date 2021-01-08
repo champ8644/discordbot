@@ -3,11 +3,6 @@ const { send } = require("../utils/send");
 const { onError } = require("../utils/errorHandle");
 
 async function fukukaichouClean(reaction, user) {
-  console.log(
-    "🚀 ~ file: fukukaichouClean.js ~ line 6 ~ fukukaichouClean ~ reaction, user",
-    reaction,
-    user
-  );
   try {
     let member = reaction.message.guild.members.cache.get(user.id);
     if (!member) member = await reaction.message.guild.members.fetch(user.id);
