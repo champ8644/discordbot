@@ -106,10 +106,10 @@ function genCharReport(info, hbd, channel, logReport) {
     )
   );
   if (nickname) embed.addField("ชื่อเล่น", nickname, true);
-  embed.addField("ชื่อ", fullnameNewline, true);
-  embed.addField("วันเกิด", hbdDay, true);
-  embed.addField("วง", getBandText(info.band), true);
-  embed.addField("ตำแหน่ง", info.role, true);
+  if (fullnameNewline) embed.addField("ชื่อ", fullnameNewline, true);
+  if (hbdDay) embed.addField("วันเกิด", hbdDay, true);
+  if (info.band) embed.addField("วง", getBandText(info.band), true);
+  if (info.role) embed.addField("ตำแหน่ง", info.role, true);
   if (info.image) embed.setImage(info.image);
   embed.setTimestamp(new Date());
 
@@ -181,10 +181,10 @@ function genSeiyuuReport(info, hbd, channel, logReport) {
     )
   );
   if (nickname) embed.addField("ชื่อเล่น", nickname, true);
-  embed.addField("ชื่อ", fullnameNewline, true);
-  embed.addField("วันเกิด", hbdDay, true);
-  embed.addField("วง", getBandText(info.band), true);
-  embed.addField("ตำแหน่ง", info.role, true);
+  if (fullnameNewline) embed.addField("ชื่อ", fullnameNewline, true);
+  if (hbdDay) embed.addField("วันเกิด", hbdDay, true);
+  if (info.band) embed.addField("วง", getBandText(info.band), true);
+  if (info.role) embed.addField("ตำแหน่ง", info.role, true);
   if (info.twitter) embed.addField("Twitter", info.twitter, true);
   if (info.site_instagram)
     embed.addField("Instagram", info.site_instagram, true);
