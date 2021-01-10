@@ -54,7 +54,7 @@
     "s_birthday_month": 10,
     "s_birthday_year": "1995",
     "colorcode_char": "#0176DD",
-    "colorcode_band": "#FF3378",
+    "colorcode_band": "#FF3377",
     "image": "https://static.wikia.nocookie.net/bandori/images/e/eb/Calming_Seaside_Breeze.png",
     "s_image": "https://pbs.twimg.com/media/DpFOdm-UUAAIht2.jpg"
   },
@@ -83,7 +83,7 @@
     "s_birthday_month": 10,
     "s_birthday_year": "1994",
     "colorcode_char": "#FF54BC",
-    "colorcode_band": "#FF3379",
+    "colorcode_band": "#FF3377",
     "image": "https://static.wikia.nocookie.net/bandori/images/f/fe/Spreading_Feelings_T.png",
     "s_image": "https://i.imgur.com/MgJxliK.jpg"
   },
@@ -112,7 +112,7 @@
     "s_birthday_month": 9,
     "s_birthday_year": "1994",
     "colorcode_char": "#FABE06",
-    "colorcode_band": "#FF3380",
+    "colorcode_band": "#FF3377",
     "image": "https://static.wikia.nocookie.net/bandori/images/5/5e/Rainy_Day_Picnic%E2%99%AA_T.png",
     "s_image": "https://i.imgur.com/7eYPn68.jpg"
   },
@@ -142,7 +142,7 @@
     "s_birthday_month": 8,
     "s_birthday_year": "1996",
     "colorcode_char": "#AA66E1",
-    "colorcode_band": "#FF3381",
+    "colorcode_band": "#FF3377",
     "image": "https://static.wikia.nocookie.net/bandori/images/c/c8/A_Touching_Feeling.png",
     "s_image": "https://stat.ameba.jp/user_images/20191215/18/mizore7arisa/35/d8/j/o0720128014678384550.jpg?caw=800"
   },
@@ -194,7 +194,7 @@
     "s_birthday_month": 1,
     "s_birthday_year": "1993",
     "colorcode_char": "#02CBAB",
-    "colorcode_band": "#EE3345",
+    "colorcode_band": "#EE3344",
     "image": "https://static.wikia.nocookie.net/bandori/images/a/ab/Anniversary%2C_Today_T.png",
     "s_image": "https://i.imgur.com/4PJ9yyH.jpg"
   },
@@ -222,7 +222,7 @@
     "s_birthday_month": 11,
     "s_birthday_year": "1983",
     "colorcode_char": "#FF999A",
-    "colorcode_band": "#EE3346",
+    "colorcode_band": "#EE3344",
     "image": "https://static.wikia.nocookie.net/bandori/images/9/98/The_Usual_%22Thing%22_T.png",
     "s_image": "https://static.wikia.nocookie.net/revuestarlight/images/4/46/Emiri_Kato.jpg"
   },
@@ -249,7 +249,7 @@
     "s_birthday_month": 7,
     "s_birthday_year": "1985",
     "colorcode_char": "#BB0133",
-    "colorcode_band": "#EE3347",
+    "colorcode_band": "#EE3344",
     "image": "https://static.wikia.nocookie.net/bandori/images/d/d8/Sleepy_Windowsill.png",
     "s_image": "https://images.moely.jp/files/article/901572/large_901572_659.jpg"
   },
@@ -274,7 +274,7 @@
     "s_birthday_month": 12,
     "s_birthday_year": "1987",
     "colorcode_char": "#FFE44F",
-    "colorcode_band": "#EE3348",
+    "colorcode_band": "#EE3344",
     "image": "https://static.wikia.nocookie.net/bandori/images/e/ed/Favor_Returning_Helper.png",
     "s_image": "https://i.imgur.com/8BENxLL.jpg"
   },
@@ -1071,7 +1071,7 @@
     "s_birthday_day": 27,
     "s_birthday_month": 11,
     "s_birthday_year": "1984",
-    "colorcode_band": "#01DFA6",
+    "colorcode_band": "#01DFA5",
     "image": "https://pbs.twimg.com/media/Ds8FAhOUcAIDOXs.jpg",
     "s_image": "https://pbs.twimg.com/media/Ds-f-sfU4AA9a4y.jpg"
   },
@@ -1096,7 +1096,7 @@
     "s_birthday_day": 30,
     "s_birthday_month": 3,
     "s_birthday_year": "1991",
-    "colorcode_band": "#01DFA7",
+    "colorcode_band": "#01DFA5",
     "image": "https://pbs.twimg.com/media/DR6uCXRUMAAKvSK.jpg",
     "s_image": "https://thetv.jp/i/tl/100/0091/1000091988_r.jpg?w=840"
   },
@@ -1121,7 +1121,7 @@
     "s_birthday_day": 26,
     "s_birthday_month": 12,
     "s_birthday_year": "1989",
-    "colorcode_band": "#01DFA8",
+    "colorcode_band": "#01DFA5",
     "image": "https://pbs.twimg.com/media/EUCrOMbU0AoMZZy.jpg",
     "s_image": "https://avex.jp/artist/tokuisora/img/mobile_image.jpg"
   },
@@ -1226,6 +1226,8 @@
     "s_birthday_day": 15,
     "s_birthday_month": 5,
     "s_birthday_year": "1993",
+    "birthday_day": 15,
+    "birthday_month": 5,
     "image": "https://static.wikia.nocookie.net/bandori/images/7/74/Memories_from_Back_Then.png/revision/latest?cb=20200110042427",
     "s_image": "https://pbs.twimg.com/profile_images/1242377449536507904/E6iTyv8w_400x400.jpg"
   },
