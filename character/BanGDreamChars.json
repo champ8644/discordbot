@@ -1407,6 +1407,7 @@
     "band": "Peaky P-key",
     "birthday_day": 4,
     "birthday_month": 2,
+    "colorcode_char": "#C55FB1",
     "colorcode_band": "#6A6A6A",
     "image": "https://newstisiki.com/wp-content/uploads/2020/11/813a84184d7c2ffa9abeda6862567cc9.jpg",
     "s_surname": "Takagi",
@@ -1734,6 +1735,7 @@
     "band": "Lyrical Lily",
     "birthday_day": 22,
     "birthday_month": 2,
+    "colorcode_char": "#FAD792",
     "colorcode_band": "#FFA8F7"
   },
   "airi": {
