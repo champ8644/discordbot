@@ -1,232 +1,1448 @@
 {
-  "01/01": [{ "key": "rinko_legacy", "type": "pre", "seiyuu": true }],
-  "02/01": [{ "key": "rinko_legacy", "type": "hbd", "seiyuu": true }],
-  "06/01": [{ "key": "tsugumi", "type": "pre" }],
-  "07/01": [{ "key": "tsugumi", "type": "hbd" }],
-  "09/01": [{ "key": "natsuki", "type": "pre", "seiyuu": true }],
-  "10/01": [{ "key": "natsuki", "type": "hbd", "seiyuu": true }],
+  "01/01": [
+    {
+      "key": "rinko",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Satomi Akesaka"
+    }
+  ],
+  "02/01": [
+    {
+      "key": "rinko",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Satomi Akesaka"
+    }
+  ],
+  "06/01": [
+    {
+      "key": "tsugumi",
+      "type": "pre"
+    },
+    {
+      "key": "tsubaki",
+      "type": "pre",
+      "NO_IMAGE": true
+    }
+  ],
+  "07/01": [
+    {
+      "key": "tsugumi",
+      "type": "hbd"
+    },
+    {
+      "key": "tsubaki",
+      "type": "hbd",
+      "NO_IMAGE": true
+    }
+  ],
+  "09/01": [
+    {
+      "key": "natsuki",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Misato Fukuen"
+    }
+  ],
+  "10/01": [
+    {
+      "key": "natsuki",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Misato Fukuen"
+    }
+  ],
   "12/01": [
-    { "key": "moca", "type": "pre", "seiyuu": true },
-    { "key": "rei", "type": "pre" },
-    { "key": "rei", "type": "pre", "seiyuu": true }
+    {
+      "key": "moca",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Sachika Misawa"
+    },
+    {
+      "key": "shano",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Raychell"
+    }
   ],
   "13/01": [
-    { "key": "moca", "type": "hbd", "seiyuu": true },
-    { "key": "rei", "type": "hbd" },
-    { "key": "rei", "type": "hbd", "seiyuu": true }
+    {
+      "key": "moca",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Sachika Misawa"
+    },
+    {
+      "key": "shano",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Raychell"
+    }
   ],
-  "28/01": [{ "key": "ran", "type": "pre", "seiyuu": true }],
-  "29/01": [{ "key": "ran", "type": "hbd", "seiyuu": true }],
-  "02/02": [{ "key": "rokka", "type": "pre", "seiyuu": true }],
+  "28/01": [
+    {
+      "key": "ran",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Ayane Sakura"
+    }
+  ],
+  "29/01": [
+    {
+      "key": "ran",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Ayane Sakura"
+    },
+    {
+      "key": "towa",
+      "type": "pre"
+    }
+  ],
+  "30/01": [
+    {
+      "key": "towa",
+      "type": "hbd"
+    }
+  ],
+  "02/02": [
+    {
+      "key": "rokka",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Riko Kohara"
+    }
+  ],
   "03/02": [
-    { "key": "rokka", "type": "hbd", "seiyuu": true },
-    { "key": "mayu", "type": "pre", "seiyuu": true }
+    {
+      "key": "rokka",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Riko Kohara"
+    },
+    {
+      "key": "mayu",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Rina Honnizumi"
+    },
+    {
+      "key": "shinobu",
+      "type": "pre"
+    }
   ],
-  "04/02": [{ "key": "mayu", "type": "hbd", "seiyuu": true }],
-  "07/02": [{ "key": "rinko", "type": "pre", "seiyuu": true }],
-  "08/02": [{ "key": "rinko", "type": "hbd", "seiyuu": true }],
-  "18/02": [{ "key": "mashiro", "type": "pre" }],
-  "19/02": [{ "key": "mashiro", "type": "hbd" }],
-  "27/02": [{ "key": "kaoru", "type": "pre" }],
-  "28/02": [{ "key": "kaoru", "type": "hbd" }],
-  "04/03": [{ "key": "yoshiko", "type": "pre", "seiyuu": true }],
-  "05/03": [{ "key": "yoshiko", "type": "hbd", "seiyuu": true }],
-  "14/03": [{ "key": "kanon", "type": "pre", "seiyuu": true }],
+  "04/02": [
+    {
+      "key": "mayu",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Rina Honnizumi"
+    },
+    {
+      "key": "shinobu",
+      "type": "hbd"
+    }
+  ],
+  "07/02": [
+    {
+      "key": "rei",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Kanon Shizaki"
+    }
+  ],
+  "08/02": [
+    {
+      "key": "rei",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Kanon Shizaki"
+    }
+  ],
+  "18/02": [
+    {
+      "key": "mashiro",
+      "type": "pre"
+    }
+  ],
+  "19/02": [
+    {
+      "key": "mashiro",
+      "type": "hbd"
+    }
+  ],
+  "21/02": [
+    {
+      "key": "miiko",
+      "type": "pre",
+      "NO_IMAGE": true
+    }
+  ],
+  "22/02": [
+    {
+      "key": "miiko",
+      "type": "hbd",
+      "NO_IMAGE": true
+    }
+  ],
+  "26/02": [
+    {
+      "key": "yuka jennifer",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Moeka Koizumi"
+    }
+  ],
+  "27/02": [
+    {
+      "key": "kaoru",
+      "type": "pre"
+    },
+    {
+      "key": "yuka jennifer",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Moeka Koizumi"
+    }
+  ],
+  "28/02": [
+    {
+      "key": "kaoru",
+      "type": "hbd"
+    }
+  ],
+  "02/03": [
+    {
+      "key": "muni",
+      "type": "pre"
+    }
+  ],
+  "03/03": [
+    {
+      "key": "muni",
+      "type": "hbd"
+    }
+  ],
+  "04/03": [
+    {
+      "key": "yoshiko",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Hikaru Tono"
+    }
+  ],
+  "05/03": [
+    {
+      "key": "yoshiko",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Hikaru Tono"
+    }
+  ],
+  "14/03": [
+    {
+      "key": "kanon",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Moe Toyota"
+    }
+  ],
   "15/03": [
-    { "key": "sayo", "type": "pre", "seiyuu": true },
-    { "key": "kanon", "type": "hbd", "seiyuu": true }
+    {
+      "key": "sayo",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Haruka Kudou"
+    },
+    {
+      "key": "kanon",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Moe Toyota"
+    }
   ],
-  "16/03": [{ "key": "sayo", "type": "hbd", "seiyuu": true }],
+  "16/03": [
+    {
+      "key": "sayo",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Haruka Kudou"
+    }
+  ],
   "19/03": [
-    { "key": "hina", "type": "pre" },
-    { "key": "sayo", "type": "pre" }
+    {
+      "key": "hina",
+      "type": "pre"
+    },
+    {
+      "key": "sayo",
+      "type": "pre"
+    }
   ],
   "20/03": [
-    { "key": "hina", "type": "hbd" },
-    { "key": "sayo", "type": "hbd" }
+    {
+      "key": "hina",
+      "type": "hbd"
+    },
+    {
+      "key": "sayo",
+      "type": "hbd"
+    }
   ],
-  "22/03": [{ "key": "rimi", "type": "pre" }],
-  "23/03": [{ "key": "rimi", "type": "hbd" }],
-  "24/03": [{ "key": "reona", "type": "pre" }],
-  "25/03": [{ "key": "reona", "type": "hbd" }],
-  "29/03": [{ "key": "nanana", "type": "pre", "seiyuu": true }],
+  "22/03": [
+    {
+      "key": "rimi",
+      "type": "pre"
+    },
+    {
+      "key": "hiiro",
+      "type": "pre",
+      "NO_IMAGE": true
+    }
+  ],
+  "23/03": [
+    {
+      "key": "rimi",
+      "type": "hbd"
+    },
+    {
+      "key": "hiiro",
+      "type": "hbd",
+      "NO_IMAGE": true
+    }
+  ],
+  "24/03": [
+    {
+      "key": "reona",
+      "type": "pre"
+    }
+  ],
+  "25/03": [
+    {
+      "key": "reona",
+      "type": "hbd"
+    }
+  ],
+  "29/03": [
+    {
+      "key": "nanana",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Mikoi Sasaki"
+    }
+  ],
   "30/03": [
-    { "key": "nanami", "type": "pre", "seiyuu": true },
-    { "key": "nanana", "type": "hbd", "seiyuu": true }
+    {
+      "key": "nanami",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Yuka Nishio"
+    },
+    {
+      "key": "nanana",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Mikoi Sasaki"
+    }
   ],
-  "31/03": [{ "key": "nanami", "type": "hbd", "seiyuu": true }],
-  "05/04": [{ "key": "chisato", "type": "pre" }],
-  "06/04": [{ "key": "chisato", "type": "hbd" }],
+  "31/03": [
+    {
+      "key": "nanami",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Yuka Nishio"
+    }
+  ],
+  "02/04": [
+    {
+      "key": "towa",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Haruki Iwata"
+    }
+  ],
+  "03/04": [
+    {
+      "key": "towa",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Haruki Iwata"
+    }
+  ],
+  "05/04": [
+    {
+      "key": "chisato",
+      "type": "pre"
+    }
+  ],
+  "06/04": [
+    {
+      "key": "chisato",
+      "type": "hbd"
+    }
+  ],
   "09/04": [
-    { "key": "ran", "type": "pre" },
-    { "key": "misaki", "type": "pre", "seiyuu": true }
+    {
+      "key": "ran",
+      "type": "pre"
+    },
+    {
+      "key": "misaki",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Tomoyo Kurosawa"
+    },
+    {
+      "key": "ibuki",
+      "type": "pre"
+    }
   ],
   "10/04": [
-    { "key": "ran", "type": "hbd" },
-    { "key": "misaki", "type": "hbd", "seiyuu": true }
+    {
+      "key": "ran",
+      "type": "hbd"
+    },
+    {
+      "key": "misaki",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Tomoyo Kurosawa"
+    },
+    {
+      "key": "ibuki",
+      "type": "hbd"
+    }
   ],
-  "14/04": [{ "key": "tomoe", "type": "pre" }],
-  "15/04": [{ "key": "tomoe", "type": "hbd" }],
-  "16/04": [{ "key": "touko", "type": "pre", "seiyuu": true }],
-  "17/04": [{ "key": "touko", "type": "hbd", "seiyuu": true }],
-  "19/04": [{ "key": "mashiro", "type": "pre", "seiyuu": true }],
-  "20/04": [{ "key": "mashiro", "type": "hbd", "seiyuu": true }],
-  "10/05": [{ "key": "kanon", "type": "pre" }],
+  "14/04": [
+    {
+      "key": "tomoe",
+      "type": "pre"
+    }
+  ],
+  "15/04": [
+    {
+      "key": "tomoe",
+      "type": "hbd"
+    }
+  ],
+  "16/04": [
+    {
+      "key": "touko",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Hina Suguta"
+    }
+  ],
+  "17/04": [
+    {
+      "key": "touko",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Hina Suguta"
+    }
+  ],
+  "19/04": [
+    {
+      "key": "mashiro",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Amane Shindo"
+    }
+  ],
+  "20/04": [
+    {
+      "key": "mashiro",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Amane Shindo"
+    }
+  ],
+  "26/04": [
+    {
+      "key": "kyoko",
+      "type": "pre"
+    }
+  ],
+  "27/04": [
+    {
+      "key": "kyoko",
+      "type": "hbd"
+    }
+  ],
+  "09/05": [
+    {
+      "key": "saki",
+      "type": "pre"
+    }
+  ],
+  "10/05": [
+    {
+      "key": "kanon",
+      "type": "pre"
+    },
+    {
+      "key": "saki",
+      "type": "hbd"
+    }
+  ],
   "11/05": [
-    { "key": "kanon", "type": "hbd" },
-    { "key": "masuki", "type": "pre" }
+    {
+      "key": "kanon",
+      "type": "hbd"
+    },
+    {
+      "key": "masuki",
+      "type": "pre"
+    }
   ],
-  "12/05": [{ "key": "masuki", "type": "hbd" }],
-  "14/05": [{ "key": "asuka", "type": "pre", "seiyuu": true }],
-  "15/05": [{ "key": "asuka", "type": "hbd", "seiyuu": true }],
-  "18/05": [{ "key": "saaya", "type": "pre" }],
-  "19/05": [{ "key": "saaya", "type": "hbd" }],
-  "21/05": [{ "key": "reona", "type": "pre", "seiyuu": true }],
-  "22/05": [{ "key": "reona", "type": "hbd", "seiyuu": true }],
-  "15/06": [{ "key": "nanami", "type": "pre" }],
-  "16/06": [{ "key": "nanami", "type": "hbd" }],
-  "17/06": [{ "key": "maya", "type": "pre", "seiyuu": true }],
-  "18/06": [{ "key": "maya", "type": "hbd", "seiyuu": true }],
+  "12/05": [
+    {
+      "key": "masuki",
+      "type": "hbd"
+    }
+  ],
+  "14/05": [
+    {
+      "key": "asuka",
+      "type": "pre"
+    },
+    {
+      "key": "asuka",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Yuka Ozaki"
+    }
+  ],
+  "15/05": [
+    {
+      "key": "asuka",
+      "type": "hbd"
+    },
+    {
+      "key": "asuka",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Yuka Ozaki"
+    }
+  ],
+  "18/05": [
+    {
+      "key": "saaya",
+      "type": "pre"
+    }
+  ],
+  "19/05": [
+    {
+      "key": "saaya",
+      "type": "hbd"
+    }
+  ],
+  "21/05": [
+    {
+      "key": "reona",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Reo Kurachi"
+    }
+  ],
+  "22/05": [
+    {
+      "key": "reona",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Reo Kurachi"
+    }
+  ],
+  "24/05": [
+    {
+      "key": "haruna",
+      "type": "pre",
+      "NO_IMAGE": true
+    }
+  ],
+  "25/05": [
+    {
+      "key": "haruna",
+      "type": "hbd",
+      "NO_IMAGE": true
+    }
+  ],
+  "31/05": [
+    {
+      "key": "dalia",
+      "type": "pre",
+      "NO_IMAGE": true
+    }
+  ],
+  "01/06": [
+    {
+      "key": "dalia",
+      "type": "hbd",
+      "NO_IMAGE": true
+    }
+  ],
+  "15/06": [
+    {
+      "key": "nanami",
+      "type": "pre"
+    }
+  ],
+  "16/06": [
+    {
+      "key": "nanami",
+      "type": "hbd"
+    }
+  ],
+  "17/06": [
+    {
+      "key": "maya",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Ikumi Nakagami"
+    }
+  ],
+  "18/06": [
+    {
+      "key": "maya",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Ikumi Nakagami"
+    }
+  ],
   "23/06": [
-    { "key": "lisa_legacy", "type": "pre", "seiyuu": true },
-    { "key": "tsukushi", "type": "pre", "seiyuu": true }
+    {
+      "key": "lisa",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Yurika Endou"
+    },
+    {
+      "key": "tsukushi",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Mika"
+    }
   ],
   "24/06": [
-    { "key": "lisa_legacy", "type": "hbd", "seiyuu": true },
-    { "key": "tsukushi", "type": "hbd", "seiyuu": true }
+    {
+      "key": "lisa",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Yurika Endou"
+    },
+    {
+      "key": "tsukushi",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Mika"
+    }
   ],
-  "26/06": [{ "key": "eve", "type": "pre" }],
+  "26/06": [
+    {
+      "key": "eve",
+      "type": "pre"
+    }
+  ],
   "27/06": [
-    { "key": "eve", "type": "hbd" },
-    { "key": "yuri", "type": "pre", "seiyuu": true }
+    {
+      "key": "eve",
+      "type": "hbd"
+    },
+    {
+      "key": "yuri",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Suzuko Mimori"
+    }
   ],
-  "28/06": [{ "key": "yuri", "type": "hbd", "seiyuu": true }],
-  "02/07": [{ "key": "ako", "type": "pre" }],
-  "03/07": [{ "key": "ako", "type": "hbd" }],
-  "04/07": [{ "key": "chiyu", "type": "pre", "seiyuu": true }],
-  "05/07": [{ "key": "chiyu", "type": "hbd", "seiyuu": true }],
-  "13/07": [{ "key": "kasumi", "type": "pre" }],
-  "14/07": [{ "key": "kasumi", "type": "hbd" }],
-  "15/07": [{ "key": "tomoe", "type": "pre", "seiyuu": true }],
+  "28/06": [
+    {
+      "key": "yuri",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Suzuko Mimori"
+    }
+  ],
+  "29/06": [
+    {
+      "key": "rinku",
+      "type": "pre"
+    }
+  ],
+  "30/06": [
+    {
+      "key": "rinku",
+      "type": "hbd"
+    }
+  ],
+  "02/07": [
+    {
+      "key": "ako",
+      "type": "pre"
+    }
+  ],
+  "03/07": [
+    {
+      "key": "ako",
+      "type": "hbd"
+    }
+  ],
+  "04/07": [
+    {
+      "key": "chiyu",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Risa Tsumugi"
+    }
+  ],
+  "05/07": [
+    {
+      "key": "chiyu",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Risa Tsumugi"
+    }
+  ],
+  "06/07": [
+    {
+      "key": "aoi",
+      "type": "pre",
+      "NO_IMAGE": true
+    }
+  ],
+  "07/07": [
+    {
+      "key": "aoi",
+      "type": "hbd",
+      "NO_IMAGE": true
+    }
+  ],
+  "13/07": [
+    {
+      "key": "kasumi",
+      "type": "pre"
+    }
+  ],
+  "14/07": [
+    {
+      "key": "kasumi",
+      "type": "hbd"
+    }
+  ],
+  "15/07": [
+    {
+      "key": "tomoe",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Youko Hikasa"
+    }
+  ],
   "16/07": [
-    { "key": "tomoe", "type": "hbd", "seiyuu": true },
-    { "key": "rokka", "type": "pre" }
+    {
+      "key": "tomoe",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Youko Hikasa"
+    },
+    {
+      "key": "rokka",
+      "type": "pre"
+    }
   ],
-  "17/07": [{ "key": "rokka", "type": "hbd" }],
-  "19/07": [{ "key": "masuki", "type": "pre", "seiyuu": true }],
-  "20/07": [{ "key": "masuki", "type": "hbd", "seiyuu": true }],
-  "29/07": [{ "key": "hagumi", "type": "pre" }],
-  "30/07": [{ "key": "hagumi", "type": "hbd" }],
-  "07/08": [{ "key": "kokoro", "type": "pre" }],
-  "08/08": [{ "key": "kokoro", "type": "hbd" }],
-  "09/08": [{ "key": "hina", "type": "pre", "seiyuu": true }],
-  "10/08": [{ "key": "hina", "type": "hbd", "seiyuu": true }],
-  "16/08": [{ "key": "arisa", "type": "pre", "seiyuu": true }],
+  "17/07": [
+    {
+      "key": "rokka",
+      "type": "hbd"
+    }
+  ],
+  "19/07": [
+    {
+      "key": "masuki",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Natsume"
+    }
+  ],
+  "20/07": [
+    {
+      "key": "masuki",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Natsume"
+    }
+  ],
+  "29/07": [
+    {
+      "key": "hagumi",
+      "type": "pre"
+    },
+    {
+      "key": "marika",
+      "type": "pre",
+      "NO_IMAGE": true
+    }
+  ],
+  "30/07": [
+    {
+      "key": "hagumi",
+      "type": "hbd"
+    },
+    {
+      "key": "marika",
+      "type": "hbd",
+      "NO_IMAGE": true
+    }
+  ],
+  "07/08": [
+    {
+      "key": "kokoro",
+      "type": "pre"
+    }
+  ],
+  "08/08": [
+    {
+      "key": "kokoro",
+      "type": "hbd"
+    }
+  ],
+  "09/08": [
+    {
+      "key": "hina",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Ari Ozawa"
+    }
+  ],
+  "10/08": [
+    {
+      "key": "hina",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Ari Ozawa"
+    }
+  ],
+  "14/08": [
+    {
+      "key": "nagisa",
+      "type": "pre",
+      "NO_IMAGE": true
+    }
+  ],
+  "15/08": [
+    {
+      "key": "nagisa",
+      "type": "hbd",
+      "NO_IMAGE": true
+    }
+  ],
+  "16/08": [
+    {
+      "key": "arisa",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Ayasa Itou"
+    }
+  ],
   "17/08": [
-    { "key": "arisa", "type": "hbd", "seiyuu": true },
-    { "key": "hagumi", "type": "pre", "seiyuu": true }
+    {
+      "key": "arisa",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Ayasa Itou"
+    },
+    {
+      "key": "hagumi",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Yuuri Yoshida"
+    }
   ],
-  "18/08": [{ "key": "hagumi", "type": "hbd", "seiyuu": true }],
-  "24/08": [{ "key": "lisa", "type": "pre" }],
-  "25/08": [{ "key": "lisa", "type": "hbd" }],
-  "02/09": [{ "key": "moca", "type": "pre" }],
-  "03/09": [{ "key": "moca", "type": "hbd" }],
-  "11/09": [{ "key": "lisa", "type": "pre", "seiyuu": true }],
+  "18/08": [
+    {
+      "key": "hagumi",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Yuuri Yoshida"
+    }
+  ],
+  "29/08": [
+    {
+      "key": "rika",
+      "type": "pre"
+    }
+  ],
+  "30/08": [
+    {
+      "key": "rika",
+      "type": "hbd"
+    }
+  ],
+  "02/09": [
+    {
+      "key": "moca",
+      "type": "pre"
+    }
+  ],
+  "03/09": [
+    {
+      "key": "moca",
+      "type": "hbd"
+    }
+  ],
+  "07/09": [
+    {
+      "key": "shinobu",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Miyu Takagi"
+    }
+  ],
+  "08/09": [
+    {
+      "key": "shinobu",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Miyu Takagi"
+    },
+    {
+      "key": "esora",
+      "type": "pre"
+    }
+  ],
+  "09/09": [
+    {
+      "key": "esora",
+      "type": "hbd"
+    }
+  ],
   "12/09": [
-    { "key": "saaya", "type": "pre", "seiyuu": true },
-    { "key": "lisa", "type": "hbd", "seiyuu": true }
+    {
+      "key": "saaya",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Ayaka Ohashi"
+    }
   ],
   "13/09": [
-    { "key": "saaya", "type": "hbd", "seiyuu": true },
-    { "key": "eve", "type": "pre", "seiyuu": true }
+    {
+      "key": "saaya",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Ayaka Ohashi"
+    },
+    {
+      "key": "eve",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Sawako Hata"
+    }
   ],
   "14/09": [
-    { "key": "eve", "type": "hbd", "seiyuu": true },
-    { "key": "tsukushi", "type": "pre" }
+    {
+      "key": "eve",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Sawako Hata"
+    },
+    {
+      "key": "tsukushi",
+      "type": "pre"
+    }
   ],
-  "15/09": [{ "key": "tsukushi", "type": "hbd" }],
-  "30/09": [{ "key": "misaki", "type": "pre" }],
-  "01/10": [{ "key": "misaki", "type": "hbd" }],
-  "09/10": [{ "key": "tae", "type": "pre", "seiyuu": true }],
-  "10/10": [{ "key": "tae", "type": "hbd", "seiyuu": true }],
-  "11/10": [{ "key": "kokoro", "type": "pre", "seiyuu": true }],
-  "12/10": [{ "key": "kokoro", "type": "hbd", "seiyuu": true }],
+  "15/09": [
+    {
+      "key": "tsukushi",
+      "type": "hbd"
+    }
+  ],
+  "18/09": [
+    {
+      "key": "maho",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Karin Kagami"
+    }
+  ],
+  "19/09": [
+    {
+      "key": "maho",
+      "type": "pre"
+    },
+    {
+      "key": "maho",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Karin Kagami"
+    }
+  ],
+  "20/09": [
+    {
+      "key": "maho",
+      "type": "hbd"
+    }
+  ],
+  "30/09": [
+    {
+      "key": "misaki",
+      "type": "pre"
+    }
+  ],
+  "01/10": [
+    {
+      "key": "misaki",
+      "type": "hbd"
+    }
+  ],
+  "08/10": [
+    {
+      "key": "noa",
+      "type": "pre"
+    }
+  ],
+  "09/10": [
+    {
+      "key": "tae",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Sae Otsuka"
+    },
+    {
+      "key": "noa",
+      "type": "hbd"
+    }
+  ],
+  "10/10": [
+    {
+      "key": "tae",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Sae Otsuka"
+    }
+  ],
+  "11/10": [
+    {
+      "key": "kokoro",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Miku Itou"
+    }
+  ],
+  "12/10": [
+    {
+      "key": "kokoro",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Miku Itou"
+    }
+  ],
   "16/10": [
-    { "key": "yukina", "type": "pre", "seiyuu": true },
-    { "key": "rinko", "type": "pre" }
+    {
+      "key": "yukina",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Aina Aiba"
+    }
   ],
   "17/10": [
-    { "key": "yukina", "type": "hbd", "seiyuu": true },
-    { "key": "rinko", "type": "hbd" }
+    {
+      "key": "yukina",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Aina Aiba"
+    }
   ],
-  "18/10": [{ "key": "rui", "type": "pre", "seiyuu": true }],
-  "19/10": [{ "key": "rui", "type": "hbd", "seiyuu": true }],
-  "22/10": [{ "key": "himari", "type": "pre" }],
+  "18/10": [
+    {
+      "key": "rui",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Ayasa"
+    }
+  ],
+  "19/10": [
+    {
+      "key": "rui",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Ayasa"
+    }
+  ],
+  "22/10": [
+    {
+      "key": "himari",
+      "type": "pre"
+    }
+  ],
   "23/10": [
-    { "key": "himari", "type": "hbd" },
-    { "key": "ako", "type": "pre", "seiyuu": true }
+    {
+      "key": "himari",
+      "type": "hbd"
+    },
+    {
+      "key": "ako",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Megu Sakuragawa"
+    }
   ],
   "24/10": [
-    { "key": "rimi", "type": "pre", "seiyuu": true },
-    { "key": "ako", "type": "hbd", "seiyuu": true }
+    {
+      "key": "rimi",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Rimi Nishimoto"
+    },
+    {
+      "key": "ako",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Megu Sakuragawa"
+    }
   ],
   "25/10": [
-    { "key": "rimi", "type": "hbd", "seiyuu": true },
-    { "key": "yukina", "type": "pre" }
+    {
+      "key": "rimi",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Rimi Nishimoto"
+    },
+    {
+      "key": "yukina",
+      "type": "pre"
+    }
   ],
   "26/10": [
-    { "key": "arisa", "type": "pre" },
-    { "key": "yukina", "type": "hbd" }
+    {
+      "key": "arisa",
+      "type": "pre"
+    },
+    {
+      "key": "yukina",
+      "type": "hbd"
+    },
+    {
+      "key": "muni",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Haruka Mimura"
+    }
   ],
-  "27/10": [{ "key": "arisa", "type": "hbd" }],
-  "02/11": [{ "key": "maya", "type": "pre" }],
-  "03/11": [{ "key": "maya", "type": "hbd" }],
-  "09/11": [{ "key": "kaoru", "type": "pre", "seiyuu": true }],
-  "10/11": [{ "key": "kaoru", "type": "hbd", "seiyuu": true }],
+  "27/10": [
+    {
+      "key": "arisa",
+      "type": "hbd"
+    },
+    {
+      "key": "muni",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Haruka Mimura"
+    }
+  ],
+  "29/10": [
+    {
+      "key": "rei",
+      "type": "pre"
+    }
+  ],
+  "30/10": [
+    {
+      "key": "rei",
+      "type": "hbd"
+    }
+  ],
+  "02/11": [
+    {
+      "key": "maya",
+      "type": "pre"
+    }
+  ],
+  "03/11": [
+    {
+      "key": "maya",
+      "type": "hbd"
+    }
+  ],
+  "09/11": [
+    {
+      "key": "kaoru",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Azusa Tadokoro"
+    }
+  ],
+  "10/11": [
+    {
+      "key": "kaoru",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Azusa Tadokoro"
+    }
+  ],
+  "11/11": [
+    {
+      "key": "kurumi",
+      "type": "pre",
+      "NO_IMAGE": true
+    }
+  ],
+  "12/11": [
+    {
+      "key": "kurumi",
+      "type": "hbd",
+      "NO_IMAGE": true
+    }
+  ],
   "18/11": [
-    { "key": "rui", "type": "pre" },
-    { "key": "satomi", "type": "pre", "seiyuu": true }
+    {
+      "key": "rui",
+      "type": "pre"
+    },
+    {
+      "key": "satomi",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Saki Minami"
+    }
   ],
   "19/11": [
-    { "key": "rui", "type": "hbd" },
-    { "key": "satomi", "type": "hbd", "seiyuu": true }
+    {
+      "key": "rui",
+      "type": "hbd"
+    },
+    {
+      "key": "satomi",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Saki Minami"
+    }
   ],
-  "21/11": [{ "key": "aya", "type": "pre", "seiyuu": true }],
-  "22/11": [{ "key": "aya", "type": "hbd", "seiyuu": true }],
-  "25/11": [{ "key": "himari", "type": "pre", "seiyuu": true }],
+  "21/11": [
+    {
+      "key": "aya",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Ami Maeshima"
+    }
+  ],
+  "22/11": [
+    {
+      "key": "aya",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Ami Maeshima"
+    }
+  ],
+  "25/11": [
+    {
+      "key": "himari",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Emiri Katou"
+    }
+  ],
   "26/11": [
-    { "key": "himari", "type": "hbd", "seiyuu": true },
-    { "key": "rii", "type": "pre", "seiyuu": true }
+    {
+      "key": "himari",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Emiri Katou"
+    },
+    {
+      "key": "rii",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Izumi Kitta"
+    },
+    {
+      "key": "saori",
+      "type": "pre",
+      "NO_IMAGE": true
+    }
   ],
-  "27/11": [{ "key": "rii", "type": "hbd", "seiyuu": true }],
-  "03/12": [{ "key": "tae", "type": "pre" }],
-  "04/12": [{ "key": "tae", "type": "hbd" }],
-  "06/12": [{ "key": "chiyu", "type": "pre" }],
-  "07/12": [{ "key": "chiyu", "type": "hbd" }],
+  "27/11": [
+    {
+      "key": "rii",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Izumi Kitta"
+    },
+    {
+      "key": "saori",
+      "type": "hbd",
+      "NO_IMAGE": true
+    }
+  ],
+  "03/12": [
+    {
+      "key": "tae",
+      "type": "pre"
+    }
+  ],
+  "04/12": [
+    {
+      "key": "tae",
+      "type": "hbd"
+    },
+    {
+      "key": "yuka jennifer",
+      "type": "pre"
+    }
+  ],
+  "05/12": [
+    {
+      "key": "yuka jennifer",
+      "type": "hbd"
+    }
+  ],
+  "06/12": [
+    {
+      "key": "chiyu",
+      "type": "pre"
+    }
+  ],
+  "07/12": [
+    {
+      "key": "chiyu",
+      "type": "hbd"
+    }
+  ],
+  "13/12": [
+    {
+      "key": "miyu",
+      "type": "pre",
+      "NO_IMAGE": true
+    }
+  ],
+  "14/12": [
+    {
+      "key": "miyu",
+      "type": "hbd",
+      "NO_IMAGE": true
+    }
+  ],
   "15/12": [
-    { "key": "tsugumi", "type": "pre", "seiyuu": true },
-    { "key": "touko", "type": "pre" }
+    {
+      "key": "tsugumi",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Hisako Kanemoto"
+    },
+    {
+      "key": "touko",
+      "type": "pre"
+    }
   ],
   "16/12": [
-    { "key": "tsugumi", "type": "hbd", "seiyuu": true },
-    { "key": "touko", "type": "hbd" },
-    { "key": "fumika", "type": "pre", "seiyuu": true }
+    {
+      "key": "tsugumi",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Hisako Kanemoto"
+    },
+    {
+      "key": "touko",
+      "type": "hbd"
+    },
+    {
+      "key": "fumika",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Madoka Asahina"
+    }
   ],
-  "17/12": [{ "key": "fumika", "type": "hbd", "seiyuu": true }],
-  "18/12": [{ "key": "chisato", "type": "pre", "seiyuu": true }],
-  "19/12": [{ "key": "chisato", "type": "hbd", "seiyuu": true }],
+  "17/12": [
+    {
+      "key": "fumika",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Madoka Asahina"
+    }
+  ],
+  "18/12": [
+    {
+      "key": "chisato",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Sumire Uesaka"
+    }
+  ],
+  "19/12": [
+    {
+      "key": "chisato",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Sumire Uesaka"
+    }
+  ],
+  "22/12": [
+    {
+      "key": "noa",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Hinata Satou"
+    }
+  ],
+  "23/12": [
+    {
+      "key": "noa",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Hinata Satou"
+    }
+  ],
   "24/12": [
-    { "key": "kasumi", "type": "pre", "seiyuu": true },
-    { "key": "marina", "type": "pre", "seiyuu": true }
+    {
+      "key": "kasumi",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Aimi Terakawa"
+    },
+    {
+      "key": "marina",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Aya Suzaki"
+    }
   ],
   "25/12": [
-    { "key": "kasumi", "type": "hbd", "seiyuu": true },
-    { "key": "hinako", "type": "pre", "seiyuu": true },
-    { "key": "marina", "type": "hbd", "seiyuu": true }
+    {
+      "key": "kasumi",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Aimi Terakawa"
+    },
+    {
+      "key": "hinako",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Sora Tokui"
+    },
+    {
+      "key": "marina",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Aya Suzaki"
+    }
   ],
   "26/12": [
-    { "key": "aya", "type": "pre" },
-    { "key": "hinako", "type": "hbd", "seiyuu": true }
+    {
+      "key": "aya",
+      "type": "pre"
+    },
+    {
+      "key": "hinako",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Sora Tokui"
+    }
   ],
-  "27/12": [{ "key": "aya", "type": "hbd" }]
+  "27/12": [
+    {
+      "key": "aya",
+      "type": "hbd"
+    }
+  ]
 }

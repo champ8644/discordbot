@@ -1,5 +1,7 @@
+const { format, isValid, parse, subDays } = require("date-fns");
+const fs = require("fs");
+
 const db = require("./BanGDreamChars.json");
-const { parse, isValid, format, subDays } = require("date-fns");
 
 function decon(string) {
   const day = Number(string.slice(0, 2));
@@ -22,6 +24,10 @@ function main() {
       birthday_month,
       s_birthday_day,
       s_birthday_month,
+      s_surname,
+      s_name,
+      s_image,
+      image,
     } = row;
     if (!graduated) {
       const date = parse(
@@ -34,8 +40,16 @@ function main() {
         const prevText = format(subDays(date, 1), "dd/MM");
         if (!output[prevText]) output[prevText] = [];
         if (!output[text]) output[text] = [];
-        output[prevText].push({ key, type: "pre" });
-        output[text].push({ key, type: "hbd" });
+        output[prevText].push({
+          key,
+          type: "pre",
+          ...(image ? {} : { NO_IMAGE: true }),
+        });
+        output[text].push({
+          key,
+          type: "hbd",
+          ...(image ? {} : { NO_IMAGE: true }),
+        });
       }
     }
     const s_date = parse(
@@ -48,8 +62,27 @@ function main() {
       const prevText = format(subDays(s_date, 1), "dd/MM");
       if (!output[prevText]) output[prevText] = [];
       if (!output[text]) output[text] = [];
-      output[prevText].push({ key, type: "pre", seiyuu: true });
-      output[text].push({ key, type: "hbd", seiyuu: true });
+      const seiyuuName = [s_name, s_surname].filter((x) => x).join(" ");
+      let validSeiyuu = true;
+      output[prevText].forEach((item) => {
+        if (seiyuuName === item.seiyuuName) validSeiyuu = false;
+      });
+      if (validSeiyuu) {
+        output[prevText].push({
+          key,
+          type: "pre",
+          seiyuu: true,
+          seiyuuName,
+          ...(s_image ? {} : { NO_IMAGE: true }),
+        });
+        output[text].push({
+          key,
+          type: "hbd",
+          seiyuu: true,
+          seiyuuName,
+          ...(s_image ? {} : { NO_IMAGE: true }),
+        });
+      }
     }
   });
   const keys = Object.keys(output).sort(compareObj);
@@ -57,6 +90,10 @@ function main() {
   keys.forEach((key) => {
     output2[key] = output[key];
   });
+  fs.writeFileSync(
+    "character/birthdayList.json",
+    JSON.stringify(output2, null, 2)
+  );
 }
 
 main();
