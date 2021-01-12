@@ -1,7 +1,7 @@
 {
   "01/01": [
     {
-      "key": "rinko",
+      "key": "Rinko Shirokane",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Satomi Akesaka"
@@ -9,7 +9,7 @@
   ],
   "02/01": [
     {
-      "key": "rinko",
+      "key": "Rinko Shirokane",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Satomi Akesaka"
@@ -17,29 +17,29 @@
   ],
   "06/01": [
     {
-      "key": "tsugumi",
+      "key": "Tsugumi Hazawa",
       "type": "pre"
     },
     {
-      "key": "tsubaki",
+      "key": "Tsubaki Aoyagi",
       "type": "pre",
       "NO_IMAGE": true
     }
   ],
   "07/01": [
     {
-      "key": "tsugumi",
+      "key": "Tsugumi Hazawa",
       "type": "hbd"
     },
     {
-      "key": "tsubaki",
+      "key": "Tsubaki Aoyagi",
       "type": "hbd",
       "NO_IMAGE": true
     }
   ],
   "09/01": [
     {
-      "key": "natsuki",
+      "key": "Natsuki Umino",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Misato Fukuen"
@@ -47,7 +47,7 @@
   ],
   "10/01": [
     {
-      "key": "natsuki",
+      "key": "Natsuki Umino",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Misato Fukuen"
@@ -55,13 +55,17 @@
   ],
   "12/01": [
     {
-      "key": "moca",
+      "key": "Moca Aoba",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Sachika Misawa"
     },
     {
-      "key": "shano",
+      "key": "Rei Wakana",
+      "type": "pre"
+    },
+    {
+      "key": "Rei Wakana",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Raychell"
@@ -69,13 +73,17 @@
   ],
   "13/01": [
     {
-      "key": "moca",
+      "key": "Moca Aoba",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Sachika Misawa"
     },
     {
-      "key": "shano",
+      "key": "Rei Wakana",
+      "type": "hbd"
+    },
+    {
+      "key": "Rei Wakana",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Raychell"
@@ -83,7 +91,7 @@
   ],
   "28/01": [
     {
-      "key": "ran",
+      "key": "Ran Mitake",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Ayane Sakura"
@@ -91,25 +99,25 @@
   ],
   "29/01": [
     {
-      "key": "ran",
+      "key": "Ran Mitake",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Ayane Sakura"
     },
     {
-      "key": "towa",
+      "key": "Towa Hanamaki",
       "type": "pre"
     }
   ],
   "30/01": [
     {
-      "key": "towa",
+      "key": "Towa Hanamaki",
       "type": "hbd"
     }
   ],
   "02/02": [
     {
-      "key": "rokka",
+      "key": "Rokka Asahi",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Riko Kohara"
@@ -117,37 +125,37 @@
   ],
   "03/02": [
     {
-      "key": "rokka",
+      "key": "Rokka Asahi",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Riko Kohara"
     },
     {
-      "key": "mayu",
+      "key": "Mayu Kawabata",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Rina Honnizumi"
     },
     {
-      "key": "shinobu",
+      "key": "Shinobu Inuyose",
       "type": "pre"
     }
   ],
   "04/02": [
     {
-      "key": "mayu",
+      "key": "Mayu Kawabata",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Rina Honnizumi"
     },
     {
-      "key": "shinobu",
+      "key": "Shinobu Inuyose",
       "type": "hbd"
     }
   ],
   "07/02": [
     {
-      "key": "rei",
+      "key": "Rei Togetsu",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Kanon Shizaki"
@@ -155,7 +163,7 @@
   ],
   "08/02": [
     {
-      "key": "rei",
+      "key": "Rei Togetsu",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Kanon Shizaki"
@@ -163,33 +171,33 @@
   ],
   "18/02": [
     {
-      "key": "mashiro",
+      "key": "Mashiro Kurata",
       "type": "pre"
     }
   ],
   "19/02": [
     {
-      "key": "mashiro",
+      "key": "Mashiro Kurata",
       "type": "hbd"
     }
   ],
   "21/02": [
     {
-      "key": "miiko",
+      "key": "Miiko Takeshita",
       "type": "pre",
       "NO_IMAGE": true
     }
   ],
   "22/02": [
     {
-      "key": "miiko",
+      "key": "Miiko Takeshita",
       "type": "hbd",
       "NO_IMAGE": true
     }
   ],
   "26/02": [
     {
-      "key": "yuka jennifer",
+      "key": "Yuka Jennifer Sasago",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Moeka Koizumi"
@@ -197,11 +205,11 @@
   ],
   "27/02": [
     {
-      "key": "kaoru",
+      "key": "Kaoru Seta",
       "type": "pre"
     },
     {
-      "key": "yuka jennifer",
+      "key": "Yuka Jennifer Sasago",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Moeka Koizumi"
@@ -209,25 +217,25 @@
   ],
   "28/02": [
     {
-      "key": "kaoru",
+      "key": "Kaoru Seta",
       "type": "hbd"
     }
   ],
   "02/03": [
     {
-      "key": "muni",
+      "key": "Muni Ohnaruto",
       "type": "pre"
     }
   ],
   "03/03": [
     {
-      "key": "muni",
+      "key": "Muni Ohnaruto",
       "type": "hbd"
     }
   ],
   "04/03": [
     {
-      "key": "yoshiko",
+      "key": "Yoshiko Nono",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Hikaru Tono"
@@ -235,7 +243,7 @@
   ],
   "05/03": [
     {
-      "key": "yoshiko",
+      "key": "Yoshiko Nono",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Hikaru Tono"
@@ -243,7 +251,7 @@
   ],
   "14/03": [
     {
-      "key": "kanon",
+      "key": "Kanon Matsubara",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Moe Toyota"
@@ -251,13 +259,13 @@
   ],
   "15/03": [
     {
-      "key": "sayo",
+      "key": "Sayo Hikawa",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Haruka Kudou"
     },
     {
-      "key": "kanon",
+      "key": "Kanon Matsubara",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Moe Toyota"
@@ -265,7 +273,7 @@
   ],
   "16/03": [
     {
-      "key": "sayo",
+      "key": "Sayo Hikawa",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Haruka Kudou"
@@ -273,61 +281,61 @@
   ],
   "19/03": [
     {
-      "key": "hina",
+      "key": "Hina Hikawa",
       "type": "pre"
     },
     {
-      "key": "sayo",
+      "key": "Sayo Hikawa",
       "type": "pre"
     }
   ],
   "20/03": [
     {
-      "key": "hina",
+      "key": "Hina Hikawa",
       "type": "hbd"
     },
     {
-      "key": "sayo",
+      "key": "Sayo Hikawa",
       "type": "hbd"
     }
   ],
   "22/03": [
     {
-      "key": "rimi",
+      "key": "Rimi Ushigome",
       "type": "pre"
     },
     {
-      "key": "hiiro",
+      "key": "Hiiro Yano",
       "type": "pre",
       "NO_IMAGE": true
     }
   ],
   "23/03": [
     {
-      "key": "rimi",
+      "key": "Rimi Ushigome",
       "type": "hbd"
     },
     {
-      "key": "hiiro",
+      "key": "Hiiro Yano",
       "type": "hbd",
       "NO_IMAGE": true
     }
   ],
   "24/03": [
     {
-      "key": "reona",
+      "key": "Reona Nyuubara",
       "type": "pre"
     }
   ],
   "25/03": [
     {
-      "key": "reona",
+      "key": "Reona Nyuubara",
       "type": "hbd"
     }
   ],
   "29/03": [
     {
-      "key": "nanana",
+      "key": "Nanana Wanibe",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Mikoi Sasaki"
@@ -335,13 +343,13 @@
   ],
   "30/03": [
     {
-      "key": "nanami",
+      "key": "Nanami Hiromachi",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Yuka Nishio"
     },
     {
-      "key": "nanana",
+      "key": "Nanana Wanibe",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Mikoi Sasaki"
@@ -349,7 +357,7 @@
   ],
   "31/03": [
     {
-      "key": "nanami",
+      "key": "Nanami Hiromachi",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Yuka Nishio"
@@ -357,7 +365,7 @@
   ],
   "02/04": [
     {
-      "key": "towa",
+      "key": "Towa Hanamaki",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Haruki Iwata"
@@ -365,7 +373,7 @@
   ],
   "03/04": [
     {
-      "key": "towa",
+      "key": "Towa Hanamaki",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Haruki Iwata"
@@ -373,63 +381,63 @@
   ],
   "05/04": [
     {
-      "key": "chisato",
+      "key": "Chisato Shirasagi",
       "type": "pre"
     }
   ],
   "06/04": [
     {
-      "key": "chisato",
+      "key": "Chisato Shirasagi",
       "type": "hbd"
     }
   ],
   "09/04": [
     {
-      "key": "ran",
+      "key": "Ran Mitake",
       "type": "pre"
     },
     {
-      "key": "misaki",
+      "key": "Misaki Okusawa",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Tomoyo Kurosawa"
     },
     {
-      "key": "ibuki",
+      "key": "Ibuki Niijima",
       "type": "pre"
     }
   ],
   "10/04": [
     {
-      "key": "ran",
+      "key": "Ran Mitake",
       "type": "hbd"
     },
     {
-      "key": "misaki",
+      "key": "Misaki Okusawa",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Tomoyo Kurosawa"
     },
     {
-      "key": "ibuki",
+      "key": "Ibuki Niijima",
       "type": "hbd"
     }
   ],
   "14/04": [
     {
-      "key": "tomoe",
+      "key": "Tomoe Udagawa",
       "type": "pre"
     }
   ],
   "15/04": [
     {
-      "key": "tomoe",
+      "key": "Tomoe Udagawa",
       "type": "hbd"
     }
   ],
   "16/04": [
     {
-      "key": "touko",
+      "key": "Touko Kirigaya",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Hina Suguta"
@@ -437,7 +445,7 @@
   ],
   "17/04": [
     {
-      "key": "touko",
+      "key": "Touko Kirigaya",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Hina Suguta"
@@ -445,7 +453,7 @@
   ],
   "19/04": [
     {
-      "key": "mashiro",
+      "key": "Mashiro Kurata",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Amane Shindo"
@@ -453,7 +461,7 @@
   ],
   "20/04": [
     {
-      "key": "mashiro",
+      "key": "Mashiro Kurata",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Amane Shindo"
@@ -461,55 +469,55 @@
   ],
   "26/04": [
     {
-      "key": "kyoko",
+      "key": "Kyoko Yamate",
       "type": "pre"
     }
   ],
   "27/04": [
     {
-      "key": "kyoko",
+      "key": "Kyoko Yamate",
       "type": "hbd"
     }
   ],
   "09/05": [
     {
-      "key": "saki",
+      "key": "Saki Izumo",
       "type": "pre"
     }
   ],
   "10/05": [
     {
-      "key": "kanon",
+      "key": "Kanon Matsubara",
       "type": "pre"
     },
     {
-      "key": "saki",
+      "key": "Saki Izumo",
       "type": "hbd"
     }
   ],
   "11/05": [
     {
-      "key": "kanon",
+      "key": "Kanon Matsubara",
       "type": "hbd"
     },
     {
-      "key": "masuki",
+      "key": "Masuki Satou",
       "type": "pre"
     }
   ],
   "12/05": [
     {
-      "key": "masuki",
+      "key": "Masuki Satou",
       "type": "hbd"
     }
   ],
   "14/05": [
     {
-      "key": "asuka",
+      "key": "Asuka Toyama",
       "type": "pre"
     },
     {
-      "key": "asuka",
+      "key": "Asuka Toyama",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Yuka Ozaki"
@@ -517,11 +525,11 @@
   ],
   "15/05": [
     {
-      "key": "asuka",
+      "key": "Asuka Toyama",
       "type": "hbd"
     },
     {
-      "key": "asuka",
+      "key": "Asuka Toyama",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Yuka Ozaki"
@@ -529,19 +537,19 @@
   ],
   "18/05": [
     {
-      "key": "saaya",
+      "key": "Saaya Yamabuki",
       "type": "pre"
     }
   ],
   "19/05": [
     {
-      "key": "saaya",
+      "key": "Saaya Yamabuki",
       "type": "hbd"
     }
   ],
   "21/05": [
     {
-      "key": "reona",
+      "key": "Reona Nyuubara",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Reo Kurachi"
@@ -549,7 +557,7 @@
   ],
   "22/05": [
     {
-      "key": "reona",
+      "key": "Reona Nyuubara",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Reo Kurachi"
@@ -557,47 +565,47 @@
   ],
   "24/05": [
     {
-      "key": "haruna",
+      "key": "Haruna Kasuga",
       "type": "pre",
       "NO_IMAGE": true
     }
   ],
   "25/05": [
     {
-      "key": "haruna",
+      "key": "Haruna Kasuga",
       "type": "hbd",
       "NO_IMAGE": true
     }
   ],
   "31/05": [
     {
-      "key": "dalia",
+      "key": "Dalia Matsuyama",
       "type": "pre",
       "NO_IMAGE": true
     }
   ],
   "01/06": [
     {
-      "key": "dalia",
+      "key": "Dalia Matsuyama",
       "type": "hbd",
       "NO_IMAGE": true
     }
   ],
   "15/06": [
     {
-      "key": "nanami",
+      "key": "Nanami Hiromachi",
       "type": "pre"
     }
   ],
   "16/06": [
     {
-      "key": "nanami",
+      "key": "Nanami Hiromachi",
       "type": "hbd"
     }
   ],
   "17/06": [
     {
-      "key": "maya",
+      "key": "Maya Yamato",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Ikumi Nakagami"
@@ -605,7 +613,7 @@
   ],
   "18/06": [
     {
-      "key": "maya",
+      "key": "Maya Yamato",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Ikumi Nakagami"
@@ -613,13 +621,13 @@
   ],
   "23/06": [
     {
-      "key": "lisa",
+      "key": "Lisa Imai",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Yurika Endou"
     },
     {
-      "key": "tsukushi",
+      "key": "Tsukushi Futaba",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Mika"
@@ -627,13 +635,13 @@
   ],
   "24/06": [
     {
-      "key": "lisa",
+      "key": "Lisa Imai",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Yurika Endou"
     },
     {
-      "key": "tsukushi",
+      "key": "Tsukushi Futaba",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Mika"
@@ -641,17 +649,17 @@
   ],
   "26/06": [
     {
-      "key": "eve",
+      "key": "Eve Wakamiya",
       "type": "pre"
     }
   ],
   "27/06": [
     {
-      "key": "eve",
+      "key": "Eve Wakamiya",
       "type": "hbd"
     },
     {
-      "key": "yuri",
+      "key": "Yuri Ushigome",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Suzuko Mimori"
@@ -659,7 +667,7 @@
   ],
   "28/06": [
     {
-      "key": "yuri",
+      "key": "Yuri Ushigome",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Suzuko Mimori"
@@ -667,31 +675,31 @@
   ],
   "29/06": [
     {
-      "key": "rinku",
+      "key": "Rinku Aimoto",
       "type": "pre"
     }
   ],
   "30/06": [
     {
-      "key": "rinku",
+      "key": "Rinku Aimoto",
       "type": "hbd"
     }
   ],
   "02/07": [
     {
-      "key": "ako",
+      "key": "Ako Udagawa",
       "type": "pre"
     }
   ],
   "03/07": [
     {
-      "key": "ako",
+      "key": "Ako Udagawa",
       "type": "hbd"
     }
   ],
   "04/07": [
     {
-      "key": "chiyu",
+      "key": "Chiyu Tamade",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Risa Tsumugi"
@@ -699,7 +707,7 @@
   ],
   "05/07": [
     {
-      "key": "chiyu",
+      "key": "Chiyu Tamade",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Risa Tsumugi"
@@ -707,33 +715,33 @@
   ],
   "06/07": [
     {
-      "key": "aoi",
+      "key": "Aoi Miyake",
       "type": "pre",
       "NO_IMAGE": true
     }
   ],
   "07/07": [
     {
-      "key": "aoi",
+      "key": "Aoi Miyake",
       "type": "hbd",
       "NO_IMAGE": true
     }
   ],
   "13/07": [
     {
-      "key": "kasumi",
+      "key": "Kasumi Toyama",
       "type": "pre"
     }
   ],
   "14/07": [
     {
-      "key": "kasumi",
+      "key": "Kasumi Toyama",
       "type": "hbd"
     }
   ],
   "15/07": [
     {
-      "key": "tomoe",
+      "key": "Tomoe Udagawa",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Youko Hikasa"
@@ -741,25 +749,25 @@
   ],
   "16/07": [
     {
-      "key": "tomoe",
+      "key": "Tomoe Udagawa",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Youko Hikasa"
     },
     {
-      "key": "rokka",
+      "key": "Rokka Asahi",
       "type": "pre"
     }
   ],
   "17/07": [
     {
-      "key": "rokka",
+      "key": "Rokka Asahi",
       "type": "hbd"
     }
   ],
   "19/07": [
     {
-      "key": "masuki",
+      "key": "Masuki Satou",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Natsume"
@@ -767,7 +775,7 @@
   ],
   "20/07": [
     {
-      "key": "masuki",
+      "key": "Masuki Satou",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Natsume"
@@ -775,41 +783,41 @@
   ],
   "29/07": [
     {
-      "key": "hagumi",
+      "key": "Hagumi Kitazawa",
       "type": "pre"
     },
     {
-      "key": "marika",
+      "key": "Marika Mizushima",
       "type": "pre",
       "NO_IMAGE": true
     }
   ],
   "30/07": [
     {
-      "key": "hagumi",
+      "key": "Hagumi Kitazawa",
       "type": "hbd"
     },
     {
-      "key": "marika",
+      "key": "Marika Mizushima",
       "type": "hbd",
       "NO_IMAGE": true
     }
   ],
   "07/08": [
     {
-      "key": "kokoro",
+      "key": "Kokoro Tsurumaki",
       "type": "pre"
     }
   ],
   "08/08": [
     {
-      "key": "kokoro",
+      "key": "Kokoro Tsurumaki",
       "type": "hbd"
     }
   ],
   "09/08": [
     {
-      "key": "hina",
+      "key": "Hina Hikawa",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Ari Ozawa"
@@ -817,7 +825,7 @@
   ],
   "10/08": [
     {
-      "key": "hina",
+      "key": "Hina Hikawa",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Ari Ozawa"
@@ -825,21 +833,21 @@
   ],
   "14/08": [
     {
-      "key": "nagisa",
+      "key": "Nagisa Tsukimiyama",
       "type": "pre",
       "NO_IMAGE": true
     }
   ],
   "15/08": [
     {
-      "key": "nagisa",
+      "key": "Nagisa Tsukimiyama",
       "type": "hbd",
       "NO_IMAGE": true
     }
   ],
   "16/08": [
     {
-      "key": "arisa",
+      "key": "Arisa Ichigaya",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Ayasa Itou"
@@ -847,13 +855,13 @@
   ],
   "17/08": [
     {
-      "key": "arisa",
+      "key": "Arisa Ichigaya",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Ayasa Itou"
     },
     {
-      "key": "hagumi",
+      "key": "Hagumi Kitazawa",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Yuuri Yoshida"
@@ -861,7 +869,7 @@
   ],
   "18/08": [
     {
-      "key": "hagumi",
+      "key": "Hagumi Kitazawa",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Yuuri Yoshida"
@@ -869,31 +877,31 @@
   ],
   "29/08": [
     {
-      "key": "rika",
+      "key": "Rika Seto",
       "type": "pre"
     }
   ],
   "30/08": [
     {
-      "key": "rika",
+      "key": "Rika Seto",
       "type": "hbd"
     }
   ],
   "02/09": [
     {
-      "key": "moca",
+      "key": "Moca Aoba",
       "type": "pre"
     }
   ],
   "03/09": [
     {
-      "key": "moca",
+      "key": "Moca Aoba",
       "type": "hbd"
     }
   ],
   "07/09": [
     {
-      "key": "shinobu",
+      "key": "Shinobu Inuyose",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Miyu Takagi"
@@ -901,25 +909,25 @@
   ],
   "08/09": [
     {
-      "key": "shinobu",
+      "key": "Shinobu Inuyose",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Miyu Takagi"
     },
     {
-      "key": "esora",
+      "key": "Esora Shimizu",
       "type": "pre"
     }
   ],
   "09/09": [
     {
-      "key": "esora",
+      "key": "Esora Shimizu",
       "type": "hbd"
     }
   ],
   "12/09": [
     {
-      "key": "saaya",
+      "key": "Saaya Yamabuki",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Ayaka Ohashi"
@@ -927,13 +935,13 @@
   ],
   "13/09": [
     {
-      "key": "saaya",
+      "key": "Saaya Yamabuki",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Ayaka Ohashi"
     },
     {
-      "key": "eve",
+      "key": "Eve Wakamiya",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Sawako Hata"
@@ -941,25 +949,25 @@
   ],
   "14/09": [
     {
-      "key": "eve",
+      "key": "Eve Wakamiya",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Sawako Hata"
     },
     {
-      "key": "tsukushi",
+      "key": "Tsukushi Futaba",
       "type": "pre"
     }
   ],
   "15/09": [
     {
-      "key": "tsukushi",
+      "key": "Tsukushi Futaba",
       "type": "hbd"
     }
   ],
   "18/09": [
     {
-      "key": "maho",
+      "key": "Maho Akashi",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Karin Kagami"
@@ -967,11 +975,11 @@
   ],
   "19/09": [
     {
-      "key": "maho",
+      "key": "Maho Akashi",
       "type": "pre"
     },
     {
-      "key": "maho",
+      "key": "Maho Akashi",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Karin Kagami"
@@ -979,43 +987,43 @@
   ],
   "20/09": [
     {
-      "key": "maho",
+      "key": "Maho Akashi",
       "type": "hbd"
     }
   ],
   "30/09": [
     {
-      "key": "misaki",
+      "key": "Misaki Okusawa",
       "type": "pre"
     }
   ],
   "01/10": [
     {
-      "key": "misaki",
+      "key": "Misaki Okusawa",
       "type": "hbd"
     }
   ],
   "08/10": [
     {
-      "key": "noa",
+      "key": "Noa Fukushima",
       "type": "pre"
     }
   ],
   "09/10": [
     {
-      "key": "tae",
+      "key": "Tae Hanazono",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Sae Otsuka"
     },
     {
-      "key": "noa",
+      "key": "Noa Fukushima",
       "type": "hbd"
     }
   ],
   "10/10": [
     {
-      "key": "tae",
+      "key": "Tae Hanazono",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Sae Otsuka"
@@ -1023,7 +1031,7 @@
   ],
   "11/10": [
     {
-      "key": "kokoro",
+      "key": "Kokoro Tsurumaki",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Miku Itou"
@@ -1031,7 +1039,7 @@
   ],
   "12/10": [
     {
-      "key": "kokoro",
+      "key": "Kokoro Tsurumaki",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Miku Itou"
@@ -1039,7 +1047,7 @@
   ],
   "16/10": [
     {
-      "key": "yukina",
+      "key": "Yukina Minato",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Aina Aiba"
@@ -1047,7 +1055,7 @@
   ],
   "17/10": [
     {
-      "key": "yukina",
+      "key": "Yukina Minato",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Aina Aiba"
@@ -1055,7 +1063,7 @@
   ],
   "18/10": [
     {
-      "key": "rui",
+      "key": "Rui Yashio",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Ayasa"
@@ -1063,7 +1071,7 @@
   ],
   "19/10": [
     {
-      "key": "rui",
+      "key": "Rui Yashio",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Ayasa"
@@ -1071,17 +1079,17 @@
   ],
   "22/10": [
     {
-      "key": "himari",
+      "key": "Himari Uehara",
       "type": "pre"
     }
   ],
   "23/10": [
     {
-      "key": "himari",
+      "key": "Himari Uehara",
       "type": "hbd"
     },
     {
-      "key": "ako",
+      "key": "Ako Udagawa",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Megu Sakuragawa"
@@ -1089,13 +1097,13 @@
   ],
   "24/10": [
     {
-      "key": "rimi",
+      "key": "Rimi Ushigome",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Rimi Nishimoto"
     },
     {
-      "key": "ako",
+      "key": "Ako Udagawa",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Megu Sakuragawa"
@@ -1103,27 +1111,27 @@
   ],
   "25/10": [
     {
-      "key": "rimi",
+      "key": "Rimi Ushigome",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Rimi Nishimoto"
     },
     {
-      "key": "yukina",
+      "key": "Yukina Minato",
       "type": "pre"
     }
   ],
   "26/10": [
     {
-      "key": "arisa",
+      "key": "Arisa Ichigaya",
       "type": "pre"
     },
     {
-      "key": "yukina",
+      "key": "Yukina Minato",
       "type": "hbd"
     },
     {
-      "key": "muni",
+      "key": "Muni Ohnaruto",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Haruka Mimura"
@@ -1131,11 +1139,11 @@
   ],
   "27/10": [
     {
-      "key": "arisa",
+      "key": "Arisa Ichigaya",
       "type": "hbd"
     },
     {
-      "key": "muni",
+      "key": "Muni Ohnaruto",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Haruka Mimura"
@@ -1143,31 +1151,31 @@
   ],
   "29/10": [
     {
-      "key": "rei",
+      "key": "Rei Togetsu",
       "type": "pre"
     }
   ],
   "30/10": [
     {
-      "key": "rei",
+      "key": "Rei Togetsu",
       "type": "hbd"
     }
   ],
   "02/11": [
     {
-      "key": "maya",
+      "key": "Maya Yamato",
       "type": "pre"
     }
   ],
   "03/11": [
     {
-      "key": "maya",
+      "key": "Maya Yamato",
       "type": "hbd"
     }
   ],
   "09/11": [
     {
-      "key": "kaoru",
+      "key": "Kaoru Seta",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Azusa Tadokoro"
@@ -1175,7 +1183,7 @@
   ],
   "10/11": [
     {
-      "key": "kaoru",
+      "key": "Kaoru Seta",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Azusa Tadokoro"
@@ -1183,25 +1191,25 @@
   ],
   "11/11": [
     {
-      "key": "kurumi",
+      "key": "Kurumi Shiratori",
       "type": "pre",
       "NO_IMAGE": true
     }
   ],
   "12/11": [
     {
-      "key": "kurumi",
+      "key": "Kurumi Shiratori",
       "type": "hbd",
       "NO_IMAGE": true
     }
   ],
   "18/11": [
     {
-      "key": "rui",
+      "key": "Rui Yashio",
       "type": "pre"
     },
     {
-      "key": "satomi",
+      "key": "Satomi Taiko",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Saki Minami"
@@ -1209,11 +1217,11 @@
   ],
   "19/11": [
     {
-      "key": "rui",
+      "key": "Rui Yashio",
       "type": "hbd"
     },
     {
-      "key": "satomi",
+      "key": "Satomi Taiko",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Saki Minami"
@@ -1221,7 +1229,7 @@
   ],
   "21/11": [
     {
-      "key": "aya",
+      "key": "Aya Maruyama",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Ami Maeshima"
@@ -1229,7 +1237,7 @@
   ],
   "22/11": [
     {
-      "key": "aya",
+      "key": "Aya Maruyama",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Ami Maeshima"
@@ -1237,7 +1245,7 @@
   ],
   "25/11": [
     {
-      "key": "himari",
+      "key": "Himari Uehara",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Emiri Katou"
@@ -1245,109 +1253,109 @@
   ],
   "26/11": [
     {
-      "key": "himari",
+      "key": "Himari Uehara",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Emiri Katou"
     },
     {
-      "key": "rii",
+      "key": "Rii Uzawa",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Izumi Kitta"
     },
     {
-      "key": "saori",
+      "key": "Saori Hidaka",
       "type": "pre",
       "NO_IMAGE": true
     }
   ],
   "27/11": [
     {
-      "key": "rii",
+      "key": "Rii Uzawa",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Izumi Kitta"
     },
     {
-      "key": "saori",
+      "key": "Saori Hidaka",
       "type": "hbd",
       "NO_IMAGE": true
     }
   ],
   "03/12": [
     {
-      "key": "tae",
+      "key": "Tae Hanazono",
       "type": "pre"
     }
   ],
   "04/12": [
     {
-      "key": "tae",
+      "key": "Tae Hanazono",
       "type": "hbd"
     },
     {
-      "key": "yuka jennifer",
+      "key": "Yuka Jennifer Sasago",
       "type": "pre"
     }
   ],
   "05/12": [
     {
-      "key": "yuka jennifer",
+      "key": "Yuka Jennifer Sasago",
       "type": "hbd"
     }
   ],
   "06/12": [
     {
-      "key": "chiyu",
+      "key": "Chiyu Tamade",
       "type": "pre"
     }
   ],
   "07/12": [
     {
-      "key": "chiyu",
+      "key": "Chiyu Tamade",
       "type": "hbd"
     }
   ],
   "13/12": [
     {
-      "key": "miyu",
+      "key": "Miyu Sakurada",
       "type": "pre",
       "NO_IMAGE": true
     }
   ],
   "14/12": [
     {
-      "key": "miyu",
+      "key": "Miyu Sakurada",
       "type": "hbd",
       "NO_IMAGE": true
     }
   ],
   "15/12": [
     {
-      "key": "tsugumi",
+      "key": "Tsugumi Hazawa",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Hisako Kanemoto"
     },
     {
-      "key": "touko",
+      "key": "Touko Kirigaya",
       "type": "pre"
     }
   ],
   "16/12": [
     {
-      "key": "tsugumi",
+      "key": "Tsugumi Hazawa",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Hisako Kanemoto"
     },
     {
-      "key": "touko",
+      "key": "Touko Kirigaya",
       "type": "hbd"
     },
     {
-      "key": "fumika",
+      "key": "Fumika Mori",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Madoka Asahina"
@@ -1355,7 +1363,7 @@
   ],
   "17/12": [
     {
-      "key": "fumika",
+      "key": "Fumika Mori",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Madoka Asahina"
@@ -1363,7 +1371,7 @@
   ],
   "18/12": [
     {
-      "key": "chisato",
+      "key": "Chisato Shirasagi",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Sumire Uesaka"
@@ -1371,7 +1379,7 @@
   ],
   "19/12": [
     {
-      "key": "chisato",
+      "key": "Chisato Shirasagi",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Sumire Uesaka"
@@ -1379,7 +1387,7 @@
   ],
   "22/12": [
     {
-      "key": "noa",
+      "key": "Noa Fukushima",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Hinata Satou"
@@ -1387,7 +1395,7 @@
   ],
   "23/12": [
     {
-      "key": "noa",
+      "key": "Noa Fukushima",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Hinata Satou"
@@ -1395,13 +1403,13 @@
   ],
   "24/12": [
     {
-      "key": "kasumi",
+      "key": "Kasumi Toyama",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Aimi Terakawa"
     },
     {
-      "key": "marina",
+      "key": "Marina Tsukishima",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Aya Suzaki"
@@ -1409,19 +1417,19 @@
   ],
   "25/12": [
     {
-      "key": "kasumi",
+      "key": "Kasumi Toyama",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Aimi Terakawa"
     },
     {
-      "key": "hinako",
+      "key": "Hinako Nijikki",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Sora Tokui"
     },
     {
-      "key": "marina",
+      "key": "Marina Tsukishima",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Aya Suzaki"
@@ -1429,11 +1437,11 @@
   ],
   "26/12": [
     {
-      "key": "aya",
+      "key": "Aya Maruyama",
       "type": "pre"
     },
     {
-      "key": "hinako",
+      "key": "Hinako Nijikki",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Sora Tokui"
@@ -1441,7 +1449,7 @@
   ],
   "27/12": [
     {
-      "key": "aya",
+      "key": "Aya Maruyama",
       "type": "hbd"
     }
   ]

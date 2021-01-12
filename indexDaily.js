@@ -27,6 +27,10 @@ bot.on("ready", async () => {
     todayEvents.forEach((event) => {
       generateReport(event, undefined, logReport);
     });
+    console.log(
+      "🚀 ~ file: indexDaily.js ~ line 28 ~ todayEvents.forEach ~ todayEvents",
+      todayEvents
+    );
 
     let eventText;
     if (logReport.length === 0) eventText = "no events.";

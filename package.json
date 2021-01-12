@@ -1,6 +1,6 @@
 {
   "name": "discordbot",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "dev": "node --trace-warnings indexDaily.js",
     "startDaily": "nodemon indexDaily.js",
     "testMsg": "nodemon testMsg.js",
-    "startgen": "nodemon character/generateBirthdayList.js"
+    "startgen": "node character/generateBirthdayList.js"
   },
   "author": "",
   "license": "ISC",
