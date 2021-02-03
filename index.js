@@ -57,7 +57,8 @@ bot.on("ready", async () => {
     await fetchRoom();
     await welcomeScreen(process.env.status);
     // postDiscord();
-    // cleanRoom(getChannelById("762691667559972884")); // ห้องคลีนtest
+    // cleanRoom(getChannelById("762021689092603914"));
+    // cleanRoom(getChannel("ห้องส่งงาน")); // ห้องคลีนtest
     // cleanRoom(getChannelById("761963411592446002")); // ห้องส่ง
     // const arr = await loopFetch();
     // const newTimerRoom = await bot.channels.cache.get("761898397451026452");

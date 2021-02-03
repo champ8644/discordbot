@@ -5,15 +5,17 @@ async function loopFetch(channel) {
   do {
     const messages = await channel.messages.fetch({ limit: 10, before });
     if (messages.size === 0) break;
-    await messages.forEach((message) => {
-      if (!done) {
-        if (message.reactions.cache.size > 0) {
-          done++;
-        } else {
-          arr.push(message);
-          before = message.id;
-        }
-      }
+    messages.forEach((message) => {
+      arr.push(message);
+      before = message.id;
+      // if (!done) {
+      //   if (message.reactions.cache.size > 0) {
+      //     done++;
+      //   } else {
+      //     arr.push(message);
+      //     before = message.id;
+      //   }
+      // }
     });
   } while (!done);
 
