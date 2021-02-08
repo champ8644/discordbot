@@ -49,6 +49,7 @@ bot.on("ready", async () => {
     logReport.forEach((embed) => {
       send("ห้องหุ่นมิเชล", { embed }, { API: true });
     });
+    bot.destroy();
   } catch (error) {
     onError(error);
   }
