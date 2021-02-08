@@ -27,6 +27,7 @@ bot.on("ready", async () => {
     todayEvents.forEach((event) => {
       generateReport(event, undefined, logReport);
     });
+    console.log("🚀 ~ Today is ", keyDate);
     console.log(
       "🚀 ~ file: indexDaily.js ~ line 28 ~ todayEvents.forEach ~ todayEvents",
       todayEvents
