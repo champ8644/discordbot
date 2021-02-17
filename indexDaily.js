@@ -37,7 +37,7 @@ bot.on("ready", async () => {
     if (logReport.length === 0) eventText = "no events.";
     else if (logReport.length === 1) eventText = "1 event.";
     else eventText = logReport.length + " events.";
-    send(
+    await send(
       "ห้องหุ่นมิเชล",
       `Today [${format(
         nowThailand,
@@ -46,9 +46,9 @@ bot.on("ready", async () => {
       { API: true }
     );
 
-    logReport.forEach((embed) => {
-      send("ห้องหุ่นมิเชล", { embed }, { API: true });
-    });
+    await Promise.all(
+      logReport.map((embed) => send("ห้องหุ่นมิเชล", { embed }, { API: true }))
+    );
     bot.destroy();
   } catch (error) {
     onError(error);
