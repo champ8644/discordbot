@@ -1,4 +1,4 @@
-import fs from 'fs';
+import * as fs from 'fs';
 
 import { openSingleBook } from './xlsx';
 
@@ -38,17 +38,15 @@ export type header = {
   graduated?: boolean;
 };
 
-export function main() {
-  const data = openSingleBook<header>("src/testCode/Bushitrod Data.xlsx");
+export default function main() {
+  const data = openSingleBook<header>("character/Bushitrod Data.xlsx");
   const output: Record<string, header> = {};
   data.forEach((row) => {
     output[[row.name, row.surname].filter((x) => x).join(" ")] = row;
   });
   fs.writeFileSync(
-    "src/testCode/BanGDreamChars.json",
+    "character/BanGDreamChars.json",
     JSON.stringify(output, null, 2)
   );
   console.log("finished");
 }
-
-main();

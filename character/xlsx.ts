@@ -1,4 +1,4 @@
-import XLSX from 'xlsx';
+import * as XLSX from 'xlsx';
 import XLSXStyle from 'xlsx-style';
 
 export function openBook<T extends boolean>(

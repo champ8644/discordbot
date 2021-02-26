@@ -1,6 +1,6 @@
 {
   "name": "discordbot",
-  "version": "1.10.2",
+  "version": "1.10.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "dev": "node --trace-warnings indexDaily.js",
     "startDaily": "nodemon indexDaily.js",
     "testMsg": "nodemon testMsg.js",
-    "startgen": "node character/generateBirthdayList.js"
+    "startgen": "ts-node character"
   },
   "author": "",
   "license": "ISC",
@@ -17,10 +17,12 @@
     "discord.js": "^12.3.1",
     "dotenv": "^8.2.0",
     "googleapis": "^61.0.0",
-    "pg": "^8.5.1"
+    "pg": "^8.5.1",
+    "fs": "^0.0.1-security"
   },
   "devDependencies": {
     "xlsx": "^0.16.9",
+    "@types/fs-extra": "^9.0.6",
     "xlsx-style": "^0.8.13"
   }
 }
