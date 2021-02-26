@@ -1,6 +1,6 @@
 {
   "name": "discordbot",
-  "version": "1.9.1",
+  "version": "1.10.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,9 @@
     "dotenv": "^8.2.0",
     "googleapis": "^61.0.0",
     "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "xlsx": "^0.16.9",
+    "xlsx-style": "^0.8.13"
   }
 }

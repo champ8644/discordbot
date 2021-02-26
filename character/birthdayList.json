@@ -22,8 +22,7 @@
     },
     {
       "key": "Tsubaki Aoyagi",
-      "type": "pre",
-      "NO_IMAGE": true
+      "type": "pre"
     }
   ],
   "07/01": [
@@ -33,8 +32,15 @@
     },
     {
       "key": "Tsubaki Aoyagi",
-      "type": "hbd",
-      "NO_IMAGE": true
+      "type": "hbd"
+    }
+  ],
+  "08/01": [
+    {
+      "key": "Aoi Miyake",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Tsunko"
     }
   ],
   "09/01": [
@@ -43,6 +49,12 @@
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Misato Fukuen"
+    },
+    {
+      "key": "Aoi Miyake",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Tsunko"
     }
   ],
   "10/01": [
@@ -169,10 +181,24 @@
       "seiyuuName": "Kanon Shizaki"
     }
   ],
+  "17/02": [
+    {
+      "key": "Miiko Takeshita",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Yuzuki Watase"
+    }
+  ],
   "18/02": [
     {
       "key": "Mashiro Kurata",
       "type": "pre"
+    },
+    {
+      "key": "Miiko Takeshita",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Yuzuki Watase"
     }
   ],
   "19/02": [
@@ -184,15 +210,13 @@
   "21/02": [
     {
       "key": "Miiko Takeshita",
-      "type": "pre",
-      "NO_IMAGE": true
+      "type": "pre"
     }
   ],
   "22/02": [
     {
       "key": "Miiko Takeshita",
-      "type": "hbd",
-      "NO_IMAGE": true
+      "type": "hbd"
     }
   ],
   "26/02": [
@@ -213,12 +237,24 @@
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Moeka Koizumi"
+    },
+    {
+      "key": "Miyu Sakurada",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Hazuki Tanda"
     }
   ],
   "28/02": [
     {
       "key": "Kaoru Seta",
       "type": "hbd"
+    },
+    {
+      "key": "Miyu Sakurada",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Hazuki Tanda"
     }
   ],
   "02/03": [
@@ -306,8 +342,7 @@
     },
     {
       "key": "Hiiro Yano",
-      "type": "pre",
-      "NO_IMAGE": true
+      "type": "pre"
     }
   ],
   "23/03": [
@@ -317,8 +352,7 @@
     },
     {
       "key": "Hiiro Yano",
-      "type": "hbd",
-      "NO_IMAGE": true
+      "type": "hbd"
     }
   ],
   "24/03": [
@@ -539,12 +573,24 @@
     {
       "key": "Saaya Yamabuki",
       "type": "pre"
+    },
+    {
+      "key": "Marika Mizushima",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Mei Okada"
     }
   ],
   "19/05": [
     {
       "key": "Saaya Yamabuki",
       "type": "hbd"
+    },
+    {
+      "key": "Marika Mizushima",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Mei Okada"
     }
   ],
   "21/05": [
@@ -566,29 +612,41 @@
   "24/05": [
     {
       "key": "Haruna Kasuga",
-      "type": "pre",
-      "NO_IMAGE": true
+      "type": "pre"
     }
   ],
   "25/05": [
     {
       "key": "Haruna Kasuga",
+      "type": "hbd"
+    }
+  ],
+  "27/05": [
+    {
+      "key": "Rika Seto",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Natsumi Hirajima"
+    }
+  ],
+  "28/05": [
+    {
+      "key": "Rika Seto",
       "type": "hbd",
-      "NO_IMAGE": true
+      "seiyuu": true,
+      "seiyuuName": "Natsumi Hirajima"
     }
   ],
   "31/05": [
     {
       "key": "Dalia Matsuyama",
-      "type": "pre",
-      "NO_IMAGE": true
+      "type": "pre"
     }
   ],
   "01/06": [
     {
       "key": "Dalia Matsuyama",
-      "type": "hbd",
-      "NO_IMAGE": true
+      "type": "hbd"
     }
   ],
   "15/06": [
@@ -716,15 +774,13 @@
   "06/07": [
     {
       "key": "Aoi Miyake",
-      "type": "pre",
-      "NO_IMAGE": true
+      "type": "pre"
     }
   ],
   "07/07": [
     {
       "key": "Aoi Miyake",
-      "type": "hbd",
-      "NO_IMAGE": true
+      "type": "hbd"
     }
   ],
   "13/07": [
@@ -788,8 +844,7 @@
     },
     {
       "key": "Marika Mizushima",
-      "type": "pre",
-      "NO_IMAGE": true
+      "type": "pre"
     }
   ],
   "30/07": [
@@ -799,8 +854,7 @@
     },
     {
       "key": "Marika Mizushima",
-      "type": "hbd",
-      "NO_IMAGE": true
+      "type": "hbd"
     }
   ],
   "07/08": [
@@ -834,15 +888,19 @@
   "14/08": [
     {
       "key": "Nagisa Tsukimiyama",
-      "type": "pre",
-      "NO_IMAGE": true
+      "type": "pre"
     }
   ],
   "15/08": [
     {
+      "key": "Saori Hidaka",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Himari Hazuki"
+    },
+    {
       "key": "Nagisa Tsukimiyama",
-      "type": "hbd",
-      "NO_IMAGE": true
+      "type": "hbd"
     }
   ],
   "16/08": [
@@ -851,6 +909,12 @@
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Ayasa Itou"
+    },
+    {
+      "key": "Saori Hidaka",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Himari Hazuki"
     }
   ],
   "17/08": [
@@ -897,6 +961,22 @@
     {
       "key": "Moca Aoba",
       "type": "hbd"
+    }
+  ],
+  "05/09": [
+    {
+      "key": "Kurumi Shiratori",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Ruka Fukagawa"
+    }
+  ],
+  "06/09": [
+    {
+      "key": "Kurumi Shiratori",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Ruka Fukagawa"
     }
   ],
   "07/09": [
@@ -991,6 +1071,22 @@
       "type": "hbd"
     }
   ],
+  "26/09": [
+    {
+      "key": "Dalia Matsuyama",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Ai Negishi"
+    }
+  ],
+  "27/09": [
+    {
+      "key": "Dalia Matsuyama",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Ai Negishi"
+    }
+  ],
   "30/09": [
     {
       "key": "Misaki Okusawa",
@@ -1001,6 +1097,22 @@
     {
       "key": "Misaki Okusawa",
       "type": "hbd"
+    }
+  ],
+  "02/10": [
+    {
+      "key": "Tsubaki Aoyagi",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Rihona Katou"
+    }
+  ],
+  "03/10": [
+    {
+      "key": "Tsubaki Aoyagi",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Rihona Katou"
     }
   ],
   "08/10": [
@@ -1192,15 +1304,13 @@
   "11/11": [
     {
       "key": "Kurumi Shiratori",
-      "type": "pre",
-      "NO_IMAGE": true
+      "type": "pre"
     }
   ],
   "12/11": [
     {
       "key": "Kurumi Shiratori",
-      "type": "hbd",
-      "NO_IMAGE": true
+      "type": "hbd"
     }
   ],
   "18/11": [
@@ -1243,12 +1353,26 @@
       "seiyuuName": "Ami Maeshima"
     }
   ],
+  "24/11": [
+    {
+      "key": "Hiiro Yano",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Haruna Momono"
+    }
+  ],
   "25/11": [
     {
       "key": "Himari Uehara",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Emiri Katou"
+    },
+    {
+      "key": "Hiiro Yano",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Haruna Momono"
     }
   ],
   "26/11": [
@@ -1266,8 +1390,7 @@
     },
     {
       "key": "Saori Hidaka",
-      "type": "pre",
-      "NO_IMAGE": true
+      "type": "pre"
     }
   ],
   "27/11": [
@@ -1279,8 +1402,7 @@
     },
     {
       "key": "Saori Hidaka",
-      "type": "hbd",
-      "NO_IMAGE": true
+      "type": "hbd"
     }
   ],
   "03/12": [
@@ -1320,15 +1442,13 @@
   "13/12": [
     {
       "key": "Miyu Sakurada",
-      "type": "pre",
-      "NO_IMAGE": true
+      "type": "pre"
     }
   ],
   "14/12": [
     {
       "key": "Miyu Sakurada",
-      "type": "hbd",
-      "NO_IMAGE": true
+      "type": "hbd"
     }
   ],
   "15/12": [
