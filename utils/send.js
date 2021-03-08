@@ -22,7 +22,7 @@ async function send(_channel, message, options = {}) {
         else messageSent.react(item._emoji.name);
       });
     }
-    if (shouldDelete) await message.delete();
+    if (shouldDelete && message.deletable) await message.delete();
     return messageSent;
   } catch (error) {
     console.error(error);
