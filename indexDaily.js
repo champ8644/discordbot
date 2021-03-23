@@ -40,9 +40,9 @@ bot.on("ready", async () => {
     await send(
       "ห้องหุ่นมิเชล",
       `Today [${format(
-        nowThailand,
+        nowJapan,
         "eee d MMMM yyyy, H:mm"
-      )}] has ${eventText}`,
+      )} GMT+9] has ${eventText}`,
       { API: true }
     );
 
