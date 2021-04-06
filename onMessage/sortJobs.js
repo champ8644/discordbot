@@ -3,6 +3,7 @@ const { getChannel } = require("../utils/getChannel");
 const { send } = require("../utils/send");
 
 const twitterRegex = new RegExp(/twitter\.com\/(.*)\/status\/(\d*)/);
+const pixivRegex = new RegExp(/pixiv\.net/);
 const oneDriveRegex = new RegExp(/payap-my\.sharepoint\.com/);
 const gDriveRegex = new RegExp(/drive\.google\.com/);
 
@@ -15,36 +16,58 @@ function parseLinkType(message) {
     const [, author, post] = twitParse;
     return { type: "twitter", parse: { author, post } };
   }
+  if (pixivRegex.test(message.content))
+    return { type: "pixiv", content: message.content };
   if (oneDriveRegex.test(message.content)) return { type: "oneDrive" };
   if (gDriveRegex.test(message.content)) return { type: "gDrive" };
   return { type: null };
 }
 
-async function checkAtChannel(parseLink, getChannel, shouldDelete) {
+function isSource(type) {
+  return type === "twitter" || type === "pixiv";
+}
+
+function isClean(type) {
+  return type === "oneDrive" || type === "gDrive" || type === "file";
+}
+
+async function checkAtChannel(sourceLink, getChannel, shouldDelete) {
+  console.log(
+    "🚀 ~ file: sortJobs.js ~ line 35 ~ checkAtChannel ~ sourceLink",
+    sourceLink
+  );
   try {
     const channel = await getChannel;
     const messages = await channel.messages.fetch();
     for (let value of messages.values()) {
       const twitParse = twitterRegex.exec(value.content);
-      if (twitParse) {
+      if (sourceLink.parse) {
         const [, author, post] = twitParse;
-        if (parseLink.author === author && parseLink.post === post) {
+        if (
+          sourceLink.parse.author === author &&
+          sourceLink.parse.post === post
+        ) {
+          if (shouldDelete) value.delete();
+          return true;
+        }
+      } else if (sourceLink.content) {
+        if (value.content === sourceLink.content) {
           if (shouldDelete) value.delete();
           return true;
         }
       }
     }
   } catch (error) {
-    onError(error, { parseLink, getChannel, shouldDelete });
+    onError(error, { sourceLink, getChannel, shouldDelete });
   }
 }
 
-async function checkQuick(parseLink) {
+async function checkQuick(sourceLink) {
   try {
     const finalPromise = await Promise.all([
-      checkAtChannel(parseLink, getChannel("ห้องงานรีบใหม่")),
-      checkAtChannel(parseLink, getChannel("ห้องคอมมิคใหม่")),
-      checkAtChannel(parseLink, getChannel("งานรีบกำลังคลีน"), true),
+      checkAtChannel(sourceLink, getChannel("ห้องงานรีบใหม่")),
+      checkAtChannel(sourceLink, getChannel("ห้องคอมมิคใหม่")),
+      checkAtChannel(sourceLink, getChannel("งานรีบกำลังคลีน"), true),
     ]);
     const finalAnswer = finalPromise.reduce(
       (state, next) => state || next,
@@ -52,7 +75,7 @@ async function checkQuick(parseLink) {
     );
     return finalAnswer;
   } catch (error) {
-    onError(error, { parseLink });
+    onError(error, { sourceLink });
   }
 }
 
@@ -80,19 +103,27 @@ async function sortJobs(message) {
     if (onGoingMessage[message2.id]) return;
     onGoingMessage[message2.id] = true;
     let rawLink;
-    let parseLink;
+    let sourceLink;
     let cleanLink;
-    if (latestLink.type === "twitter" && secondLink.type !== "twitter") {
+    console.log("🚀 ~ file: sortJobs.js ~ line 117 ~ sortJobs ~ latestLink", {
+      latestLink,
+      secondLink,
+    });
+    if (isSource(latestLink.type) && isClean(secondLink.type)) {
       rawLink = message;
-      parseLink = latestLink.parse;
+      sourceLink = latestLink;
       cleanLink = message2;
-    } else if (latestLink.type !== "twitter" && secondLink.type === "twitter") {
+    } else if (isClean(latestLink.type) && isSource(secondLink.type)) {
       rawLink = message2;
-      parseLink = secondLink.parse;
+      sourceLink = secondLink;
       cleanLink = message;
     } else return;
 
-    const isQuick = await checkQuick(parseLink);
+    const isQuick = await checkQuick(sourceLink);
+    console.log(
+      "🚀 ~ file: sortJobs.js ~ line 104 ~ sortJobs ~ isQuick",
+      isQuick
+    );
 
     let destRoom;
     if (isQuick) destRoom = await getChannel("ห้องส่งงานรีบ");
