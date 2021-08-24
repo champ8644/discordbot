@@ -1,20 +1,4 @@
 {
-  "01/01": [
-    {
-      "key": "Rinko Shirokane",
-      "type": "pre",
-      "seiyuu": true,
-      "seiyuuName": "Satomi Akesaka"
-    }
-  ],
-  "02/01": [
-    {
-      "key": "Rinko Shirokane",
-      "type": "hbd",
-      "seiyuu": true,
-      "seiyuuName": "Satomi Akesaka"
-    }
-  ],
   "06/01": [
     {
       "key": "Tsugumi Hazawa",
@@ -167,7 +151,7 @@
   ],
   "07/02": [
     {
-      "key": "Rei Togetsu",
+      "key": "Rinko Shirokane",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Kanon Shizaki"
@@ -175,7 +159,7 @@
   ],
   "08/02": [
     {
-      "key": "Rei Togetsu",
+      "key": "Rinko Shirokane",
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Kanon Shizaki"
@@ -679,12 +663,6 @@
   ],
   "23/06": [
     {
-      "key": "Lisa Imai",
-      "type": "pre",
-      "seiyuu": true,
-      "seiyuuName": "Yurika Endou"
-    },
-    {
       "key": "Tsukushi Futaba",
       "type": "pre",
       "seiyuu": true,
@@ -692,12 +670,6 @@
     }
   ],
   "24/06": [
-    {
-      "key": "Lisa Imai",
-      "type": "hbd",
-      "seiyuu": true,
-      "seiyuuName": "Yurika Endou"
-    },
     {
       "key": "Tsukushi Futaba",
       "type": "hbd",
@@ -939,6 +911,18 @@
       "seiyuuName": "Yuuri Yoshida"
     }
   ],
+  "24/08": [
+    {
+      "key": "Lisa Imai",
+      "type": "pre"
+    }
+  ],
+  "25/08": [
+    {
+      "key": "Lisa Imai",
+      "type": "hbd"
+    }
+  ],
   "29/08": [
     {
       "key": "Rika Seto",
@@ -1005,12 +989,26 @@
       "type": "hbd"
     }
   ],
+  "11/09": [
+    {
+      "key": "Lisa Imai",
+      "type": "pre",
+      "seiyuu": true,
+      "seiyuuName": "Yuki Nakashima"
+    }
+  ],
   "12/09": [
     {
       "key": "Saaya Yamabuki",
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Ayaka Ohashi"
+    },
+    {
+      "key": "Lisa Imai",
+      "type": "hbd",
+      "seiyuu": true,
+      "seiyuuName": "Yuki Nakashima"
     }
   ],
   "13/09": [
@@ -1163,6 +1161,10 @@
       "type": "pre",
       "seiyuu": true,
       "seiyuuName": "Aina Aiba"
+    },
+    {
+      "key": "Rinko Shirokane",
+      "type": "pre"
     }
   ],
   "17/10": [
@@ -1171,6 +1173,10 @@
       "type": "hbd",
       "seiyuu": true,
       "seiyuuName": "Aina Aiba"
+    },
+    {
+      "key": "Rinko Shirokane",
+      "type": "hbd"
     }
   ],
   "18/10": [
