@@ -41,9 +41,13 @@ function mcAcceptCommand(message) {
   switch (command) {
     case "sesame":
     case "open": {
-      turnOnKCMHPC().then((res) => {
-        if (res) message.reply(res);
-      });
+      turnOnKCMHPC()
+        .then((res) => {
+          if (res) message.reply(res);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
       return;
     }
     case "":
