@@ -151,6 +151,7 @@ bot_mc.on("message", async (message) => {
   try {
     switch (message.channel.id) {
       case "935904896270618634": // Enigmatica Minecraft
+      case "937326918498406441":
         mcAcceptCommand(message);
         return;
     }
