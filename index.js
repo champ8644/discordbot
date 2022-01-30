@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const { bot } = require("./utils/Discord");
+const { bot, bot_mc } = require("./utils/Discord");
 const { roomname } = require("./utils/roomname");
 const { onError, onRejection } = require("./utils/errorHandle");
 
@@ -124,6 +124,7 @@ bot.on("messageReactionAdd", async (reaction, user) => {
 const { acceptCommand } = require("./onMessage/acceptCommand");
 const { sortJobs } = require("./onMessage/sortJobs");
 const { registerQC } = require("./onMessage/registerQC");
+const { mcAcceptCommand } = require("./onMessage/mcAcceptCommand");
 bot.on("message", async (message) => {
   try {
     await partialCheck(message);
@@ -146,4 +147,18 @@ bot.on("message", async (message) => {
   }
 });
 
+bot_mc.on("message", async (message) => {
+  try {
+    switch (message.channel.id) {
+      case "935904896270618634": // Enigmatica Minecraft
+        mcAcceptCommand(message);
+        return;
+    }
+  } catch (error) {
+    console.error(error);
+    // onError(error, { message });
+  }
+});
+
 bot.login(process.env.token);
+bot_mc.login(process.env.token_mc);
