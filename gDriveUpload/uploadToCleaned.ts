@@ -17,14 +17,13 @@ export async function uploadToCleaned(filePath: string): Promise<string> {
     requestBody: {
       name: base,
       mimeType,
-      parents: ["1Crdl-OSpVLVW5D3o2j25fQJdW7TAQni6"],
+      parents: ["1ivXHjtgnr6jLQiASAw78YKhO0IT4WIR-"],
     },
     media: {
       mimeType,
       body: fs.createReadStream(filePath),
     },
   });
-  console.log(res.data);
   if (!res.data.id) throw new Error("Uploaded data has no id");
   const { id } = res.data;
   const url = `https://drive.google.com/file/d/${id}`;
