@@ -23,7 +23,12 @@
     "tp-link-tapo-connect": "^1.0.6"
   },
   "devDependencies": {
+    "@types/archiver": "^5.3.1",
     "@types/fs-extra": "^9.0.6",
+    "@types/lodash": "^4.14.179",
+    "archiver": "^5.3.0",
+    "lodash": "^4.17.21",
+    "typescript": "^4.6.2",
     "xlsx": "^0.16.9",
     "xlsx-style": "^0.8.13"
   }
