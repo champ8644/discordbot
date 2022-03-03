@@ -93,7 +93,7 @@ export function main() {
     };
     writeBook(xlsxPath, xlsxLink);
     console.log(`Finish sending ${filename}`);
-    await sleep(1000);
+    await sleep(2000);
   });
 }
 
